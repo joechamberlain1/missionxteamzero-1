@@ -5,7 +5,7 @@ import Hsec2 from "./hsec2";
 import Hsec3 from "./hsec3";
 import "./App.css";
 // import { Route, Link } from "react-router-dom";
-import MainFooter from "./CSS/Footer.css";
+import MainFooter from "./Components/Footer";
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
       <MainFooter />
     </div>
 
-<<<<<<< HEAD
     /*
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About}/>
@@ -27,10 +26,7 @@ function App() {
       this is was inside the return function
     */
   );
-=======
 
-  ); 
->>>>>>> 81c066096e3b5f9d9c02d3a593e04b764740b722
 }
 
 export default App;

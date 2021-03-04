@@ -1,6 +1,7 @@
 import React from 'react';
 
-const MainFooter () {
+
+const MainFooter = () => {
 return (
     <div className="main-footer">
         <div className="container">
@@ -60,4 +61,4 @@ return (
 );
 }
 
-expect default MainFooter;
+export default MainFooter;
