@@ -14,16 +14,16 @@ function Hsec4() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" className="a11">LEARNING PATHWAYS </a>
+                            <a href="#" className="a11"> LEARNING PATHWAYS </a>
                         </li>
                         <li>
-                            <a href="#" className="a11">DIGITAL TECHNOLOGIES </a>
+                            <a href="#" className="a11"> DIGITAL TECHNOLOGIES </a>
                         </li>
                         <li>
-                            <a href="#" className="a11">KEY COMPETENCIES </a>
+                            <a href="#" className="a12"> KEY COMPETENCIES </a>
                         </li>
                         <li>
-                            <a href="#" className="a11">IR4.0 </a>
+                            <a href="#" className="a11"> IR4.0 </a>
                         </li>
                     </ul>
                 </nav>

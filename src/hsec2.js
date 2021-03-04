@@ -26,12 +26,32 @@ function Hsec2() {
           <img src={pxt3} className="pxt" />
           <img src={pxt4} className="pxt" />
         </div>
-
+      
         <div className="sec22">
           <img src={project1} className="project1" />
+
         </div>
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
+
+
+
+    
 
   );
 }
