@@ -7,6 +7,7 @@ import "./App.css";
 // import { Route, Link } from "react-router-dom";
 import MainFooter from "./Components/Footer";
 
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,12 @@ function App() {
       <Hsec1 />
       <Hsec2 />
       <Hsec3 />
+      <div className="page-container">
+      <div className="content-wrap">
+
+      </div>
       <MainFooter />
+      </div>
     </div>
 
     /*

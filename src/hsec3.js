@@ -5,7 +5,6 @@ function Hsec3(){
         <div>
             <h1>My Projects</h1>
         </div>
-
     );
 }
 
