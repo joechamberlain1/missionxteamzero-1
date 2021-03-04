@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../CSS/Footer.css'; 
 
 const MainFooter = () => {
 return (
@@ -7,7 +7,7 @@ return (
         <div className="container">
             <div className='row'>
             {/* Column1 */}
-                <div className="Col">
+                <div className="Col1">
                     <h4>COMPANY</h4>
                         <ul className="list-unstyled">
                         <li>About Us</li>
@@ -17,7 +17,7 @@ return (
                 </div>
 
             {/* Column2 */}
-            <div className="Col">
+            <div className="Col2">
                     <h4>COURSES</h4>
                         <ul className="list-unstyled">
                         <li>Register</li>
@@ -29,7 +29,7 @@ return (
                         </ul>
                 </div>
             {/* Column3 */}
-            <div className="Col">
+            <div className="Col3">
                     <h4>SUPPORT</h4>
                         <ul className="list-unstyled">
                         <li>FAQs</li>
@@ -37,9 +37,8 @@ return (
                         <li>Contact Us</li>
                         </ul>
                 </div>
-
                          {/* Column4 */}
-            <div className="Col">
+            <div className="Col4">
                     <h4>LEGAL</h4>
                         <ul className="list-unstyled">
                         <li>Terms & Conditions</li>
@@ -47,7 +46,7 @@ return (
                         </ul>
                 </div>
 
-                <div className="LevelUpWorksText">
+                <div className="Col5">
                     <h4>LevelUp Works</h4>
                     <p>LevelUp Works is an Auckland-based enterprise dedicated to developing game-based learning software to help teachers
                     in response to the New Zealand Digital Technologies & Hangarau Matchiko.

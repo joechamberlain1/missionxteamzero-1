@@ -1,11 +1,10 @@
 
 
 .topNav{
-    background:rgb(0, 177, 251);
+    background: #43C0F6;
     display:flex;
     justify-content:center;
     width:100%;
-  
   }
 
   .topLogo{
@@ -24,7 +23,7 @@
     list-style-type: none;
     display: flex;
   
-    
+
   }
   .a1{
     text-decoration:none;
