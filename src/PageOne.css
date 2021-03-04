@@ -1,0 +1,36 @@
+.App {
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    display: flex;
+}
+
+.TopNavBar{
+    margin: 0px;
+    padding: 0px;
+    background-color: 110,182,248;
+    height: 50px;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Pic{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+
+.StudentDetails{
+    margin: 40px;
+    padding: 0px;
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+

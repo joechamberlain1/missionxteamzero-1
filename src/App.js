@@ -17,6 +17,7 @@ function App() {
       <MainFooter />
     </div>
 
+<<<<<<< HEAD
     /*
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About}/>
@@ -26,6 +27,10 @@ function App() {
       this is was inside the return function
     */
   );
+=======
+
+  ); 
+>>>>>>> 81c066096e3b5f9d9c02d3a593e04b764740b722
 }
 
 export default App;
