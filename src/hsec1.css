@@ -32,3 +32,21 @@
     
     font-weight: 900px;
   }
+
+  button{
+    text-decoration:none;
+    margin:10px;
+    border:solid;
+    color:#707070;
+    border-color:#43C0F6;
+    border-radius: 5px;
+    font-size:11px;
+    font-weight: bold;
+      
+  }
+
+  .b2 {
+    background-color:#F91C85;
+    border-color:#F91C85;
+    color:white;
+  }
