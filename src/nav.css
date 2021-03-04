@@ -1,0 +1,54 @@
+
+
+.topNav{
+    background:rgb(0, 177, 251);
+    display:flex;
+    justify-content:center;
+    width:100%;
+  
+  }
+
+  .topLogo{
+    width: 30%;
+    justify-content: flex-start;
+    display:flex;
+  }
+
+  .topNavLinks{
+    width: 40%;
+    justify-content: flex-start;
+    display:flex;  
+  }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+  
+    
+  }
+  .a1{
+    text-decoration:none;
+    margin:10px;
+    color:white;
+  }
+
+  .topNavUser{
+    width: 20%;
+    align-content: flex-end;
+    display:flex;
+  }
+
+  .topNavLogin{
+    font-size:15px;
+    padding-top: 5px;
+  }
+
+  .topFlagLang{  
+    font-size:10px;
+    padding:0px;
+    margin:0px;
+   
+    align-content: flex-end;
+    display:flex;
+  
+  }
