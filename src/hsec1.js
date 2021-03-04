@@ -12,9 +12,9 @@ function Hsec1() {
         and other learning areas with our project-based learning programme.
         </p>
 
-        <button>LEARN MORE</button>
+        <button className='b1'>LEARN MORE</button>
 
-        <button>SIGN UP</button>
+        <button className='b2'>SIGN UP</button>
 
         <p className="psec11">*Basic subscription includes the first 15 project
         free of charge.
