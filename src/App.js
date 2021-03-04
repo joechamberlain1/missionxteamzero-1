@@ -3,6 +3,7 @@ import Nav from "./nav";
 import Hsec1 from "./hsec1";
 import Hsec2 from "./hsec2";
 import Hsec3 from "./hsec3";
+import Hsec4 from "./hsec4";
 import "./App.css";
 // import { Route, Link } from "react-router-dom";
 import MainFooter from "./Components/Footer";
@@ -15,6 +16,7 @@ function App() {
       <Hsec1 />
       <Hsec2 />
       <Hsec3 />
+      <Hsec4/>
       <div className="page-container">
       <div className="content-wrap">
 
