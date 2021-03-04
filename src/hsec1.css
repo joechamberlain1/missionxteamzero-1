@@ -15,14 +15,20 @@
 
   .psec1{
     font-size:15px;
-    color:#282c34;
+   
   }
   .psec11{
     font-size:10px;
-    color:#282c34;
+   
   }
 
   .sec12{
     width:65%;
   
+  }
+
+  h1{
+    font-size:40px;
+    
+    font-weight: 900px;
   }
