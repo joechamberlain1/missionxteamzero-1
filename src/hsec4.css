@@ -12,10 +12,27 @@
   }
 
   .a11{
+    
     text-decoration:none;
-    margin:10px;
-    color:black;
+    margin:40px;
     border:solid;
+    color:#707070;
     border-color:#43C0F6;
     border-radius: 5px;
+    
+    font-weight: bold;
+    border-width: 3px;
+  }
+
+  .a12{
+    
+    text-decoration:none;
+    margin:40px;
+    border:solid;
+    color:#707070;
+    border-color:#EFEFF1;
+    background-color:#EFEFF1;
+    border-radius: 5px;
+    border-width:3px;
+    font-weight: bold;
   }
