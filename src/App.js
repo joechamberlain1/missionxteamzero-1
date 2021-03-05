@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import ProfilePage from "./Components/ProfilePage";
 import LogIn from "./Components/Login";
+import StudentProjectLib from './StudentProjectLib.js';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" component={HomePage}/>
       <Route exact path="/ProfilePage" component={ProfilePage}/>
       <Route exact path="/login" component={LogIn}/>
+      <Route exact path="/StudentProjectLib" component={StudentProjectLib}/>
     </div>
 
     /*

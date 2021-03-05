@@ -1,9 +1,9 @@
 import React from 'react';
-
 import '../CSS/login.css'
 import students from '../Students.jpg' 
 import teachers from '../teacher-1.jpg'
-
+import {Link} from 'react-router-dom'
+ 
 // this will all be addded to the hompage and will need to be placed over the top of it 
 function LogIn() {
     return (
@@ -18,7 +18,8 @@ function LogIn() {
             <div className = 'UserInput'>
             <input placeholder ='Email Address'></input>
             <input placeholder = "Password"></input>
-            <button className="LogInButton">Log In</button>
+            {/* have added link to the student project library page. User data has not been added yet */}
+            <Link to="/StudentProjectLib"><button className="LogInButton">Log In</button></Link>
             </div>
         </div>
         <div className = 'TeacherLogIn'>
@@ -29,7 +30,8 @@ function LogIn() {
             <div className = 'UserInput'>
             <input type = 'email' required placeholder ='Email Address'></input>
             <input placeholder = "Password"></input>
-            <button className="LogInButton">Log In</button>
+            {/* Will be changed to teachers page once the page has been made */}
+            <Link to="/StudentProjectLib"><button className="LogInButton">Log In</button></Link>
 
             </div>
         </div>
