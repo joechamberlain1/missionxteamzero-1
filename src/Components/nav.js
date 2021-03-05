@@ -1,9 +1,10 @@
 import React from 'react';
-import star from './logo.png';
-import flagnz from './img/nz.jpg';
-import flagmaori from './img/maori.jpg';
+import star from '../img/logo.png';
+import flagnz from '../img/nz.jpg';
+import flagmaori from '../img/maori.jpg';
 
-import './nav.css';
+
+import '../CSS/nav.css'; 
 
 
 function Nav(){
