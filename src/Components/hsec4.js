@@ -1,5 +1,5 @@
 import React from 'react';
-import './hsec4.css';
+import '../CSS/hsec4.css';
 
 
 function Hsec4() {
