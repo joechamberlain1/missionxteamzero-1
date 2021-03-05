@@ -20,25 +20,26 @@ function Hsec3() {
                 <img src={pxt4} className="pxt" />
             </div>
 
-          
 
-            <div className="sec32">
+
+            <div className="sec31">
                 <h2> How our programme helps teachers and schools </h2>
-                <ul>
-                    <li>
-                        <a href="#" className="a11"> LEARNING PATHWAYS </a>
-                    </li>
-                    <li>
-                        <a href="#" className="a11"> DIGITAL TECHNOLOGIES </a>
-                    </li>
-                    <li>
-                        <a href="#" className="a12"> KEY COMPETENCIES </a>
-                    </li>
-                    <li>
-                        <a href="#" className="a11"> IR4.0 </a>
-                    </li>
-                </ul>
+
             </div>
+
+
+
+            <button className='b11'>LEARNING PATHWAYS</button>
+            <button className='b11'>DIGITAL TECHNOLOGIES</button>
+            <button className='b12'>KEY COMPETENCIES</button>
+            <button className='b11'>IR4.0</button>
+
+
+
+
+
+
+
         </div>
 
 

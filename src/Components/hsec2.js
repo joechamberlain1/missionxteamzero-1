@@ -30,7 +30,7 @@ function Hsec2() {
           <img src={pxt4} className="pxt" />
         </div>
       
-        <div className="sec22">
+        <div className="secs22">
           <img src={project1} className="project1" />
 
         </div>

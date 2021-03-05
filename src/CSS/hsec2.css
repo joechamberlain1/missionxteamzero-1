@@ -1,5 +1,4 @@
 .sec21{
-  padding-bottom:50px;
   padding-top:50px;
   padding-left:15%;
   padding-right:15%;
@@ -10,6 +9,14 @@
   .sec22{
     flex: 50%;
     height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .secs22{
+    flex: 40%;
+    height: 300px;
+    
   }
 
   
@@ -27,11 +34,12 @@
 
   .pxt{
     margin:10px;
-    width:20%;
+    width:15%;
   }
 
   .project1{
-    margin:30px;
+    padding:60px;
+
     
   }
 

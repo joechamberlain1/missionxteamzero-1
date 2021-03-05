@@ -7,13 +7,15 @@ function Hsec5() {
 
             <div className="background5">
                 <div className="container51">
-                    <h2>Enhance key competencies</h2>
-
-                    <p>The programme enhances capabilities of students in the 5 Key
-                        Competencies identified in the New Zealand Curriculum:</p>
-
 
                     <div className="h5list">
+                        <h2>Enhance key competencies</h2>
+
+                        <p>The programme enhances capabilities of students in the 5 Key
+                        Competencies identified in the New Zealand Curriculum:</p>
+                    </div>
+
+                    <div className="h5list2">
                         <ul id="staricon">
                             <li >
                                 <h4 className="h5list">THINKING</h4>
@@ -35,44 +37,44 @@ function Hsec5() {
                         </ul>
 
                         <ul id="staricon">
-                        <li>
-                            <h4 className="h5list">SELF-MANAGEMENT</h4>
-                            <p className="psec5">
-                                Projects and challenges are designed to motivate students to
-                                explore and experiment with self-motivation
+                            <li>
+                                <h4 className="h5list">SELF-MANAGEMENT</h4>
+                                <p className="psec5">
+                                    Projects and challenges are designed to motivate students to
+                                    explore and experiment with self-motivation
                             </p>
-                        </li>
+                            </li>
                         </ul>
 
                         <ul id="staricon">
-                        <li>
-                            <h4 className="h5list">RELATIONSHIPS WITH PEERS</h4>
-                            <p className="psec5">
-                                The programme is designed with unplugged sessions where students
-                                interact in a range of different situations, including things
-                                like being able to listen well, recognise different points of
-                                view, and share ideas.
+                            <li>
+                                <h4 className="h5list">RELATIONSHIPS WITH PEERS</h4>
+                                <p className="psec5">
+                                    The programme is designed with unplugged sessions where students
+                                    interact in a range of different situations, including things
+                                    like being able to listen well, recognise different points of
+                                    view, and share ideas.
                             </p>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
 
                         <ul id="staricon">
-                        <li>
-                            <h4 className="h5list">PARTICIPATION AND COLLABORATION</h4>
-                            <p className="psec5">
-                                The programme encourages students to be involved in communities,
-                                such as family, whanau, school and contribute and make connections
-                                with other people
+                            <li>
+                                <h4 className="h5list">PARTICIPATION AND COLLABORATION</h4>
+                                <p className="psec5">
+                                    The programme encourages students to be involved in communities,
+                                    such as family, whanau, school and contribute and make connections
+                                    with other people
                             </p>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
                 </div>
-
-
-
-
             </div>
-        </div>
 
         </div >
     );

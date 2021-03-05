@@ -14,7 +14,7 @@ function Hsec6() {
             </div>
 
 
-            <div className="sec61">
+            <div className="sec62">
                 <h2> What are you waiting for? </h2>
                 <h3> Start teaching Digital Technologies today. </h3>
 
