@@ -2,6 +2,10 @@
   font-family: 'Nunito';
   color:#707070;
   position: relative;
+  
+  /*set space on left and right side of the page */
+  padding-left:4%;
+  padding-right:4%; 
 }
 
 

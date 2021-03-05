@@ -2,20 +2,31 @@
     background: #43C0F6;
     display:flex;
     justify-content:center;
-    background-size:70%;
+    background-size:100%;
     object-fit:cover;
     width:100%;
-    
     display: flex;
-    
   }
 
+  .topLogo{
+    flex: 20%;    
+    text-align: center;
+  }
 
   .topNavLinks{
-    width: 40%;
+    flex: 40%;
     justify-content: center;
     display:flex;  
   }
+
+  .topNavUser{
+    flex: 20%;
+    align-content: center;
+    display:flex;
+  }
+
+
+
 
   ul{
     list-style-type: none;
@@ -31,11 +42,7 @@
 
 
 
-  .topNavUser{
-    width: 20%;
-    align-content: flex-end;
-    display:flex;
-  }
+
 
   .topNavLogin{
     font-size:15px;
