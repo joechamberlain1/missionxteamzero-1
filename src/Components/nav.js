@@ -34,10 +34,9 @@ function Nav() {
               <Link to="/profilepage">Profile Page TEST LOL</Link>{" "}
               {/* Be sure to update this properly once finalized - Johnny */}
             </li>
-            <li>
-              <Link to="/login">JOSEPH LOGIN TEST </Link>{" "}
-              {/* Be sure to update this properly once finalized - Johnny */}
-            </li>
+            
+           
+              
           </ul>
         </nav>
       </div>
@@ -48,7 +47,10 @@ function Nav() {
             <p>
               <a href="#" className="a1">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
-                REGISTER | LOGIN{" "}
+                <Link to="/login">REGISTER | LOGIN </Link>
+                
+                
+                {" "}
               </a>
             </p>
           </div>
