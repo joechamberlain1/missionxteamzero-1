@@ -22,7 +22,9 @@ function Hsec1() {
 
       </div>
 
-      <div className="sec12"></div>
+      <div className="sec11">
+
+      </div>
     </div>
 
   );

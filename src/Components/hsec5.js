@@ -44,7 +44,7 @@ function Hsec5() {
                         </li>
                         </ul>
 
-                    <ul id="staricon">
+                        <ul id="staricon">
                         <li>
                             <h4 className="h5list">RELATIONSHIPS WITH PEERS</h4>
                             <p className="psec5">
@@ -56,7 +56,7 @@ function Hsec5() {
                         </li>
                     </ul>
 
-                    <ul id="staricon">
+                        <ul id="staricon">
                         <li>
                             <h4 className="h5list">PARTICIPATION AND COLLABORATION</h4>
                             <p className="psec5">
