@@ -1,9 +1,9 @@
 import React from 'react';
-import './hsec3.css';
-import pxt1 from './img/11.png';
-import pxt2 from './img/22.png';
-import pxt3 from './img/33.png';
-import pxt4 from './img/44.png';
+import '../CSS/hsec3.css';
+import pxt1 from '../img/11.png';
+import pxt2 from '../img/22.png';
+import pxt3 from '../img/33.png';
+import pxt4 from '../img/44.png';
 
 function Hsec3() {
     return (
