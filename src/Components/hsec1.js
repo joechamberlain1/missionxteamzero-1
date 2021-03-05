@@ -1,5 +1,5 @@
 import React from 'react';
-import './hsec1.css';
+import '../CSS/hsec1.css'; 
 
 function Hsec1() {
   return (
