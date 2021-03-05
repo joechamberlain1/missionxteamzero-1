@@ -1,9 +1,4 @@
-
-
-/* Have commented all this out so I can make sure all the css is on one page for the log in and sign up. 
-Might just need to change some class names so it all makes sense
-
-.SignUp{
+.Login{
     display: flex;
     justify-content: center;
     z-index: 100;
@@ -18,17 +13,20 @@ Might just need to change some class names so it all makes sense
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bolder;
+    
 }
 
 
-.StudentLogIn{
+
+
+.StudentSignUp{
     background-color: white;
     width:200px;
     height: 500px;
     align-items: center;
     justify-content: center;
     padding: 2%;
-   
+    flex-wrap: nowrap;
 }
 
 a{
@@ -60,6 +58,8 @@ a:hover{
     justify-content: center;
     padding: 2%;
     border-left: solid silver 0.25px;
+    flex-wrap: nowrap;
+
 }
 
 .UserInput{
@@ -91,5 +91,3 @@ a:hover{
 .LogInButton:hover{
     border: white 1px solid;
 }
-
- */
