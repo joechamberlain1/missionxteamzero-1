@@ -11,17 +11,41 @@ function ProfilePage() {
     <div className="profile-background">
     <div className="profile-container">
       <div className="main-profile-left">
-      <div className="profile-pic">
-<img src={ProfilePic} width="175px" height="175" />
-      </div>
+        <img className="profile-pic" src={ProfilePic}/>
+        <div className="profile-buttons">
         <button>Edit profile</button>
         <button>Change Photo</button>
+        </div>
       </div>
       <div className="main-profile-details">
         <h1>Profile Name</h1>
-        <p>Test 2</p>
+        <div className="profile-row">
+          {/* Column1 */}
+          <div className="profile-col">
+            <ul className="profile-list">
+              <li>School</li>
+              <li>Teacher</li>
+              <li>Course</li>
+              <li>Date Of Birth</li>
+              <li>Contact No</li>
+              <li>Email Address</li>
+            </ul>
+                 {/* Column2 */}
+          {/* <div className="profile-col">
+            <ul className="profile-list">
+              <li>School</li>
+              <li>Teacher</li>
+              <li>Course</li>
+              <li>Date Of Birth</li>
+              <li>Contact No</li>
+              <li>Email Address</li>
+            </ul>
+            </div> */}
+
       </div>
       </div>
+    </div>
+    </div>
     </div>
     <MainFooter />
     </div>
