@@ -4,10 +4,10 @@ import Hsec1 from "./hsec1";
 import Hsec2 from "./hsec2";
 import Hsec3 from "./hsec3";
 import Hsec4 from "./hsec4";
+import Hsec5 from "./hsec5";
 import "../App.css";
-import { Route, Link, Switch } from "react-router-dom";
 import MainFooter from "./Footer";
-import ProfilePage from "./ProfilePage";
+
 
 
 function HomePage() {
@@ -18,14 +18,13 @@ function HomePage() {
       <Hsec2 />
       <Hsec3 />
       <Hsec4/>
+      <Hsec5/>
       <div className="page-container">
       <div className="content-wrap">
       </div>
       <MainFooter />
       </div>
     </div>
-
-  
   );
 
 }
