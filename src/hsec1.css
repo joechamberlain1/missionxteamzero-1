@@ -1,15 +1,18 @@
 .sec1{
     background-image:url("img/baloonkid.jpg");
-    background-size:100%;
-    width:100%;
+    background-position: center;
+    object-fit:cover;
+    background-repeat:no-repeat;
     padding-bottom:10px;
     padding-top:20px;
-    padding-left:30px;
+
+    padding-left:6%;
+
   }
 
   .sec11{
-    width:35%;
-    padding-left:200px;
+    width:25%;
+    padding-left:15%;
   
   }
 
