@@ -1,7 +1,8 @@
 import React from 'react';
-import Nav from './nav.js';
-import css from './StudentProjectLib.css';
+import Nav from './Components/nav.js';
+import './StudentProjectLib.css';
 import project1 from './img/project1.png';
+
 
 function StudentProjectLib() {
     return (

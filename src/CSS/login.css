@@ -76,7 +76,6 @@ a:hover{
 }
 
 .LogInButton{ 
-
     background-color:#F91C85;;
     color: white;
     margin-top: 50px;
@@ -84,6 +83,7 @@ a:hover{
     padding: 15px 32px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
+    font-size: 20px;
 }
 
 .LogInButton:hover{
