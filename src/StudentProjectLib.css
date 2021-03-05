@@ -1,0 +1,48 @@
+.MainPage{
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+
+}
+.SideBar{
+
+height: 100%;
+width: 160px;
+/*change back to 160px*/
+position: fixed;
+top: 0;
+left: 0;
+overflow-x: hidden;
+padding-top: 16px;
+margin-top: 10px;
+margin-right: 100px
+
+}
+
+.Header{
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 200px;
+    background-color: lawngreen;
+}
+
+.SideBar ul{
+    color: red;
+    margin: 100px;
+    list-style-type: none;
+    display: grid;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: underline 1px grey;
+}
+
+.Subscription{
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.Project1{
+    height: 200px;
+    width:200px;
+    margin:20px;
+    padding: 5px;
+}
