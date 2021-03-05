@@ -16,8 +16,8 @@ function Nav() {
         <nav>
           <ul>
             <li>
-              {/* <a href="#" className="a1">HOME </a> */}
-              <Link to="/">Home</Link>
+              <a href="#" className="a1">
+              <Link to="/">HOME</Link></a>
             </li>
             <li>
               <a href="#" className="a1">
