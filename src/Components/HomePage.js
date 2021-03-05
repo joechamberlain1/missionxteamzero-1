@@ -18,14 +18,10 @@ function HomePage() {
       <Hsec1 />
       <Hsec2 />
       <Hsec3 />
-      
       <Hsec5/>
       <Hsec6/>
-      <div className="page-container">
-      <div className="content-wrap">
-      </div>
       <MainFooter />
-      </div>
+      
     </div>
   );
 
