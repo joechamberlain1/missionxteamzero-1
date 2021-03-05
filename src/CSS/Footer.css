@@ -7,6 +7,14 @@
   width: 100%;
   padding-top: 3em;
   display: flex;
+  flex: 1;
+}
+
+.container{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
 }
 
 .main-footer ul {
@@ -24,13 +32,16 @@
 .row {
   display: flex;
   padding: 30px;
-  margin: 0px;
+  /* margin: 0px; */
   width: 40%;
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  align-content: center;
+
 }
 
 .Col{
     margin: 30px;
+
 }
 
 .main-footer p {
