@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./Components/nav";
 import Hsec1 from "./hsec1";
 import Hsec2 from "./hsec2";
 import Hsec3 from "./hsec3";
