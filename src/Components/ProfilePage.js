@@ -2,6 +2,7 @@ import React from "react";
 import "../CSS/ProfilePage.css";
 import Nav from "./nav.js";
 import MainFooter from "./Footer.js";
+import ProfilePic from '../img/profilepicplaceholder.png';
 
 function ProfilePage() {
   return (
@@ -10,8 +11,11 @@ function ProfilePage() {
     <div className="profile-background">
     <div className="profile-container">
       <div className="main-profile-left">
-        <h1>hello</h1>
-        <p>Test 1</p>
+      <div className="profile-pic">
+<img src={ProfilePic} width="175px" height="175" />
+      </div>
+        <button>Edit profile</button>
+        <button>Change Photo</button>
       </div>
       <div className="main-profile-details">
         <h1>Profile Name</h1>
