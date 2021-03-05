@@ -1,10 +1,13 @@
 import React from 'react';
-import './hsec2.css';
-import pxt1 from './img/pxt1.png';
-import pxt2 from './img/pxt2.png';
-import pxt3 from './img/pxt3.png';
-import pxt4 from './img/pxt4.png';
-import project1 from './img/project1.png';
+
+import pxt1 from '../img/pxt1.png';
+import pxt2 from '../img/pxt2.png';
+import pxt3 from '../img/pxt3.png';
+import pxt4 from '../img/pxt4.png';
+import project1 from '../img/project1.png';
+
+
+import '../CSS/hsec2.css'; 
 
 function Hsec2() {
   return (
