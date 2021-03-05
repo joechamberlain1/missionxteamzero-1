@@ -8,6 +8,7 @@ import "../CSS/nav.css";
 function Nav() {
   return (
     <div className="topNav">
+
       <div className="topLogo">
         <img src={star} className="star" alt="starlogo" />
       </div>
