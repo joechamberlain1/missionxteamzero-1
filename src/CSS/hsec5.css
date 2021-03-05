@@ -1,0 +1,37 @@
+.container5{
+   width: 100%;
+   display:flex;
+}
+
+.background5{
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 634px;
+}
+
+
+.container51{
+    padding-top:50px;
+    padding-left:15%;
+    padding-right:15%;
+    padding-bottom:0px;
+    
+    text-align:left;
+}
+
+#staricon {
+   list-style-image: url('../img/staricon.png');
+   flex-wrap:wrap;
+   width:100%;
+   
+   
+  }
+
+.psec5{
+    font-size:12px;
+    margin:0px;
+  }
+
+.h5list{
+    margin:0px;
+}
