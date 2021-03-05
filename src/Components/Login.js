@@ -18,7 +18,7 @@ function LogIn() {
             <div className = 'UserInput'>
             <input placeholder ='Email Address'></input>
             <input placeholder = "Password"></input>
-            <button>Log In</button>
+            <button className="LogInButton">Log In</button>
             </div>
         </div>
         <div className = 'TeacherLogIn'>
@@ -29,7 +29,7 @@ function LogIn() {
             <div className = 'UserInput'>
             <input type = 'email' required placeholder ='Email Address'></input>
             <input placeholder = "Password"></input>
-            <button>Log In</button>
+            <button className="LogInButton">Log In</button>
 
             </div>
         </div>
