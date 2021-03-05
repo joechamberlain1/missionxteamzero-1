@@ -1,17 +1,8 @@
 .App {
   font-family: 'Nunito';
   color:#707070;
-}
-
-.page-container{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  position: relative;
 }
 
 
-/* Adapting to peoples monitors */
-.content-wrap{
-  flex: 1;
-} 
 
