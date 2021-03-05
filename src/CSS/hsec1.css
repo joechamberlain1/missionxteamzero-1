@@ -1,5 +1,5 @@
 .sec1{
-    background-image:url("img/baloonkid.jpg");
+    background-image:url("/src/img/baloonkid.jpg");
     background-position: center;
     object-fit:cover;
     background-repeat:no-repeat;
