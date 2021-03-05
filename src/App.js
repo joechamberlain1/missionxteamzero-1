@@ -3,7 +3,7 @@ import Nav from "./Components/nav";
 import Hsec1 from "./Components/hsec1";
 import Hsec2 from "./Components/hsec2";
 import Hsec3 from "./Components/hsec3";
-import Hsec4 from "./hsec4";
+import Hsec4 from "./Components/hsec4";
 import "./App.css";
 // import { Route, Link } from "react-router-dom";
 import MainFooter from "./Components/Footer";
