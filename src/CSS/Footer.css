@@ -1,5 +1,4 @@
 .main-footer {
-  padding: 50px 0;
   background-color: #b2e4fa;
   color: #4b4c4d;
   position: relative;
@@ -31,11 +30,13 @@
 
 .row {
   display: flex;
-  padding: 30px;
+  /*padding: 30px;*/
   /* margin: 0px; */
-  width: 40%;
+  width: 100%;
   /* margin-left: 20%; */
   align-content: center;
+  padding-left:10%;
+  padding-right:10%;
 
 }
 

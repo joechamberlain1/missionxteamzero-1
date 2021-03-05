@@ -27,18 +27,13 @@ function Hsec3() {
 
             </div>
 
-
+            <div className="sec32">
 
             <button className='b11'>LEARNING PATHWAYS</button>
             <button className='b11'>DIGITAL TECHNOLOGIES</button>
             <button className='b12'>KEY COMPETENCIES</button>
             <button className='b11'>IR4.0</button>
-
-
-
-
-
-
+            </div>
 
         </div>
 
