@@ -1,18 +1,16 @@
 .sec21{
-    width:80%;
-    text-align:flex-start;
-    padding-left:15%;
-  
+  padding-bottom:50px;
+  padding-top:50px;
+  padding-left:15%;
+  padding-right:15%;
+  display: flex;
+
   }
 
-
-
-  .row1 {
-    
-    padding-top:20px;
-    
+  .sec22{
+    flex: 50%;
+    height: 300px;
   }
-
 
   
   .psec1{
@@ -20,9 +18,7 @@
     color:#282c34;
   }
 
-  .sec22{
-    width:50%;
-  }
+  
 
   .sec23{
     width:40%;

@@ -4,17 +4,14 @@
     background: #43C0F6;
     display:flex;
     justify-content:center;
-    background-size:100%;
+    background-size:70%;
     object-fit:cover;
     width:100%;
+
+    display: flex;
     
   }
 
-  .topLogo{
-    width: 100px;
-    justify-content: center;
-    display:flex;
-  }
 
   .topNavLinks{
     width: 40%;

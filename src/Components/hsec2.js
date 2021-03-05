@@ -12,8 +12,8 @@ import '../CSS/hsec2.css';
 function Hsec2() {
   return (
     <div className="sec21">
-      <div className='row1'>
-        <div className="sec23">
+
+        <div className="sec22">
 
           <h2> What we offer </h2>
           <p className="psec1">
@@ -49,7 +49,7 @@ function Hsec2() {
 
 
 
-      </div>
+     
     </div>
 
 
