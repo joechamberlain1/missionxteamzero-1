@@ -8,9 +8,6 @@
     object-fit:cover;
     width:100%;
     
-
-
-
   }
 
   .topLogo{
@@ -32,6 +29,12 @@
 
   }
   .a1{
+    text-decoration:none;
+    margin:10px;
+    color:white;
+  }
+
+  .li{
     text-decoration:none;
     margin:10px;
     color:white;
