@@ -1,6 +1,7 @@
-.container5{
+.hsec5{
    width: 100%;
    display:flex;
+   padding-top:10px;
 }
 
 .background5{
@@ -13,7 +14,7 @@
 }
 
 
-.container51{
+.insidebk{
     padding-bottom:10px;
    
     text-align:left;
