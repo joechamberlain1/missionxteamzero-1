@@ -1,7 +1,20 @@
 .sec21{
-    width:100%;
+    width:80%;
+    text-align:flex-start;
+    padding-left:15%;
+  
   }
 
+
+
+  .row1 {
+    
+    padding-top:20px;
+    
+  }
+
+
+  
   .psec1{
     font-size:15px;
     color:#282c34;
@@ -9,12 +22,11 @@
 
   .sec22{
     width:50%;
-    
   }
 
   .sec23{
     width:40%;
-    padding-left:200px;
+
   }
 
   .pxt{
@@ -27,9 +39,13 @@
     
   }
 
-  .row1 {
-    display: flex;
-    padding-top:10px;
-    margin:30px;
-    width: 100%;
-  }
+ 
+
+
+
+
+
+
+
+
+  
