@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Components/nav";
 import Hsec1 from "./Components/hsec1";
-import Hsec2 from "./hsec2";
+import Hsec2 from "./Components/hsec2";
 import Hsec3 from "./hsec3";
 import Hsec4 from "./hsec4";
 import "./App.css";
