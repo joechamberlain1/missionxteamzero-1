@@ -5,6 +5,7 @@ import HomePage from "./Components/HomePage";
 import ProfilePage from "./Components/ProfilePage";
 import LogIn from "./Components/Login";
 import StudentProjectLib from './StudentProjectLib.js';
+import Slide from './Components/slide.js';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/ProfilePage" component={ProfilePage}/>
       <Route exact path="/login" component={LogIn}/>
       <Route exact path="/StudentProjectLib" component={StudentProjectLib}/>
+      <Route exact path="/slide" component={Slide}/>
     </div>
 
     /*

@@ -35,6 +35,11 @@ function Nav() {
               <Link to="/profilepage">Profile Page TEST LOL</Link>{" "}
               {/* Be sure to update this properly once finalized - Johnny */}
             </li>
+
+            <li>
+              <Link to="/slide">Slideshow</Link>
+              {/* testing creating slideshow - Ofa */}
+            </li>
             
            
               
