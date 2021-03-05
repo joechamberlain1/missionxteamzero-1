@@ -3,10 +3,10 @@ import "../CSS/hsec5.css";
 
 function Hsec5() {
     return (
-        <div className="container5">
+        <div className="hsec5">
 
             <div className="background5">
-                <div className="container51">
+                <div className="insidebk">
 
                     <div className="h5list">
                         <h2>Enhance key competencies</h2>
