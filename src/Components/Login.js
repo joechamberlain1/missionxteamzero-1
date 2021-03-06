@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/login.css'
+import '../CSS/SignUp.css'
 import students from '../Students.jpg'
 import teachers from '../teacher-1.jpg'
 import {Link } from 'react-router-dom'
@@ -8,11 +8,11 @@ import {Link } from 'react-router-dom'
 function LogIn() {
   return (
     // needs a better class name now I've found out that signup needs to go here too
-    <div className='Login'>
+    <div className='Form'>
 
       {/* <h1>LOG IN</h1>    */}
       <div className='StudentLogIn'>
-        <img src={students} className="LogInPic" alt="Students" />
+        <img src={students} className="FormPic" alt="Students" />
         <p>Students</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
         <a href='#'>Log In</a> <Link to='/SignUp'>Sign Up</Link>
@@ -21,13 +21,13 @@ function LogIn() {
           <input placeholder='Email Address'></input>
           <input placeholder="Password"></input>
           {/* have added link to the student project library page. User data has not been added yet */}
-          <Link to="/StudentProjectLib"><button className="LogInButton">Log In</button></Link>
+          <Link to="/StudentProjectLib"><button className="FormButton">Log In</button></Link>
         </div>
         </div>
       </div>
 
       <div className='TeacherLogIn'>
-        <img src={teachers} className="LogInPic" alt="Teacher" />
+        <img src={teachers} className="FormPic" alt="Teacher" />
         <p>Teachers</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
         <a href='#'>Log In</a> <Link to='/SignUp'>Sign Up</Link>
@@ -36,7 +36,7 @@ function LogIn() {
           <input type='email' required placeholder='Email Address'></input>
           <input placeholder="Password"></input>
           {/* Will be changed to teachers page once the page has been made */}
-          <Link to="/StudentProjectLib"><button className="LogInButton">Log In</button></Link>
+          <Link to="/teacherpro"><button className="FormButton">Log In</button></Link>
           </div>
           
         </div>

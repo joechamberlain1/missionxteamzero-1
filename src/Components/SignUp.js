@@ -7,29 +7,31 @@ import { Link } from 'react-router-dom';
 function SignUp(){
     return(
 
-        <div className ='SignUp'>
-            <div className='StudentLogIn'>
-            <img src={students} className='LogInPic' alt='Students' />
+        <div className ='Form'>
+            <div className='StudentSignUp'>
+            <img src={students} className='FormPic' alt='Students' />
             <p>Students</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
         <Link to='/LogIn'>Log In</Link> <Link to='/SignUp'>Sign Up</Link>
         <div className='UserInput'>
-        <div className='SignUpInput'>
+        
         <input placeholder='Full Name'></input>
         <input placeholder='Email Address' name='email' required></input>
         <input placeholder='Password'></input>
         <input placeholder='Confirm Password'></input>
           {/* have added link to the student project library page. User data has not been added yet */}
-          <Link to="/LogIn"><button className="LogInButton">Sign Up</button></Link>
-        </div>
+          <Link to="/LogIn"><button className="FormButton">Sign Up</button></Link>
+        
         </div>
       </div>
 
-      <div className='TeacherLogIn'>
-        <img src={teachers} className="LogInPic" alt="Teacher" />
+      <div className='TeacherSignUp'>
+        <img src={teachers} className="FormPic" alt="Teacher" />
         <p>Teachers</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
+        <div className='FormLink'>
         <Link to='/LogIn'>Log In</Link> <Link to='/SignUp'>Sign Up</Link>
+        </div>
         <div className='UserInput'>
         <div className='SignUpInput'>
         <input placeholder='Full Name'></input>
@@ -37,7 +39,7 @@ function SignUp(){
         <input placeholder='Password'></input>
         <input placeholder='Confirm Password'></input>
           {/* Will be changed to teachers page once the page has been made */}
-          <Link to="/LogIn"><button className="LogInButton">Sign Up</button></Link>
+          <Link to="/LogIn"><button className="FormButton">Sign Up</button></Link>
           </div>
           </div>
         </div>
