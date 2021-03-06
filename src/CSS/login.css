@@ -1,7 +1,7 @@
 
 
 /* Have commented all this out so I can make sure all the css is on one page for the log in and sign up. 
-Might just need to change some class names so it all makes sense
+Might just need to change some class names so it all makes sense */
 
 .SignUp{
     display: flex;
@@ -92,4 +92,4 @@ a:hover{
     border: white 1px solid;
 }
 
- */
+ 
