@@ -79,7 +79,24 @@ margin: 50px 0px 0px
     font-size: 60px;
 }
 
-.profile-list{
+.orange-box{
+  height: 80px;
+  background-color: orange;
+  display: flex;
+}
+
+.green-box{
+  height: 60px;
+  width: 50%;
+  /* margin-top: 40px; */
+  background-color: green;
+  font-size: 30px;
+  border: solid 5px black;
+  text-align: left;
+}
+
+
+/* .profile-list{
 display: inline-block;
 color: #A5A5A5;
 font-size: 30px;
@@ -87,13 +104,13 @@ font-weight: bold;
 text-align: left;
 line-height: 1.5;
 width: 30%;
-margin-inline-end: 20px;
+
 }
 
 .profile-col{
     background-color: black;
     width: 30%;
-    /* padding: 1%; */
+    padding: 1%;
     border: solid 2px #e2dfdf;
     border-radius: 20px;
     display: flex;
@@ -102,7 +119,7 @@ margin-inline-end: 20px;
     .profile-row{
         display: flex;
         
-    }
+    } */
 
     
 
