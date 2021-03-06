@@ -27,7 +27,8 @@ function Nav() {
             </li>
             <li>
               <a href="#" className="a1">
-                TEACHERS{" "}
+              <Link to="/teacherpro">TEACHERS</Link>{" "}
+              {/* I'm using this to navigate to my Teacher Progress page - Ofa */}
               </a>
             </li>
 
@@ -36,10 +37,7 @@ function Nav() {
               {/* Be sure to update this properly once finalized - Johnny */}
             </li>
 
-            <li>
-              <Link to="/slide">Slideshow</Link>
-              {/* testing creating slideshow - Ofa */}
-            </li>
+            
             
            
               
