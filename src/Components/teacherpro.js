@@ -5,7 +5,7 @@ import star from "../img/logo.png";
 import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import teachid from "../img/teacherpro.png";
-import studentimg from "../img/std.PNG";
+// import studentimg from "../img/std.PNG";
 
 
 function Teacherpro() {
@@ -75,7 +75,7 @@ function Teacherpro() {
                   </div>
 
                   <div className="studentname">
-                  <img src={studentimg} />
+                  {/* <img src={studentimg} /> */}
 
                   </div>
                   

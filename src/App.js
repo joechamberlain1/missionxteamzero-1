@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import ProfilePage from "./Components/ProfilePage";
 import LogIn from "./Components/Login";
-import StudentProjectLib from './Components/StudentProjectLib.js';
+import StudentProjectLib from './StudentProjectLib.js';
 import SignUp from './Components/SignUp.js'
 import Teacherpro from './Components/teacherpro.js';
 
