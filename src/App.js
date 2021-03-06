@@ -5,8 +5,8 @@ import HomePage from "./Components/HomePage";
 import ProfilePage from "./Components/ProfilePage";
 import LogIn from "./Components/Login";
 import StudentProjectLib from './StudentProjectLib.js';
-import Slide from './Components/slide.js';
 import SignUp from './Components/SignUp.js'
+import Teacherpro from './Components/teacherpro.js';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Route exact path="/Login" component={LogIn}/>
       <Route exact path="/SignUp" component={SignUp}/>
       <Route exact path="/StudentProjectLib" component={StudentProjectLib}/>
-      <Route exact path="/slide" component={Slide}/>
+      <Route exact path="/teacherpro" component={Teacherpro}/>
     </div>
 
     /*
