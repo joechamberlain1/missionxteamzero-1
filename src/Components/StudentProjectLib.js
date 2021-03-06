@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from './nav.js';
-import './css/StudentProjectLib.css';
-import project1 from './img/Project -1@2x.jpg';
-import project2 from './img/Project -2@2x.jpg';
-import project3 from './img/Project -3@2x.jpg';
-import project4 from './img/Project -4@2x.jpg';
-import project5 from './img/Project -5@2x.jpg';
-import project6 from './img/Project -6@2x.jpg';
-import { Route } from 'react-router-dom';
+import '../CSS/StudentProjectLib.css';
+import project1 from '../img/Project -1@2x.jpg';
+import project2 from '../img/Project -2@2x.jpg';
+import project3 from '../img/Project -3@2x.jpg';
+import project4 from '../img/Project -4@2x.jpg';
+import project5 from '../img/Project -5@2x.jpg';
+import project6 from '../img/Project -6@2x.jpg';
+import { Link } from 'react-router-dom';
 
 
 function StudentProjectLib() {
@@ -62,11 +62,6 @@ function StudentProjectLib() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
 
