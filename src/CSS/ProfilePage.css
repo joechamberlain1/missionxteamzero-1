@@ -79,47 +79,35 @@ margin: 50px 0px 0px
     font-size: 60px;
 }
 
-.orange-box{
+/* Container that holds both the requiredDetails and returnedFunctions */
+.details-container{
   height: 80px;
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
 }
 
-.green-box{
+/* Container that holds the Required fields */
+.requiredDetails{
   height: 60px;
   width: 50%;
-  /* margin-top: 40px; */
-  background-color: green;
+  margin-left: 20px;
+  /* background-color: green; */
   font-size: 30px;
-  border: solid 5px black;
+  /* border: solid 5px black; */
   text-align: left;
+  font-weight: bold;
+  color: #A5A5A5;
 }
 
-
-/* .profile-list{
-display: inline-block;
-color: #A5A5A5;
-font-size: 30px;
-font-weight: bold;
-text-align: left;
-line-height: 1.5;
-width: 30%;
-
+/* Container that holds the returned functions */
+.returnedFunction{
+  height: 60px;
+  width: 50%;
+  margin-left: 20px;
+  /* background-color: blue; */
+  font-size: 30px;
+  /* border: solid 5px black;  */
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #707070;
 }
-
-.profile-col{
-    background-color: black;
-    width: 30%;
-    padding: 1%;
-    border: solid 2px #e2dfdf;
-    border-radius: 20px;
-    display: flex;
-    }
-
-    .profile-row{
-        display: flex;
-        
-    } */
-
-    
-
