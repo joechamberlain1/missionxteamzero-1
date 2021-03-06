@@ -19,34 +19,59 @@ function ProfilePage() {
       </div>
       <div className="main-profile-details">
         <h1>Profile Name</h1>
-        <div className="profile-row">
-          {/* Column1 */}
-          <div className="profile-col">
-            <ul className="profile-list">
-              <li>School</li>
-              <li>Teacher</li>
-              <li>Course</li>
-              <li>Date Of Birth</li>
-              <li>Contact No</li>
-              <li>Email Address</li>
-            </ul>
-                 {/* Column2 */}
-          {/* <div className="profile-col">
-            <ul className="profile-list">
-              <li>School</li>
-              <li>Teacher</li>
-              <li>Course</li>
-              <li>Date Of Birth</li>
-              <li>Contact No</li>
-              <li>Email Address</li>
-            </ul>
-            </div> */}
+        <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 1 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 1 right</p>
+        </div>
+      </div>
+      <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 2 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 2 right</p>
+        </div>
+      </div>
+      <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 3 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 3 right</p>
+        </div>
+      </div>
+      <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 4 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 4 right</p>
+        </div>
 
       </div>
+      <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 5 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 5 right</p>
+        </div>
+      </div>
+      <div className="orange-box">
+        <div className="green-box">
+            <p>Hello box 6 left</p>
+        </div>
+        <div className="green-box">
+            <p>Hello box 6 right</p>
+        </div>
+      </div>
       </div>
     </div>
     </div>
-    </div>
+
     <MainFooter />
     </div>
   );
