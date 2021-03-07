@@ -1,0 +1,23 @@
+.profile-main-container {
+  background-color: #b2e4fa;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+.profile-inner-container {
+  display: flex;
+  margin: 40px;
+  padding: 250px;
+  width: 50%;
+  border-radius: 20px;
+  z-index: 50;
+  background-color: white;
+  opacity: 50%;
+  align-items: center;
+  justify-content: center;
+}
