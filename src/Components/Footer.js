@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../CSS/Footer.css";
 
 const MainFooter = () => {
@@ -55,6 +56,20 @@ const MainFooter = () => {
               response to the New Zealand Digital Technologies & Hangarau
               Matchiko. alan@levelupworks.com (021) 668 185
             </p>
+          </div>
+          {/* Column6 */}
+          <div className="Col">
+            <h4>Random Test</h4>
+            <ul className="list-unstyled">
+              <li>
+                <Link to="/profilepage">Profile Page TEST LOL</Link>{" "}
+                {/* Be sure to update this properly once finalized - Johnny */}
+              </li>
+              <li>
+                <Link to="/teacherstudentprofile">Teacher Student Profile Page TEST LOL</Link>{" "}
+                {/* Be sure to update this properly once finalized - Johnny */}
+              </li>
+            </ul>
           </div>
         </div>
       </div>

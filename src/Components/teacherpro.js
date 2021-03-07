@@ -6,24 +6,16 @@ import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import teachid from "../img/teacherpro.png";
 import studentimg from "../img/std.png";
+import TopNav2 from "./TopNavPart2";
+import MainFooter2 from "./Footer2";
+
 
 
 function Teacherpro() {
   return (
     <div className="teacherpro-body">
 
-      <div className="topNav2">
-        {/*Logo */}
-        <div className="topLogo2">
-          <img src={star} className="star" alt="starlogo" />
-        </div>
-        {/*nz flag and maori flag */}
-        <div className="topFlagLang2">
-          <p>
-            <img src={flagnz} alt="NZ Flag" />{" "}
-            <img src={flagmaori} alt="Maori Flag" />
-          </p>
-        </div></div>
+<TopNav2 />
 
 
 
@@ -126,17 +118,7 @@ function Teacherpro() {
 
 
 
-
-
-
-
-
-
-      <footer>
-      
-      <p className="footer2"> &#169; LevelUp Works 2020 </p>
-   
-      </footer>
+<MainFooter2 />
      
 
     </div>

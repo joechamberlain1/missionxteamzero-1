@@ -32,15 +32,10 @@ function Nav() {
               </a>
             </li>
 
-            <li>
-              <Link to="/profilepage">Profile Page TEST LOL</Link>{" "}
-              {/* Be sure to update this properly once finalized - Johnny */}
-            </li>
+
 
             
-            
-           
-              
+               
           </ul>
         </nav>
       </div>
