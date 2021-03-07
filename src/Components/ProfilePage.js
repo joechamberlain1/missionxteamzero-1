@@ -4,6 +4,7 @@ import Nav from "./nav.js";
 import MainFooter from "./Footer.js";
 import ProfilePic from "../img/profilepicplaceholder.png";
 
+
 function ProfilePage() {
   return (
     <div className="webcontainer">
@@ -11,7 +12,7 @@ function ProfilePage() {
       <div className="profile-background">
         <div className="profile-container">
           <div className="main-profile-left">
-            <img className="profile-pic" src={ProfilePic} />
+            <img className="profile-pic" src={ProfilePic} alt="profileplaceholder" />
             <div className="profile-buttons">
               <button>Edit profile</button>
               <button>Change Photo</button>

@@ -2,15 +2,6 @@
   width:100%;
 }
 
-.topNav2{
-    background: white;
-    display:flex;
-    justify-content:center;
-    background-size:100%;
-    object-fit:cover;
-    width:100%;
-    display: flex;
-  }
 
 
 
@@ -19,15 +10,7 @@
   }
 
 
-  .topLogo2{
-    flex: 90%;
-    padding-left:5%;    
-    text-align: left;
-  }
 
-  .topFlagLang2{  
-    flex: 10%;    
-  }
 
 
   .leftnav{
@@ -58,13 +41,6 @@
     text-decoration:none;
     
   }
-
-
-  .footer2{
-    text-align:center;
-  }
-
-
 
 .left-side{
   width:15%;
