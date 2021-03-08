@@ -9,41 +9,42 @@ import Divider from '@material-ui/core/Divider';
 
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '100%',
-      maxWidth: 360,
-      backgroundColor: theme.palette.background.paper,
-    },
-  }));
+  root: {
+    width: '100%',
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper,
+  },
+}));
 
 
 function TeacherLNav() {
-    const classes = useStyles();
-  
-    return (
-      <List component="nav" className={classes.root} aria-label="mailbox folders">
-        <ListItem button>
-          <ListItemText primary="PROGRESS TRACKER" />
-        </ListItem>
+  const classes = useStyles();
 
-        <Divider />
-            <ListItem button divider>
-            <ListItemText primary="STUDENT PROFILES" />
-        </ListItem>
+  return (
+    <List component="nav" className={classes.root} aria-label="mailbox folders">
+      
+      <ListItem button>
+        <ListItemText primary="PROGRESS TRACKER" />
+      </ListItem>
 
-        <ListItem button>
-          <ListItemText primary="HELP REQUESTS" />
-        </ListItem>
-        <Divider light />
-        <ListItem button>
-          <ListItemText primary="PROJECT SUBMISSIONS" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="PROJECT LIBRARY" />
-        </ListItem>
+      <ListItem button>
+        <ListItemText primary="STUDENT PROFILES" />
+      </ListItem>
+
+      <ListItem button>
+        <ListItemText primary="HELP REQUESTS" />
+      </ListItem>
+
+      <ListItem button>
+        <ListItemText primary="PROJECT SUBMISSIONS" />
+      </ListItem>
+
+      <ListItem button>
+        <ListItemText primary="PROJECT LIBRARY" />
+      </ListItem>
 
 
-      </List>
-    );
-  }
+    </List>
+  );
+}
 export default TeacherLNav;
