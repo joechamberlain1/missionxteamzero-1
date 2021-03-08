@@ -8,7 +8,7 @@ import Hsec5 from "./hsec5";
 import Hsec6 from "./hsec6";
 import "../App.css";
 import MainFooter from "./Footer";
-
+import TeacherLNav from "./TeacherLNav";
 
 
 function HomePage() {
@@ -21,6 +21,7 @@ function HomePage() {
       <Hsec5/>
       <Hsec6/>
       <MainFooter />
+  
       
     </div>
   );
