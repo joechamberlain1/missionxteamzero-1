@@ -49,25 +49,12 @@
   position: absolute;}
 
 
-.right-side{
+.rightSide-Body{
   
   height:600px;
   background-color:#B2E4FA;
   display: flex;
   padding-left:20%;
-}
-
-.h31{
-  font-weight:bold;
-  padding-left:30px;
-  padding-top:30px;
-}
-
-
-.studentname{
-  padding-left:50px;
-  padding-top:30px;
-
 }
 
 

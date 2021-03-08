@@ -1,7 +1,6 @@
 import React from "react";
 import "../CSS/teacherpro.css";
 
-import studentimg from "../img/std.png";
 import TopNav2 from "./TopNavPart2";
 import MainFooter2 from "./Footer2";
 import TeacherLNav from "./TeacherLNav";
@@ -12,9 +11,7 @@ function Teacherpro() {
   return (
     <div className="teacherpro-body">
 
-      <TopNav2 />
-
-
+    <TopNav2 />
 
       <div className="teacherbody">
 
@@ -38,68 +35,17 @@ function Teacherpro() {
         
 
 
-          <div className="right-side">
+          <div className="rightSide-Body">
           
-            <div>
-                  <div>    <h3 className="h31"> BEGINNER COURSE</h3>
-                  
-                  </div>
+           
+                 
 
-                  <div className="studentname">
-                  <img src={studentimg} />
-
-                  </div>
-                  
-            
-            </div>
-
-          
           </div>
-
-        
-
-
-
-
-
-
-
-
-
-
+      
+      
+      
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<MainFooter2 />
-     
-
+    <MainFooter2 />
     </div>
 
 
