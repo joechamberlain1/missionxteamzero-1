@@ -4,6 +4,7 @@ import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
+import SimpleModal from './LoginModal.js'
 
 function Nav() {
   return (
@@ -55,13 +56,15 @@ function Nav() {
           <div className="topNavLogin">
             <p>
               <a href="#" className="a1">
-              <Link to="/login">
-             
+              {/* <Link to="/login">
+                
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                 {" "}
                 REGISTER | LOGIN 
-                </Link>
+                </Link> 
                 
+                have left the original in for now whilst I'm changing it on LoginModal page*/}
+                <SimpleModal />
                 
                 
               </a>

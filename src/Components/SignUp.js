@@ -3,6 +3,7 @@ import '../CSS/SignUp.css';
 import students from '../Students.jpg';
 import teachers from '../teacher-1.jpg';
 import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
  
 function SignUp(){
     return(
@@ -20,9 +21,10 @@ function SignUp(){
         <input placeholder='Password'></input>
         <input placeholder='Confirm Password'></input>
           {/* have added link to the student project library page. User data has not been added yet */}
-          <Link to="/LogIn"><button className="FormButton">Sign Up</button></Link>
+          </div>
+          <Link to="/LogIn"><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></Link>
         
-        </div>
+        
       </div>
 
       <div className='TeacherSignUp'>
@@ -33,15 +35,16 @@ function SignUp(){
         <Link to='/LogIn'>Log In</Link> <Link to='/SignUp'>Sign Up</Link>
         </div>
         <div className='UserInput'>
-        <div className='SignUpInput'>
+        
         <input placeholder='Full Name'></input>
         <input placeholder='Email Address' name='email' required></input>
         <input placeholder='Password'></input>
         <input placeholder='Confirm Password'></input>
           {/* Will be changed to teachers page once the page has been made */}
-          <Link to="/LogIn"><button className="FormButton">Sign Up</button></Link>
           </div>
-          </div>
+          <Link to="/LogIn"><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></Link>
+          
+         
         </div>
         </div>
       
