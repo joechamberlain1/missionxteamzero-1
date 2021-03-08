@@ -2,7 +2,7 @@ import React from "react";
 
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import "./slide.css";
+import '../CSS/slide.css';
 import Project1 from '../img/project1.png';
 import Project2 from '../img/project2.png';
 import Project3 from '../img/project3.png';
