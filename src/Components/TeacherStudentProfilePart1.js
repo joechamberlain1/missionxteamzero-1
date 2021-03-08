@@ -9,7 +9,7 @@ function TeacherStudentProfile() {
   return (
     <div className="webcontainer">
       <TopNav2 />
-      {/* <SideNavMainTest /> */}
+      <SideNavMainTest />
       <div className="profile-main-container">
         <div className="profile-inner-container">
           <h1>

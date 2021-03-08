@@ -22,6 +22,8 @@
     
     width: 300px;
     padding: 2%;
+    margin-right: 20px;
+    
     flex-wrap: nowrap;
 } 
 
@@ -39,7 +41,9 @@
     
     width: 300px;
     padding: 2%;
+    margin-right: 20px;
     flex-wrap: nowrap;
+    
 }
 
 .TeacherLogIn{
@@ -78,6 +82,7 @@
     position: relative;
     align-items: flex-end;
     margin-top: 50px;
+    margin-bottom: 100px;
     
 }
 
@@ -89,19 +94,7 @@
 
 }
 
-.FormButton{ 
-    background-color:#F91C85;;
-    color: white;
-    margin-top: 50px;
-    border: none;
-    padding: 15px 32px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
-    font-size: 20px;
-
+.LogSignButton {
+    color: green;
 }
 
-.FormButton:hover{
-    border: white 1px solid;
-    
-}
