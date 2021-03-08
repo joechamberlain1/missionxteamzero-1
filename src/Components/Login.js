@@ -15,7 +15,7 @@ function LogIn() {
         <img src={students} className="FormPic" alt="Students" />
         <p>Students</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
-        <a href='#'>Log In</a> <Link to='/SignUp'>Sign Up</Link>
+        <Link to='/LogIn'>Log In</Link> <Link to='/SignUp'>Sign Up</Link>
         <div className='UserInput'>
           <div className ='LogInput'>
           <input placeholder='Email Address'></input>
@@ -30,7 +30,7 @@ function LogIn() {
         <img src={teachers} className="FormPic" alt="Teacher" />
         <p>Teachers</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
-        <a href='#'>Log In</a> <Link to='/SignUp'>Sign Up</Link>
+        <Link to='/LogIn'>Log In</Link> <Link to='/SignUp'>Sign Up</Link>
         <div className='UserInput'>
         <div className ='LogInput'>
           <input type='email' required placeholder='Email Address'></input>

@@ -7,7 +7,7 @@ import project3 from '../img/Project -3@2x.jpg';
 import project4 from '../img/Project -4@2x.jpg';
 import project5 from '../img/Project -5@2x.jpg';
 import project6 from '../img/Project -6@2x.jpg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 function StudentProjectLib() {
@@ -15,23 +15,23 @@ function StudentProjectLib() {
         <div className="StudentProjectLibrary">
             <Nav />
             <div className='MainPage'>
-                
-                 <div className='ProjectSideBar'> {/*sidebar container */}
+
+                <div className='ProjectSideBar'> {/*sidebar container */}
 
                     <div className="TableHeader">
                         <tr>
                             <th>Subscription</th>
                         </tr>
                         <tr>
-                            <label class="checkbox">Free
+                            <label className="checkbox">
                                     <input type='checkbox' checked='checked' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Free</span>
                             </label>
                         </tr>
                         <tr>
-                            <label class="checkbox">Premium
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span  className='checkmark'>Premium</span>
                             </label>
                         </tr>
 
@@ -39,27 +39,27 @@ function StudentProjectLib() {
                             <th>Activity Type</th>
                         </tr>
                         <tr>
-                            <label>Animation
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span  className='checkmark'>Animation</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Game
+                            <label className="checkbox">
                                     <input type='checkbox' checked='checked' />
-                                <span class='checkmark'></span>
+                                <span  className='checkmark'>Game</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Chatbot
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Chatbot</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Augmented Reality
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Augmented Reality</span>
                             </label>
                         </tr>
 
@@ -67,27 +67,27 @@ function StudentProjectLib() {
                             <th>Year Level</th>
                         </tr>
                         <tr>
-                            <label>1-4
+                            <label className="checkbox">
                                     <input type='checkbox' checked='checked' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>1-4</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>5-6
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>5-6</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>7-8
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>7-8</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>9-13
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>9-13</span>
                             </label>
                         </tr>
 
@@ -95,39 +95,39 @@ function StudentProjectLib() {
                             <th>Subject Matter</th>
                         </tr>
                         <tr>
-                            <label>Computer Science
+                            <label className="checkbox">
                                     <input type='checkbox' checked='checked' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Computer Science</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Maths
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Maths</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Science
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Science</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Language
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Language</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Art
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span className='checkmark'>Art</span>
                             </label>
                         </tr>
                         <tr>
-                            <label>Music
+                            <label className="checkbox">
                                     <input type='checkbox' />
-                                <span class='checkmark'></span>
+                                <span claclassNamess='checkmark'>Music</span>
                             </label>
                         </tr>
 
@@ -136,9 +136,23 @@ function StudentProjectLib() {
                 <div className='ProjectContainer'>
 
                     <div className='ProjectLibText'>
+
                         <h1>Projects</h1>
                         <p>This is where all the project pictures will go</p>
-                        <button className = "difficultyButton">beginner</button><button className = "difficultyButton">Intermediate</button><button className = "difficultyButton">Advanced</button>
+
+                        <div className='LeftButtonContainer'>
+                            <button className="ProjectButton">beginner</button>
+                            <button className="ProjectButton">Intermediate</button>
+                            <button className="ProjectButton">Advanced</button>
+                        </div>
+
+                        <div className='RightButtonContainer'>
+                            Show: 
+                            <button className="ProjectButton">25</button>
+                            <button className="ProjectButton">50</button>
+                            <button className="ProjectButton">100</button>
+                        </div>
+
                     </div>
                     <div className="ProjectGallery">
                         <div className='ProjectPic1'>
