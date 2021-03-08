@@ -8,6 +8,7 @@ import teachid from "../img/teacherpro.png";
 import studentimg from "../img/std.png";
 import TopNav2 from "./TopNavPart2";
 import MainFooter2 from "./Footer2";
+import TeacherLNav from "./TeacherLNav";
 
 
 
@@ -32,25 +33,7 @@ function Teacherpro() {
 
             <div class="list-group">
 
-              <div className="listbk">
-                <a class="a2" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; PROGRESS TRACKER</a>
-              </div>
-              <div className="listbk">
-                <br></br>
-                <a class="a2" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; STUDENT PROFILE</a>
-              </div>
-              <div className="listbk">
-                <br></br>
-                <a class="a2" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; HELP REQUEST</a>
-              </div>
-              <div className="listbk">
-                <br></br>
-                <a class="a2" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; PROTECT SUBMISSIONS</a>
-              </div>
-              <div className="listbk">
-                <br></br>
-                <a class="a2" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; PROTECT LIBRARY</a>
-              </div>
+            <TeacherLNav/>
 
             </div>
 
