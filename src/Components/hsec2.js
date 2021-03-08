@@ -4,8 +4,7 @@ import pxt1 from '../img/pxt1.png';
 import pxt2 from '../img/pxt2.png';
 import pxt3 from '../img/pxt3.png';
 import pxt4 from '../img/pxt4.png';
-import project1 from '../img/project1.png';
-
+import Slide1 from "./slide";
 
 import '../CSS/hsec2.css'; 
 
@@ -31,8 +30,7 @@ function Hsec2() {
         </div>
       
         <div className="secs22">
-          <img src={project1} className="project1" />
-
+          <Slide1/>
         </div>
 
       

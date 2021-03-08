@@ -1,0 +1,12 @@
+.App1 {
+    font-family: sans-serif;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    
+  }
+  
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 0px #707070;
+  }
