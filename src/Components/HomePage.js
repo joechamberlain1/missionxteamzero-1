@@ -8,12 +8,13 @@ import Hsec5 from "./hsec5";
 import Hsec6 from "./hsec6";
 import "../App.css";
 import MainFooter from "./Footer";
-import TeacherLNav from "./TeacherLNav";
+import Tavitar from "./tavitar";
 
 
 function HomePage() {
   return (
     <div className="App">
+      <Tavitar/>
       <Nav />
       <Hsec1 />
       <Hsec2 />
