@@ -1,22 +1,18 @@
 import React from "react";
 import "../CSS/teacherpro.css";
 
-import star from "../img/logo.png";
-import flagnz from "../img/nz.jpg";
-import flagmaori from "../img/maori.jpg";
-import teachid from "../img/teacherpro.png";
 import studentimg from "../img/std.png";
 import TopNav2 from "./TopNavPart2";
 import MainFooter2 from "./Footer2";
 import TeacherLNav from "./TeacherLNav";
-
+import Tavitar from "./tavitar";
 
 
 function Teacherpro() {
   return (
     <div className="teacherpro-body">
 
-<TopNav2 />
+      <TopNav2 />
 
 
 
@@ -27,7 +23,7 @@ function Teacherpro() {
 
 
             <div className="leftnav">
-              <img src={teachid} className="teacherprofile" alt="teacherprofile" />
+            <Tavitar/>
 
             </div>
 
