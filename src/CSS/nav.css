@@ -11,10 +11,11 @@
   .topLogo{
     flex: 20%;    
     text-align: center;
+    
   }
 
   .topNavLinks{
-    flex: 40%;
+    flex: 60%;
     justify-content: center;
     display:flex;  
   }
