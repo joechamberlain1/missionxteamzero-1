@@ -1,5 +1,4 @@
 import React from "react";
-import MainFooter from "./Footer";
 import TopNav2 from "./TopNavPart2";
 import "../CSS/ProfileMainBackground.css";
 import MainFooter2 from "./Footer2";
