@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/teacher1.css";
-import Nav from "./TopNavPart2.js";
-import Footer from "./Footer2.js"
+
+
 import Teacher2 from "./teacher2.js";
 
 
@@ -10,7 +10,7 @@ import Teacher2 from "./teacher2.js";
 function Teacher1() {
   return (
     <div>
-      <Nav />
+     
       <div className="divt1">
         <div className="divt2">
           
@@ -65,7 +65,7 @@ function Teacher1() {
           </div>
         </div>
       </div>
-      <Footer/>
+
     </div>
   );
 }

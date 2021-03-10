@@ -3,12 +3,12 @@ import "../CSS/teacherpro.css";
 
 import TopNav2 from "./TopNavPart2";
 import MainFooter2 from "./Footer2";
-import Teacherb from "./teacher1.js";
+import Teacherb from "./helpT.js";
 import TeacherLNav from "./TeacherLNav";
 import Tavitar from "./tavitar";
 
 
-function Teacherpro() {
+function Teacherstu() {
   return (
     <div className="teacherpro-body">
 
@@ -75,4 +75,4 @@ function Teacherpro() {
   );
 }
 
-export default Teacherpro;
+export default Teacherstu;
