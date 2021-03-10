@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Login from './Login.js'
 import Link from '@material-ui/core/Link'
-
 import "../CSS/loginmodal.css";
+
 
 function getModalStyle() {
   const top = 50;
@@ -53,7 +53,9 @@ function LogInModal() {
     <div>
 
       <Link type="button" onClick={handleOpen}>
+
       <button type="button" className="navbutton" onClick={handleOpen}/>{/* this needs to be changed to suit the previous page */}LOGIN 
+      
       </Link>
 
       <Modal

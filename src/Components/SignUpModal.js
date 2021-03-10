@@ -4,6 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import SignUp from './SignUp.js'
 // import CloseIcon from '@material-ui/icons/Close';
 import Link from '@material-ui/core/Link'
+import "../CSS/loginmodal.css";
 
 
 function getModalStyle() {
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
     width: 700,
-    // height: 800,
+    //height: 800,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
@@ -55,7 +56,7 @@ function SignUpModal() {
   return (
     <div>
 
-      <Link type="button" onClick={handleOpen}>
+      <Link type="button" class = 'navbutton' onClick={handleOpen}>
         
                 {/* this needs to be changed to suit the previous page */}
                 
