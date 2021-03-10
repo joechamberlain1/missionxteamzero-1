@@ -40,9 +40,8 @@
   height: 40px;
   border-radius: 7px;
   position: absolute;
-  column-count:2;
- 
-
+  column-count:3;
+  display:flex;
 }
 
 
@@ -54,6 +53,14 @@
   margin:0px;
   padding-left:20px;
   font-size:10px;
+  
+}
+
+.mp3 {
+  margin:0px;
+  padding-left:300px;
+  font-size:10px;
+  text-align:right;
 }
 
 .col2 {
