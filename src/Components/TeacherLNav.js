@@ -33,8 +33,6 @@ function TeacherLNav() {
 
       <ListItem button>
       <Link to="/teacherstu">HELP REQUESTS</Link>
-        
-    
       </ListItem>
 
       <ListItem button>
