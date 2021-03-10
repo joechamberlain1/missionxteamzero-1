@@ -20,16 +20,16 @@ function Slide1() {
     <div className="App1">
       <Carousel breakPoints={breakPoints}>
         <Item>
-          <img src={Project1} className="project1" />
+          <img src={Project1} className="project1" alt="Project1" />
         </Item>
         <Item>
-          <img src={Project2} className="project2" />
+          <img src={Project2} className="project2" alt="Project2" />
         </Item>
         <Item>
-          <img src={Project3} className="project3" />
+          <img src={Project3} className="project3" alt="Project3" />
         </Item>
         <Item>
-          <img src={Project4} className="project4" />
+          <img src={Project4} className="project4" alt="Project4" />
         </Item>
       </Carousel>
     </div>

@@ -11,10 +11,11 @@
   .topLogo{
     flex: 20%;    
     text-align: center;
+    
   }
 
   .topNavLinks{
-    flex: 40%;
+    flex: 60%;
     justify-content: center;
     display:flex;  
   }
@@ -31,6 +32,7 @@
   ul{
     list-style-type: none;
     display: flex;
+    text-decoration:none;
   
 
   }
@@ -38,23 +40,27 @@
     text-decoration:none;
     margin:10px;
     color:white;
+    
   }
 
 
-
-
-
-  .topNavLogin{
-    font-size:15px;
-    padding-top: 5px;
+  .leftsidenav{
+    text-align: right;
   }
 
   .topFlagLang{  
     font-size:10px;
-    padding:0px;
-    margin:0px;
-   
-    align-content: flex-end;
-    display:flex;
-  
+
   }
+
+  .topNavLogin{
+    height:inherit;
+    width:inherit;
+  }
+
+  .lang1{
+    margin:0px;
+    padding-top:10px;
+    color:white;
+  }
+  

@@ -14,6 +14,37 @@ const MainFooter = () => {
               <li>About Us</li>
               <li>Careers</li>
               <li>Partners</li>
+              <li>
+                <Link to="/teacher1">
+                  Teacher-Ofa
+                </Link>{" "}
+                {/* use to access to my teacher1 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/teacher2">
+                RadioButton 
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/helpT">
+                Help-Ofa
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/ImageAvatars">
+                Avitar-Ofa
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+
+
+
             </ul>
           </div>
 
@@ -66,9 +97,14 @@ const MainFooter = () => {
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
               <li>
-                <Link to="/teacherstudentprofile">Teacher Student Profile Page TEST LOL</Link>{" "}
+                <Link to="/TeacherStudentProfilePart1">
+                  Teacher Student Profile Page TEST LOL
+                </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
+
+              
+
             </ul>
           </div>
         </div>
