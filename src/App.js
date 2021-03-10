@@ -8,7 +8,8 @@ import StudentProjectLib from "./Components/StudentProjectLib.js";
 import SignUp from "./Components/SignUp.js";
 import Teacherpro from "./Components/teacherpro.js";
 import TeacherStudentProfilePart1 from "./Components/TeacherStudentProfilePart1";
-
+import Teacher1 from "./Components/teacher1";
+import Teacher2 from "./Components/teacher2";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,8 @@ function App() {
       <Route exact path="/SignUp" component={SignUp} />
       <Route exact path="/StudentProjectLib" component={StudentProjectLib} />
       <Route exact path="/teacherpro" component={Teacherpro} />
+      <Route exact path="/teacher1" component={Teacher1} />
+      <Route exact path="/teacher2" component={Teacher2} />
       <Route
         exact
         path="/TeacherStudentProfilePart1"

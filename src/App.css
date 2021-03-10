@@ -7,10 +7,9 @@
 }
 
 
-/* remove the underline for all link */
+/* remove the underline for all link, and set background to inherit*/
 a{
   text-decoration:none;
-  background-color: inherit;
 }
 
 
