@@ -22,8 +22,8 @@
 
   .topNavUser{
     flex: 20%;
-    align-content: center;
-    display:flex;
+    align-content: flex-end;
+   
   }
 
 
@@ -40,7 +40,13 @@
     text-decoration:none;
     margin:10px;
     color:white;
-    
+   
+  }
+
+  .a2{
+    text-decoration:none;
+    color:white;
+   
   }
 
 
@@ -50,15 +56,21 @@
 
   .topFlagLang{  
     font-size:10px;
-
+    
   }
 
   .topNavLogin{
     height:inherit;
     width:inherit;
+    ;
   }
   
-
+.p1{
+  padding:0px;
+  margin:0px;
+  text-align: left;
+  color:white;
+}
   .lang1{
     margin:0px;
     padding-top:10px;

@@ -2,7 +2,9 @@ import React from "react";
 import Avatar from '@material-ui/core/Avatar';
 
 import "../CSS/helpT.css";
-import Nav from "./nav.js";
+import Nav from "./TopNavPart2.js";
+import Footer from "./Footer2.js"
+
 import Checkbox from "./checkbox.js";
 import AIDEN from "../img/AIDEN.png"
 import RAWIRI from "../img/RAWIRI.png"
@@ -84,7 +86,7 @@ function Helpt() {
           </div>
         </div>
       </div>
-   
+      <Footer />
     </div>
   );
 }
