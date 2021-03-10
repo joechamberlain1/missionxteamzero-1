@@ -50,6 +50,14 @@ const MainFooter = () => {
               </li>
 
 
+              <li>
+                <Link to="/teacherstu">
+                TeacherStudent
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+
 
 
             </ul>

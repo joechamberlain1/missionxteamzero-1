@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -24,15 +24,17 @@ function TeacherLNav() {
     <List component="nav" className={classes.root} aria-label="mailbox folders">
       
       <ListItem button>
-        <ListItemText primary="PROGRESS TRACKER" />
+      <Link to="/teacherpro">PROGRESS TRACKER</Link>
       </ListItem>
 
-      <ListItem button>
-        <ListItemText primary="STUDENT PROFILES" />
+      <ListItem button >
+      <Link to="/teacherstu">STUDENT PROFILES</Link>
       </ListItem>
 
       <ListItem button>
         <ListItemText primary="HELP REQUESTS" />
+        
+    
       </ListItem>
 
       <ListItem button>
@@ -43,6 +45,7 @@ function TeacherLNav() {
         <ListItemText primary="PROJECT LIBRARY" />
       </ListItem>
 
+      
 
     </List>
   );

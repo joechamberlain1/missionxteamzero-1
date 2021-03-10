@@ -2,8 +2,7 @@ import React from "react";
 import Avatar from '@material-ui/core/Avatar';
 
 import "../CSS/helpT.css";
-import Nav from "./TopNavPart2.js";
-import Footer from "./Footer2.js"
+
 
 import Checkbox from "./checkbox.js";
 import AIDEN from "../img/AIDEN.png"
@@ -15,7 +14,7 @@ import TOKIO from "../img/TOKIO.png"
 function Helpt() {
   return (
     <div>
-      <Nav />
+      
       <div className="divt1">
 
         <div className="divt2">
@@ -86,7 +85,7 @@ function Helpt() {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }
