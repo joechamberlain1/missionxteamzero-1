@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from '@material-ui/core/Avatar';
 
-import "../CSS/teacher1.css";
+import "../CSS/helpT.css";
 import Nav from "./nav.js";
 import AIDEN from "../img/AIDEN.png"
 
@@ -29,11 +29,12 @@ function Helpt() {
 
             <div className="divt41">
                 <div className="divt5">
-                  <Avatar alt="Aiden" src={AIDEN}/>
-                  <p className="mp1">AIDEN needs help with his project.</p>
-                  <p className="mp2">TUE 28 April 2020</p>
-
                   
+                  <Avatar alt="Aiden" src={AIDEN}/>
+                  
+                  <p className="mp1">AIDEN needs help with his project.</p>
+                  <p className="mp3">TUE 28 April 2020</p>
+
                 </div>
             </div>
 
