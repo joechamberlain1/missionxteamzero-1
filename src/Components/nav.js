@@ -4,7 +4,8 @@ import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
-import SimpleModal from './LoginModal.js'
+import LogInModal from './LoginModal.js'
+import SignUpModal from './SignUpModal.js'
 
 function Nav() {
   return (
@@ -15,10 +16,10 @@ function Nav() {
       </div>
 
       <div className="topNavLinks">
-        
-      
 
-        
+
+
+
         <nav>
           <ul>
 
@@ -28,16 +29,16 @@ function Nav() {
 
 
             <li>
-              <a href="#" className="a1">
-              <Link to="/">HOME</Link></a>
+                <a href="#" className="a1">
+                <Link to="/">HOME</Link></a>
             </li>
             <li>
-              <a href="#" className="a1">
+            <a href="#" className="a1">
                 FEATURES{" "}
-              </a>
+              </a>         
             </li>
             <li>
-              <a href="#" className="a1">
+            <a href="#" className="a1">
               <Link to="/teacherpro">TEACHERS</Link>{" "}
               {/* I'm using this to navigate to my Teacher Progress page - Ofa */}
               </a>
@@ -45,8 +46,8 @@ function Nav() {
 
 
 
-            
-               
+
+
           </ul>
         </nav>
       </div>
@@ -55,8 +56,8 @@ function Nav() {
         <div>
           <div className="topNavLogin">
             <p>
-              <a href="#" className="a1">
-              {/* <Link to="/login">
+            <a href="#" className="a1">
+                {/* <Link to="/login">
                 
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
                 {" "}
@@ -64,10 +65,17 @@ function Nav() {
                 </Link> 
                 
                 have left the original in for now whilst I'm changing it on LoginModal page*/}
-                <SimpleModal />
-                
-                
-              </a>
+                <Link type="button" >
+                  {/* this needs to be changed to suit the previous page */}
+                  <i class="fa fa-user-circle" aria-hidden="true"></i>
+                  {" "}
+                </Link>
+                <Link type="button" ><SignUpModal /></Link>
+                <Link type="button" ><LogInModal /></Link>
+
+
+              
+                </a>            
             </p>
           </div>
         </div>
