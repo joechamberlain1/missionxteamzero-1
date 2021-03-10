@@ -32,8 +32,8 @@ function Helpt() {
 
             </div >
 
-            <div className="divt41">
-                <div className="divt5">
+            <div className="divt4">
+                <div className="divt51">
                   <Checkbox/>
                   <Avatar alt="Aiden" src={AIDEN}/>
                   <p className="mp1">AIDEN needs help with his project.</p>
@@ -41,8 +41,8 @@ function Helpt() {
                 </div>
             </div>
 
-            <div className="divt41">
-                <div className="divt5">
+            <div className="divt4">
+                <div className="divt51">
                   <Checkbox/>
                   <Avatar alt="Rawiri" src={RAWIRI}/>
                   <p className="mp1">RAWIRI needs help with his project.</p>
@@ -50,8 +50,8 @@ function Helpt() {
                 </div>
             </div>
 
-            <div className="divt41">
-                <div className="divt5">
+            <div className="divt4">
+                <div className="divt51">
                   <Checkbox/>
                   <Avatar alt="Neveah" src={NEVEAH}/>
                   <p className="mp1">NEVEAH needs help with his project.</p>
@@ -59,8 +59,8 @@ function Helpt() {
                 </div>
             </div>
 
-            <div className="divt41">
-                <div className="divt5">
+            <div className="divt4">
+                <div className="divt51">
                   <Checkbox/>
                   <Avatar alt="Javier" src={JAVIER}/>
                   <p className="mp1">JAVIER needs help with his project.</p>
@@ -68,8 +68,8 @@ function Helpt() {
                 </div>
             </div>
 
-            <div className="divt41">
-                <div className="divt5">
+            <div className="divt4">
+                <div className="divt51">
                   <Checkbox/>
                   <Avatar alt="Tokio" src={TOKIO}/>
                   <p className="mp1">TOKIO needs help with his project.</p>
