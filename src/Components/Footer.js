@@ -16,14 +16,28 @@ const MainFooter = () => {
               <li>Partners</li>
               <li>
                 <Link to="/teacher1">
-                  Teachercom1
+                  Teacher-Ofa
                 </Link>{" "}
                 {/* use to access to my teacher1 js - Ofa */}
               </li>
 
               <li>
                 <Link to="/teacher2">
-                Teachercom2
+                RadioButton 
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/helpT">
+                Help-Ofa
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/ImageAvatars">
+                Avitar-Ofa
                 </Link>{" "}
                 {/* use to access to my teacher2 js - Ofa */}
               </li>
