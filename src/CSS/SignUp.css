@@ -21,7 +21,7 @@
     color: inherit;
     margin: 10px;
     text-decoration: none;
-    margin-bottom: 5px;
+   
     font-size: 24px;
     
 }
@@ -32,7 +32,7 @@
     
     width: 300px;
     padding: 2%;
-    margin-right: 20px;
+    
     flex-wrap: nowrap;
 } 
 
@@ -50,7 +50,7 @@
     
     width: 300px;
     padding: 2%;
-    margin-right: 20px;
+    
     flex-wrap: nowrap;
     
 }
@@ -76,7 +76,6 @@
 .UserInput{
     position: relative;
     align-items:center;
-    margin-top: 50px;
     margin-bottom: 20px;
 }
 
