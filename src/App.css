@@ -3,10 +3,13 @@
   color:#707070;
   position: relative;
   
-  /*set space on left and right side of the page */
-  /* padding-left:4%;
-  padding-right:4%;  */
+  
 }
 
+
+/* remove the underline for all link, and set background to inherit*/
+a{
+  text-decoration:none;
+}
 
 

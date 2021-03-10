@@ -14,6 +14,23 @@ const MainFooter = () => {
               <li>About Us</li>
               <li>Careers</li>
               <li>Partners</li>
+              <li>
+                <Link to="/teacher1">
+                  Teachercom1
+                </Link>{" "}
+                {/* use to access to my teacher1 js - Ofa */}
+              </li>
+
+              <li>
+                <Link to="/teacher2">
+                Teachercom2
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+
+
+
             </ul>
           </div>
 
@@ -71,6 +88,9 @@ const MainFooter = () => {
                 </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
+
+              
+
             </ul>
           </div>
         </div>
