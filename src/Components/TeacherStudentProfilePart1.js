@@ -4,6 +4,10 @@ import TopNav2 from "./TopNavPart2";
 import "../CSS/ProfileMainBackground.css";
 import MainFooter2 from "./Footer2";
 import SideNavTest from "./SideNavTest";
+import ProfilePicPlaceHolder from "./ProfilePicPlaceHolder";
+import { SideNavData } from "./SideNavData";
+import "../CSS/SideNavTest.css";
+import { Link } from "react-router-dom";
 
 function TeacherStudentProfilePart1() {
   return (
@@ -11,7 +15,26 @@ function TeacherStudentProfilePart1() {
       <TopNav2 />
 
       <div className="profile-main-container">
-        <SideNavTest />
+        <div className="SideBarContainer">
+          {/* <SideNavTest /> */}
+          <ProfilePicPlaceHolder />
+          {SideNavData.map((item, index) => {
+            return (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </Link>
+              </li>
+            );
+          })}
+
+          <div className="SideBarBottomMenu">
+            <h1>Testing</h1>
+            <h1>Testing</h1>
+            <h1>Testing</h1>
+          </div>
+        </div>
         <div className="profile-inner-container">
           <h1>
             Hello plz halp me. Plz turn me into a reusable container /
