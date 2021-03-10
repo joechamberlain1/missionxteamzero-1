@@ -28,11 +28,11 @@ function TeacherLNav() {
       </ListItem>
 
       <ListItem button >
-      <Link to="/teacherstu">STUDENT PROFILES</Link>
+      <Link to="./teacherpro">STUDENT PROFILES</Link>
       </ListItem>
 
       <ListItem button>
-        <ListItemText primary="HELP REQUESTS" />
+      <Link to="/teacherstu">HELP REQUESTS</Link>
         
     
       </ListItem>
