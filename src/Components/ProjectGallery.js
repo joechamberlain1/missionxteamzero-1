@@ -8,9 +8,9 @@ import project3 from '../img/Project -3@2x.jpg';
 import project4 from '../img/Project -4@2x.jpg';
 import project5 from '../img/Project -5@2x.jpg';
 import project6 from '../img/Project -6@2x.jpg';
-// import {Grid} from '@material-ui/core'
-// import {makeStyles} from '@material-ui/styles'
-// import SimpleCard from './galleryComponent'
+import {Grid} from '@material-ui/core'
+import {makeStyles} from '@material-ui/styles'
+import SimpleCard from './galleryComponent'
 
 
 
@@ -57,22 +57,22 @@ export default ProjectGallery
 // const PorjectGallery = () => {
 //     return(
 //         <Grid container spacing={6}>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
-//             <Grid item xs={12} sm={4}>
+//             <Grid item xs={12} md={4}>
 //             <SimpleCard />
 //             </Grid>
 //         </Grid>

@@ -8,21 +8,22 @@ import project1 from '../img/Project -1@2x.jpg'
 import { CardMedia } from '@material-ui/core';
 
 
+// const {Image, title, subtitle} = props; 
 
 const useStyles = makeStyles({
-  
+
+
     CardSize:{
-        height: 300,
-        width: 300,
+        height: 250,
+        width: 350,
     },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
-    },
+ 
     FontSize:{
-        fontSize: 20,
+        fontSize: 50,
+    },
+
+    textAlign:{
+      textAlign: 'center',
     },
 
     cardBorder: {
@@ -31,17 +32,23 @@ const useStyles = makeStyles({
       }
 });
   
+
+
   function SimpleCard() {
     const classes = useStyles();
   
     return (
+
       <Card className = {classes.cardBorder}>
-        <CardMedia component = 'img' alt = 'Project 1' height = '250' image = {project1}/>
         <CardContent>
-        <Typography>Introduction</Typography>
-        <Typography>BEGINNER | Animation</Typography>
+
+        {/*project image*/}<CardMedia component = 'img' alt = 'Project 1' height = 'auto' image = {project1}/>
+        {/* title*/}<Typography className = {classes.textAlign}>Introduction</Typography> 
+        {/* subtitle*/}<Typography className = {classes.textAlign}>BEGINNER | Animation</Typography>
+
         </CardContent>
       </Card>
+
     );
   }
 
