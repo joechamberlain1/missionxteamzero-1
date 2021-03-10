@@ -2,8 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Login from './Login.js'
+<<<<<<< HEAD
 import Link from '@material-ui/core/Link'
 
+=======
+import "../CSS/loginmodal.css";
+>>>>>>> a84b5548fa46ee5068f94c2dde8cda0f1674062f
 
 function getModalStyle() {
   const top = 50;
@@ -52,8 +56,12 @@ function LogInModal() {
 
   return (
     <div>
+<<<<<<< HEAD
 
       <Link type="button" onClick={handleOpen}>
+=======
+      <button type="button" className="navbutton" onClick={handleOpen}>
+>>>>>>> a84b5548fa46ee5068f94c2dde8cda0f1674062f
         
                 {/* this needs to be changed to suit the previous page */}
                  LOGIN 

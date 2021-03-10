@@ -17,13 +17,18 @@ function Nav() {
 
       <div className="topNavLinks">
 
+<<<<<<< HEAD
 
 
 
         <nav>
+=======
+>>>>>>> a84b5548fa46ee5068f94c2dde8cda0f1674062f
           <ul>
 
+            <li> <Link to="/"><p className="a1">HOME</p></Link> </li>
 
+<<<<<<< HEAD
 
 
 
@@ -47,12 +52,19 @@ function Nav() {
 
 
 
+=======
+            <li> <Link to="/"><p className="a1">FEATURES</p></Link> </li>
+            
+            <li><Link to="/teacherpro"><p className="a1">TEACHERS</p></Link> </li>
+>>>>>>> a84b5548fa46ee5068f94c2dde8cda0f1674062f
 
           </ul>
-        </nav>
+        
+
       </div>
 
       <div className="topNavUser">
+<<<<<<< HEAD
         <div>
           <div className="topNavLogin">
             <p>
@@ -76,19 +88,24 @@ function Nav() {
 
               
                 </a>            
+=======
+        <div className="leftsidenav">
+          
+          <div className="topFlagLang">
+            <p className="lang1">
+              LANG: <img src={flagnz} alt="NZ Flag" />  <img src={flagmaori} alt="Maori Flag" />
+>>>>>>> a84b5548fa46ee5068f94c2dde8cda0f1674062f
             </p>
-          </div>
+          </div>  
+
+          <div className="topNavLogin">
+            <SimpleModal /></div>
+         
         </div>
 
-        <div>
-          <div className="topFlagLang">
-            <p>
-              LANG: <img src={flagnz} alt="NZ Flag" />{" "}
-              <img src={flagmaori} alt="Maori Flag" />
-            </p>
-          </div>
+
+          
         </div>
-      </div>
     </div>
   );
 }
