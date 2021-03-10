@@ -3,12 +3,13 @@ import * as GiIcons from "react-icons/gi";
 import * as Io5Icons from "react-icons/io5";
 import * as RiIcons from "react-icons/ri";
 import * as AiIcons from "react-icons/ai";
+import progressbar from "../img/icons/progresscustom.png";
 
 export const SideNavData = [
   {
     title: "Progress Tracker",
     path: "/teacherpro",
-    icon: <GiIcons.GiProgression />,
+    icon: <img src={progressbar} />,
     cName: "nav-text",
   },
   {
