@@ -70,8 +70,8 @@ function Nav() {
                   <i class="fa fa-user-circle" aria-hidden="true"></i>
                   {" "}
                 </Link>
-                <Link type="button" ><SignUpModal /></Link>
-                <Link type="button" ><LogInModal /></Link>
+                <Link ><SignUpModal /></Link>
+                <Link  ><LogInModal /></Link>
 
 
               
