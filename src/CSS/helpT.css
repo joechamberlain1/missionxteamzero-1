@@ -36,11 +36,11 @@
 
 .divt5 {
   background-color: white;
-  width: 700px;
+  width: 800px;
   height: 40px;
   border-radius: 7px;
   position: absolute;
-  column-count:3;
+  column-count:4;
   display:flex;
 }
 
