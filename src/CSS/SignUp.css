@@ -1,18 +1,28 @@
 .Form{
     display: flex;
-    /* have kept the grid code incase we wanted to change */
+    /* have kept the grid code incase we wanted to change
     /* display: grid; 
     grid-template-columns: auto auto; */
     justify-content: center;
-    color:grey;
+    color:#A5A5A5;
     text-align: center;
     padding: 5%;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 42px;
     font-weight: bolder;
+    
+}
+
+
+.FormLinks{
+    color: inherit;
+    margin: 10px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 24px;
     
 }
 
@@ -23,7 +33,6 @@
     width: 300px;
     padding: 2%;
     margin-right: 20px;
-    
     flex-wrap: nowrap;
 } 
 
@@ -55,20 +64,6 @@
     
 }
 
-
-.Form a{
-    color: inherit;
-    margin:10px;
-    text-decoration:none;
-    margin-bottom: 5px;
-}
-
-/*needs to make it so the button doesn't have a border also*/
-/* .Form a:hover{
-    border-bottom: grey 1px solid;
-
-} */
-
 .FormPic{
 
     height: 200px;
@@ -80,21 +75,22 @@
 
 .UserInput{
     position: relative;
-    align-items: flex-end;
+    align-items:center;
     margin-top: 50px;
-    margin-bottom: 100px;
-    
+    margin-bottom: 20px;
 }
 
 .UserInput input{
 
     margin:10px;
-    border: none;
-    border-bottom: solid 1px grey;
-
+    border: solid 1px #A29F9F;
+    border-radius: 5px;
+    font-family: nunito, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    width: 200px;
+    height: 33px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-.LogSignButton {
-    color: green;
-}
-
+ 

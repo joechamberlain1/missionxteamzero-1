@@ -10,23 +10,23 @@
 
 
 .ProjectContainer{
-    margin-top: 100px;
+    margin-top: 50px;
     grid-area: header;
-    border: 1px solid;
-    background-color: lightcoral;
+    /* border: 1px solid;
+    background-color: lightcoral; */
 }
 
-.ProjectLibText{
-    /* margin-left: 45px;
-    width: 100%; */
-}
+/* .ProjectLibText{
+    margin-left: 45px;
+    width: 100%;
+} */
 
  .ProjectGallery{
      border: 1px solid;
      background-color: lawngreen;
      display: grid;
      grid-template-columns: auto auto auto;
-     margin: 50px 0px 50px 0px;
+     margin: 100px 0px 50px 0px;
      padding: 0px;
      text-align: center;
      grid-area: gallery;
@@ -37,7 +37,7 @@
     height: 180px;
     width: 260px;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     /* border: 1px solid;
     background-color: red; */
     
@@ -63,7 +63,7 @@
 
 .RightButtonContainer{
     float: right;
-    margin-right: 105px; /* lines the button up with the end picture of the gallery*/
+    margin-right: 80px; /* lines the button up with the end picture of the gallery*/
     /* background-color: hotpink; */
 }
 
@@ -72,7 +72,7 @@
     grid-area: sidebar;
     display: block;
     /* background-color: lightsteelblue; */
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: left;
     
 }
@@ -80,7 +80,7 @@
 .TableHeader{
     /* background-color: lime; */
     margin: 100px 20px;
-    padding: 50px;
+    padding: 0px;
     grid-template-areas: auto;
     
 }
@@ -90,6 +90,4 @@
     padding: 20px;
 }
 
-.checkbox{
-    /* margin-right: 10px; */
-}
+
