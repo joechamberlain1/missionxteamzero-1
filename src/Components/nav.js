@@ -4,8 +4,8 @@ import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
-import LogInModal from './LoginModal.js'
-import SignUpModal from './SignUpModal.js'
+import LogInnav from './Login.js'
+import SignUpnav from './SignUp.js'
 
 function Nav() {
   return (
@@ -17,16 +17,7 @@ function Nav() {
 
       <div className="topNavLinks">
 
-
-
-
-        <nav>
           <ul>
-
-
-
-
-
 
             <li>
                 <a href="#" className="a1">
@@ -37,6 +28,7 @@ function Nav() {
                 FEATURES{" "}
               </a>         
             </li>
+            
             <li>
             <a href="#" className="a1">
               <Link to="/teacherpro">TEACHERS</Link>{" "}
@@ -44,50 +36,42 @@ function Nav() {
               </a>
             </li>
 
-
-
-
-
           </ul>
-        </nav>
+
       </div>
 
       <div className="topNavUser">
-        <div>
-          <div className="topNavLogin">
-            <p>
-            <a href="#" className="a1">
-                {/* <Link to="/login">
+        
+              <div>
+                  <div className="topFlagLang">
+                    <p className="p1">
+                      LANG: <img src={flagnz} alt="NZ Flag" />{" "}
+                      <img src={flagmaori} alt="Maori Flag" />
+                    </p>
+                  </div>
+              </div>
                 
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-                {" "}
-                REGISTER | LOGIN 
-                </Link> 
-                
-                have left the original in for now whilst I'm changing it on LoginModal page*/}
-                <Link type="button" >
-                  {/* this needs to be changed to suit the previous page */}
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-                  {" "}
-                </Link>
-                <Link ><SignUpModal /></Link>
-                <Link  ><LogInModal /></Link>
+              <div>
+                  <div className="topNavLogin">
+                    
+                    <a href="#" className="a2">
+                        <Link to="/SignUp">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+                          REGISTER
+                        </Link> 
+                    </a>
+
+                    <a href="#" className="a2">
+                        <Link to="/Login">
+                        {" | "}
+                           LOGIN 
+                        </Link> 
+                    </a>                
+                        
+                  </div>
+              </div>
 
 
-              
-                </a>            
-                </p>
-          </div>
-        </div>
-
-        <div>
-          <div className="topFlagLang">
-            <p>
-              LANG: <img src={flagnz} alt="NZ Flag" />{" "}
-              <img src={flagmaori} alt="Maori Flag" />
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );
