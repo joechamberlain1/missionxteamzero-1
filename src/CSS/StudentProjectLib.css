@@ -22,8 +22,8 @@
 } */
 
  .ProjectGallery{
-     border: 1px solid;
-     background-color: lawngreen;
+     /* border: 1px solid; */
+     /* background-color: lawngreen; */
      display: grid;
      grid-template-columns: auto auto auto;
      margin: 100px 0px 50px 0px;

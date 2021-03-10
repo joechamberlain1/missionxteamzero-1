@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import teachid from "../img/teacherpro.png";
+import teachid from "../img/teacherpro.PNG";
 
 const useStyles = makeStyles((theme) => ({
   root: {
