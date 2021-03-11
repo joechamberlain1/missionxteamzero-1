@@ -15,37 +15,24 @@ const MainFooter = () => {
               <li>Careers</li>
               <li>Partners</li>
               <li>
-                <Link to="/teacher1">
-                  Teacher
-                </Link>{" "}
+                <Link to="/teacher1">Teacher</Link>{" "}
                 {/* use to access to my teacher1 js - Ofa */}
               </li>
 
               <li>
-                <Link to="/helpT">
-                Help
-                </Link>{" "}
+                <Link to="/helpT">Help</Link>{" "}
                 {/* use to access to my teacher2 js - Ofa */}
               </li>
 
               <li>
-                <Link to="/teacherstu">
-                TeacherStudent
-                </Link>{" "}
+                <Link to="/teacherstu">TeacherStudent</Link>{" "}
                 {/* use to access to my teacher2 js - Ofa */}
               </li>
-
 
               <li>
-                <Link to="./Project/learning">
-                Learning Page
-                </Link>{" "}
+                <Link to="./Project/learning">Learning Page</Link>{" "}
                 {/* use to access to my teacher2 js - Ofa */}
               </li>
-
-
-
-
             </ul>
           </div>
 
@@ -103,9 +90,10 @@ const MainFooter = () => {
                 </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
-
-              
-
+              <li>
+                <Link to="/StudentProfileGrid">StudentGrid thingy</Link>{" "}
+                {/* Be sure to update this properly once finalized - Johnny */}
+              </li>
             </ul>
           </div>
         </div>

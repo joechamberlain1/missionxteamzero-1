@@ -71,6 +71,38 @@ function ProfilePage() {
                 <p>Function for Email</p>
               </div>
             </div>
+            <div className="details-container">
+              <div className="requiredDetails">
+                <p>Email Address</p>
+              </div>
+              <div className="returnedFunction">
+                <p>Function for Email</p>
+              </div>
+            </div>
+            <div className="details-container">
+              <div className="requiredDetails">
+                <p>Email Address</p>
+              </div>
+              <div className="returnedFunction">
+                <p>Function for Email</p>
+              </div>
+            </div>
+            <div className="details-container">
+              <div className="requiredDetails">
+                <p>Email Address</p>
+              </div>
+              <div className="returnedFunction">
+                <p>Function for Email</p>
+              </div>
+            </div>
+            <div className="details-container">
+              <div className="requiredDetails">
+                <p>Email Address</p>
+              </div>
+              <div className="returnedFunction">
+                <p>Function for Email</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
