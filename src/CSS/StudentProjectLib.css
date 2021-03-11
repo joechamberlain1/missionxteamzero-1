@@ -46,8 +46,8 @@
 
 
 .LeftButtonContainer{
-    /* background-color: hotpink; */
-    float: left;
+    background-color: hotpink;
+    /* float: left; */
 }
 
 .ProjectButton{

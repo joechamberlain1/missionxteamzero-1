@@ -27,6 +27,8 @@ const ProjectGallery = () => {
     
     return(
     <div className = 'ProjectGallery'>
+
+        {/*this first project needs to go the project builder pages*/}
         <div className='ProjectPic'>
         <img src={project1} className='ProjectPic1' alt="Project 1" />
         <h3>Introduction</h3><p>BEGINNER | Animation</p>
