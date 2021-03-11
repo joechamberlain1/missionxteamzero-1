@@ -27,13 +27,15 @@ function TeacherStudentProfilePart1() {
               </li>
             );
           })}
-
+          {/* <div className="sideBarInnerContainerFooter"> */}
           <div className="SideBarBottomMenu">
             <h1>Testing</h1>
             <h1>Testing</h1>
             <h1>Testing</h1>
           </div>
+          {/* </div> */}
         </div>
+
         <div className="profile-inner-container">
           <h1>
             Hello plz halp me. Plz turn me into a reusable container /
