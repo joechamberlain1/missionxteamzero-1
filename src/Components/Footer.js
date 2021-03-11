@@ -22,13 +22,6 @@ const MainFooter = () => {
               </li>
 
               <li>
-                <Link to="/teacher2">
-                Radio
-                </Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
-              </li>
-
-              <li>
                 <Link to="/helpT">
                 Help
                 </Link>{" "}
@@ -36,23 +29,16 @@ const MainFooter = () => {
               </li>
 
               <li>
-                <Link to="/ImageAvatars">
-                Avitar
-                </Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
-              </li>
-
-              <li>
-                <Link to="/checkbox">
-                Checkbox
-                </Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
-              </li>
-
-
-              <li>
                 <Link to="/teacherstu">
                 TeacherStudent
+                </Link>{" "}
+                {/* use to access to my teacher2 js - Ofa */}
+              </li>
+
+
+              <li>
+                <Link to="./Project/learning">
+                Learning Page
                 </Link>{" "}
                 {/* use to access to my teacher2 js - Ofa */}
               </li>
