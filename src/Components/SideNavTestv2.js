@@ -4,12 +4,13 @@ import SideNavTest from "./SideNavTest";
 import ProfilePicPlaceHolder from "./ProfilePicPlaceHolder";
 import { SideNavData } from "./SideNavData";
 import { Link } from "react-router-dom";
+import StudentProfileGridPic from "./StudentProfileGridPic";
 
 function SideNavTestv2() {
   return (
     <div className="SideBarContainer">
       {/* <SideNavTest /> */}
-      <ProfilePicPlaceHolder />
+      <StudentProfileGridPic />
       {SideNavData.map((item, index) => {
         return (
           <li key={index} className={item.cName}>
@@ -20,13 +21,13 @@ function SideNavTestv2() {
           </li>
         );
       })}
-      {/* <div className="sideBarInnerContainerFooter"> */}
-      <div className="SideBarBottomMenu">
-        <h1>Testing</h1>
-        <h1>Testing</h1>
-        <h1>Testing</h1>
+      <div className="sideBarInnerContainerFooter">
+        <div className="SideBarBottomMenu">
+          <p>hello</p>
+          <p>hello</p>
+          <p>hello</p>
+        </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }

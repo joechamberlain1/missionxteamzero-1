@@ -6,6 +6,9 @@ import MainFooter from "./Footer";
 import "../CSS/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
 import SideNavTestv2 from "./SideNavTestv2";
+import TakeScreenShotButton from "./TakeScreenShotButton";
+import HelpCenterButton from "./HelpCenterButton";
+import MoreProjectsButton from "./MoreProjectsButton";
 
 function TeacherStudentProfilePart1() {
   return (
@@ -14,6 +17,11 @@ function TeacherStudentProfilePart1() {
 
       <div className="profile-main-container">
         <SideNavTestv2 />
+        <div className="ButtonContainer">
+          <TakeScreenShotButton />
+          <HelpCenterButton />
+          <MoreProjectsButton />
+        </div>
         <div className="profile-maininner-container">
           <div className="grid-container">
             <StudentProfileGrid />
