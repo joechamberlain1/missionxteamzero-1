@@ -1,4 +1,5 @@
 import React from 'react';
+import Checkbox from '@material-ui/core/Checkbox';
 import '../CSS/StudentProjectLib.css'
 
 function ProjectSideBar(){
@@ -10,112 +11,132 @@ function ProjectSideBar(){
                             <th>Subscription</th>
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' checked='checked' />
-                                <span className='checkmark'>Free</span>
-                            </label>
+                        <Checkbox
+                            defaultChecked
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Free
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Premium</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Premium
                         </tr>
 
                         <tr>
                             <th>Activity Type</th>
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Animation</span>
-                            </label>
+                        <Checkbox
+                            defaultChecked
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Animation
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' checked='checked' />
-                                <span className='checkmark'>Game</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Game
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Chatbot</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                                Chatbot
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Augmented Reality</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                                    Augmented Reality
                         </tr>
 
                         <tr>
                             <th>Year Level</th>
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' checked='checked' />
-                                <span className='checkmark'>1-4</span>
-                            </label>
+                        <Checkbox
+                            defaultChecked
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            1-4
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>5-6</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            5-6
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>7-8</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            7-8
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>9-13</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            9-13
                         </tr>
 
                         <tr>
                             <th>Subject Matter</th>
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' checked='checked' />
-                                <span className='checkmark'>Computer Science</span>
-                            </label>
+                        <Checkbox
+                            defaultChecked
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Computer Science
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Maths</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Maths
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Science</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Science
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Language</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Language
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span className='checkmark'>Art</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Art
                         </tr>
                         <tr>
-                            <label className="checkbox">
-                                <input type='checkbox' />
-                                <span claclassNamess='checkmark'>Music</span>
-                            </label>
+                        <Checkbox
+                            size = 'small'
+                            color="primary"
+                            inputProps={{ 'aria-label': 'secondary checkbox' }}/>
+                            Music
                         </tr>
 
                     </div>
