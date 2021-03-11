@@ -1,21 +1,38 @@
 import React, {useState} from 'react';
 import '../CSS/StudentProjectLib.css';
 import { Button, ButtonGroup } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles'
+
+// in case i want to add some styles to the button
+// const useStyles = makeStyles((theme) => ({
+//     paper: {
+//         position: 'static',
+//         display: 'flex',
+//         flexDirection: 'column',
+//         backgroudColor: 'yellow',
+//         margin: 50,
+//         boxShadow: 'none',
+//         border: '1px solid',
+//         backgroundColor: '#E5AB2C',
+//         color: 'white',
+//         fontFamily: 'Nunito',
+//         // width: 170,
+//         textAlign: 'center',
+
+//         '&:hover': {
+//         backgroundColor: '#E5AB2C',
+//         boxShadow: 'none',
+//           },
+//     },
+//   }));
 
 
 // changes the button to show which selection is highlighted
 function LibButton() {
-    const [variant, setVariant]= useState('text')
-
-    function customMe(){
-
-    setVariant('outlined')
-    }
-
     return (
         <div className='ButtonContainer'>
             <div className='LeftButtonContainer'>
-                <ButtonGroup variant = {variant} onClick = {customMe} color="primary" aria-label="text primary button group">
+                <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
                     <Button>BEGINNER</Button>
                     <Button>INTERMEDIATE</Button>
                     <Button>ADVANCED</Button>
