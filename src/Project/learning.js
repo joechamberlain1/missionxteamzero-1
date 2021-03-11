@@ -131,12 +131,12 @@ function LearningPg() {
 
             
 
-              {/*  Top Header
+             
 
-            <Typography variant="h6" noWrap>
-              Top Navigation
-            </Typography>
-             */}  
+            <p variant="h6" noWrap>
+              Click here to expand the Left Navigation Menu
+            </p>
+             
           
           </Toolbar>
          
