@@ -14,6 +14,7 @@ import Helpt from "./Components/helpT";
 import ImageAvatars from "./Components/ImageAvatars";
 import Checkboxes from "./Components/checkbox";
 import Teacherstu from "./Components/teacherstu";
+import LearningPg from "./Project/learning";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,8 @@ function App() {
       <Route exact path="/ImageAvatars" component={ImageAvatars} />
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/teacherstu" component={Teacherstu} />
+      <Route exact path="/Project/learning" component={LearningPg} />
+
       <Route
         exact
         path="/TeacherStudentProfilePart1"
