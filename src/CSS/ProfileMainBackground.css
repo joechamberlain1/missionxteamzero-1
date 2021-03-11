@@ -9,17 +9,26 @@
   flex: 1;
 }
 
-.profile-inner-container {
-  display: flex;
+.profile-maininner-container {
+  /* display: flex; */
   margin: 40px;
-  padding: 250px;
+  /* padding: 250px; */
   width: 70%;
   border-radius: 20px;
   z-index: 50;
-  background-color: white;
-  opacity: 50%;
+  background-color: #d8f1fc;
+  /* opacity: 50%; */
   align-items: center;
   justify-content: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .SideBarContainer {
@@ -33,7 +42,6 @@
   font-size: 14;
   /* position: relative; */
   align-items: stretch;
-  justify-content: center;
 }
 
 .sideBarInnerContainerFooter {

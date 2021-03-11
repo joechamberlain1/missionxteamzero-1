@@ -14,6 +14,7 @@
 
 /* Profile Pic inside main profile left */
 .profile-pic {
+  display: flex;
   width: 175px;
   height: 175px;
   border-radius: 50%;

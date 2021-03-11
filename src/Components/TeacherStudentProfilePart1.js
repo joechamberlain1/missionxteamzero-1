@@ -2,11 +2,10 @@ import React from "react";
 import TopNav2 from "./TopNavPart2";
 import "../CSS/ProfileMainBackground.css";
 import MainFooter2 from "./Footer2";
-import SideNavTest from "./SideNavTest";
-import ProfilePicPlaceHolder from "./ProfilePicPlaceHolder";
-import { SideNavData } from "./SideNavData";
+import MainFooter from "./Footer";
 import "../CSS/SideNavTest.css";
-import { Link } from "react-router-dom";
+import StudentProfileGrid from "./StudentProfileGrid";
+import SideNavTestv2 from "./SideNavTestv2";
 
 function TeacherStudentProfilePart1() {
   return (
@@ -14,33 +13,29 @@ function TeacherStudentProfilePart1() {
       <TopNav2 />
 
       <div className="profile-main-container">
-        <div className="SideBarContainer">
-          {/* <SideNavTest /> */}
-          <ProfilePicPlaceHolder />
-          {SideNavData.map((item, index) => {
-            return (
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            );
-          })}
-          {/* <div className="sideBarInnerContainerFooter"> */}
-          <div className="SideBarBottomMenu">
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
+        <SideNavTestv2 />
+        <div className="profile-maininner-container">
+          <div className="grid-container">
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
           </div>
-          {/* </div> */}
-        </div>
-
-        <div className="profile-inner-container">
-          <h1>
-            Hello plz halp me. Plz turn me into a reusable container /
-            componenet somehow PLEASEEEEEEE
-          </h1>
+          <div className="grid-container">
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+          </div>
+          <div className="grid-container">
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+            <StudentProfileGrid />
+          </div>
         </div>
       </div>
 
