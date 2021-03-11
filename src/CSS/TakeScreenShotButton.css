@@ -1,0 +1,10 @@
+.TakeScreenshot {
+  width: 200px;
+  height: 35px;
+  color: white;
+  font-size: 16;
+  text-align: center;
+  background-color: #e5ab2c;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
