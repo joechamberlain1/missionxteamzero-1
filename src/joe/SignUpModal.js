@@ -4,7 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import SignUp from './SignUp.js'
 // import CloseIcon from '@material-ui/icons/Close';
 import Link from '@material-ui/core/Link'
-import "../CSS/loginmodal.css";
+import "../CSS/joe/loginmodal.css";
 
 
 function getModalStyle() {

@@ -1,10 +1,10 @@
 import React from 'react';
-import Nav from './nav.js';
-import '../CSS/StudentProjectLib.css';
+import Nav from '../Components/nav.js';
+import './css/StudentProjectLib.css';
 import ProjectGallery from './ProjectGallery.js';
 import LibButton from './ProjectLibButtons.js';
 import ProjectSideBar from './ProjectGallerySideBar';
-import MainFooter from './Footer.js'
+import MainFooter from '../Components/Footer.js'
 import { Button, } from '@material-ui/core';
 import {makeStyles} from '@material-ui/styles'
 // import { yellow } from '@material-ui/core/colors';
