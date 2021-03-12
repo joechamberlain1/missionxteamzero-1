@@ -1,21 +1,21 @@
 import React from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
+import "./App.css";
+import Checkboxes from "./Components/checkbox";
+import Helpt from "./Components/helpT";
 import HomePage from "./Components/HomePage";
-import ProfilePage from "./Components/ProfilePage";
-import LogIn from "./joe/Login";
-import StudentProjectLib from "./joe/StudentProjectLib.js";
-import SignUp from "./joe/SignUp.js";
-import Teacherpro from "./Components/teacherpro.js";
-import TeacherStudentProfilePart1 from "./Components/TeacherStudentProfilePart1";
+import ImageAvatars from "./Components/ImageAvatars";
+import StudentProfileGrid from "./Components/StudentProfileGrid";
 import Teacher1 from "./Components/teacher1";
 import Teacher2 from "./Components/teacher2";
-import Helpt from "./Components/helpT";
-import ImageAvatars from "./Components/ImageAvatars";
-import Checkboxes from "./Components/checkbox";
+import Teacherpro from "./Components/teacherpro.js";
 import Teacherstu from "./Components/teacherstu";
+import TeacherStudentProfilePart1 from "./Components/TeacherStudentProfilePart1";
+import LogIn from "./joe/Login";
+import SignUp from "./joe/SignUp.js";
+import StudentProjectLib from "./joe/StudentProjectLib.js";
+import ProfilePage from "./ProfilePage/ProfilePage";
 import LearningPg from "./Project/learning";
-import StudentProfileGrid from "./Components/StudentProfileGrid";
 
 function App() {
   return (
