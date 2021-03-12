@@ -90,6 +90,7 @@
   height: 80px;
   /* background-color: orange; */
   display: flex;
+  justify-content: space-evenly;
 }
 
 /* Container that holds the Required fields */
