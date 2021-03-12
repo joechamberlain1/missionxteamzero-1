@@ -5,12 +5,12 @@ import flagmaori from "../img/maori.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
 //these will need to be the modal parts for the home page -joe
-// import loginmodal from './joe/LoginModal.js'
-// import SignUpnav from './SignUp.js'
+// import LogInModal from '../joe/LoginModal.js'
+// import SignUpModal from '../joe/SignUpModal.js'
 
 function Nav() {
   return (
-    <div className="topNav">
+    <div className="topNav"> 
 
       <div className="topLogo">
         <img src={star} className="star" alt="starlogo" />
@@ -56,16 +56,21 @@ function Nav() {
                   <div className="topNavLogin">
                     
                     <a href="#" className="a2">
+                    {/* <SignUpModal />
+                    this is where the signup modal will go <SignUpModal />  */}
                         <Link to="/SignUp">
-                          {/*this is where the signup modal will go <signup />*/} 
+                          
+                          
                         <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
                           REGISTER
                         </Link> 
                     </a>
 
                     <a href="#" className="a2">
+                      {/* <LogInModal />
+                      this is where the login modal will go <LoginModal /> */}
                         <Link to='/Login'>
-                     {/*this is where the login modal will go <loginmodal />*/}   
+                        
                         {" | "}
                            LOGIN 
                         </Link> 

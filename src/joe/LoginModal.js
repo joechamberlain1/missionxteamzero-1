@@ -54,7 +54,7 @@ function LogInModal() {
 
       <Link type="button" onClick={handleOpen}>
 
-      <button type="button" className="navbutton" onClick={handleOpen}/>{/* this needs to be changed to suit the previous page */}LOGIN 
+      <button type="button"  onClick={handleOpen}/>{/* this needs to be changed to suit the previous page */}REGISTER 
       
       </Link>
 
