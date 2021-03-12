@@ -1,6 +1,6 @@
 import React from "react";
-import TopNav2 from "./TopNavPart2";
-import "../CSS/ProfileMainBackground.css";
+import TopNav2 from "../TeacherDashboard/TopNavPart2";
+import "../TeacherDashboard/MainTemplate.css";
 import MainFooter2 from "../TeacherDashboard/Footer2";
 import MainFooter from "../MainFooter/Footer.js";
 import "../CSS/SideNavTest.css";

@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/teacherpro.css";
 
-import TopNav2 from "./TopNavPart2";
+import TopNav2 from "../TeacherDashboard/TopNavPart2";
 
 import Teacherb from "./helpT.js";
 import TeacherLNav from "./TeacherLNav";
