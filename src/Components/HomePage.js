@@ -6,8 +6,7 @@ import Hsec3 from "./hsec3";
 import Hsec5 from "./hsec5";
 import Hsec6 from "./hsec6";
 import "../App.css";
-import MainFooter from "./Footer";
-
+import MainFooter from "../MainFooter/Footer";
 
 function HomePage() {
   return (
@@ -16,14 +15,11 @@ function HomePage() {
       <Hsec1 />
       <Hsec2 />
       <Hsec3 />
-      <Hsec5/>
-      <Hsec6/>
+      <Hsec5 />
+      <Hsec6 />
       <MainFooter />
-  
-      
     </div>
   );
-
 }
 
 export default HomePage;
