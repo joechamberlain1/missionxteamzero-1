@@ -4,7 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import SignUp from './SignUp.js'
 // import CloseIcon from '@material-ui/icons/Close';
 import Link from '@material-ui/core/Link'
-import "../CSS/joe/loginmodal.css";
+// import "../CSS/joe/loginmodal.css";
 
 
 function getModalStyle() {
@@ -22,13 +22,13 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'absolute',
     width: 700,
-    //height: 800,
+    height: 800,
     backgroundColor: theme.palette.background.paper,
+    border: '1px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
 }));
-
 
 function SignUpModal() {
   const classes = useStyles();
@@ -43,25 +43,20 @@ function SignUpModal() {
   const handleClose = () => {
     setOpen(false);
   };
-  
-// the x to exit the page. Needs to be in the top right hand corner
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-        {/* <span className="close" onClick = {handleClose}><CloseIcon/></span> */}
-        <SignUp />
+      <SignUp />
     </div>
   );
 
   return (
     <div>
 
-      <Link type="button" class = 'navbutton' onClick={handleOpen}>
-        
-                {/* this needs to be changed to suit the previous page */}
-                
-                REGISTER | 
-        
+      <Link type="button" onClick={handleOpen}>
+
+      <button type="button" onClick={handleOpen}/>{/* this needs to be changed to suit the previous page */}LOGIN 
+      
       </Link>
 
       <Modal
@@ -71,16 +66,9 @@ function SignUpModal() {
         aria-describedby="simple-modal-description"
       >
         {body}
-        
       </Modal>
-      
     </div>
-
-    
-
-      
   );
 }
-
 
 export default SignUpModal 
