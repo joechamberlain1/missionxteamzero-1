@@ -1,8 +1,8 @@
 import React from "react";
-import "../CSS/ProfilePage.css";
-import Nav from "./nav.js";
-import MainFooter from "./Footer.js";
+import MainFooter from "../MainFooter/Footer.js";
+import Nav from "../Components/nav.js";
 import ProfilePic from "../img/profilepicplaceholder.png";
+import "./ProfilePage.css";
 
 function ProfilePage() {
   return (
@@ -61,38 +61,6 @@ function ProfilePage() {
               </div>
               <div className="returnedFunction">
                 <p>Function for Contact No</p>
-              </div>
-            </div>
-            <div className="details-container">
-              <div className="requiredDetails">
-                <p>Email Address</p>
-              </div>
-              <div className="returnedFunction">
-                <p>Function for Email</p>
-              </div>
-            </div>
-            <div className="details-container">
-              <div className="requiredDetails">
-                <p>Email Address</p>
-              </div>
-              <div className="returnedFunction">
-                <p>Function for Email</p>
-              </div>
-            </div>
-            <div className="details-container">
-              <div className="requiredDetails">
-                <p>Email Address</p>
-              </div>
-              <div className="returnedFunction">
-                <p>Function for Email</p>
-              </div>
-            </div>
-            <div className="details-container">
-              <div className="requiredDetails">
-                <p>Email Address</p>
-              </div>
-              <div className="returnedFunction">
-                <p>Function for Email</p>
               </div>
             </div>
             <div className="details-container">

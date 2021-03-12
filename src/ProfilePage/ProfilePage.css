@@ -5,22 +5,26 @@
   height: 575px;
   /* margin-left: 50; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   /* padding: 2%; */
   border: solid 2px #e2dfdf;
   border-radius: 20px;
-  position: absolute;
+  /* position: absolute; */
+  /* margin-left: 430px; */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Profile Pic inside main profile left */
 .profile-pic {
-  display: flex;
+  /* display: flex; */
   width: 175px;
   height: 175px;
   border-radius: 50%;
+  margin-top: 60px;
   /* margin: 50px 0px 0px; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .profile-buttons {
@@ -47,6 +51,7 @@
   display: flex;
   background-color: #eeeeee;
   width: 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -59,12 +64,13 @@
   background-color: white;
   width: 800px;
   height: 712px;
-  margin-left: 430px;
+  margin-left: 70px;
   align-items: center;
   justify-content: center;
   /* padding: 2%; */
   border: solid 2px #e2dfdf;
   border-radius: 20px;
+  flex: auto;
 }
 
 /* The main container to hold both main profile left and right containers */
@@ -84,6 +90,7 @@
   height: 80px;
   /* background-color: orange; */
   display: flex;
+  justify-content: space-evenly;
 }
 
 /* Container that holds the Required fields */

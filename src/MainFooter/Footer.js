@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../CSS/Footer.css";
+import "./Footer.css";
 
 const MainFooter = () => {
   return (
@@ -88,10 +88,6 @@ const MainFooter = () => {
                 <Link to="/TeacherStudentProfilePart1">
                   Teacher Student Profile Page TEST LOL
                 </Link>{" "}
-                {/* Be sure to update this properly once finalized - Johnny */}
-              </li>
-              <li>
-                <Link to="/StudentProfileGrid">StudentGrid thingy</Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
             </ul>
