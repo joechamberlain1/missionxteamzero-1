@@ -3,9 +3,9 @@ import "./App.css";
 import { Route } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import ProfilePage from "./Components/ProfilePage";
-import LogIn from "./Components/Login";
-import StudentProjectLib from "./Components/StudentProjectLib.js";
-import SignUp from "./Components/SignUp.js";
+import LogIn from "./joe/Login";
+import StudentProjectLib from "./joe/StudentProjectLib.js";
+import SignUp from "./joe/SignUp.js";
 import Teacherpro from "./Components/teacherpro.js";
 import TeacherStudentProfilePart1 from "./Components/TeacherStudentProfilePart1";
 import Teacher1 from "./Components/teacher1";
@@ -16,6 +16,7 @@ import Checkboxes from "./Components/checkbox";
 import Teacherstu from "./Components/teacherstu";
 import LearningPg from "./Project/learning";
 import StudentProfileGrid from "./Components/StudentProfileGrid";
+
 function App() {
   return (
     <div className="App">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
-import '../CSS/StudentProjectLib.css'
+import './css/StudentProjectLib.css'
 
 function ProjectSideBar(){
     return(

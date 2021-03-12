@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import '../CSS/StudentProjectLib.css';
+import './css/StudentProjectLib.css';
 import { Button, ButtonGroup } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles'
+// import { makeStyles } from '@material-ui/styles'
 
 // in case i want to add some styles to the buttons for the top part of the page using material UI
 // const useStyles = makeStyles((theme) => ({
