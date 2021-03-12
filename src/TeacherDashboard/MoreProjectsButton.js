@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/MoreProjectsButton.css";
+import "./MoreProjectsButton.css";
 
 function MoreProjectsButton() {
   return <button className="moreprojectsbutton">More Projects</button>;

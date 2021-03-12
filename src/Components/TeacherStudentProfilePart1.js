@@ -1,14 +1,14 @@
 import React from "react";
-import TopNav2 from "./TopNavPart2";
-import "../CSS/ProfileMainBackground.css";
-import MainFooter2 from "./Footer2";
-import MainFooter from "./Footer";
+import TopNav2 from "../TeacherDashboard/TopNavPart2";
+import "../TeacherDashboard/MainTemplate.css";
+import MainFooter2 from "../TeacherDashboard/Footer2";
+import MainFooter from "../MainFooter/Footer.js";
 import "../CSS/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
 import SideNavTestv2 from "./SideNavTestv2";
-import TakeScreenShotButton from "./TakeScreenShotButton";
-import HelpCenterButton from "./HelpCenterButton";
-import MoreProjectsButton from "./MoreProjectsButton";
+import TakeScreenShotButton from "../TeacherDashboard/TakeScreenShotButton";
+import HelpCenterButton from "../TeacherDashboard/HelpCenterButton";
+import MoreProjectsButton from "../TeacherDashboard/MoreProjectsButton";
 
 function TeacherStudentProfilePart1() {
   return (

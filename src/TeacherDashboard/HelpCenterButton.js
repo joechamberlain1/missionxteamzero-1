@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/HelpCenterButton.css";
+import "./HelpCenterButton.css";
 
 function HelpCenterButton() {
   return <button className="helpcenterbutton">Help Center</button>;
