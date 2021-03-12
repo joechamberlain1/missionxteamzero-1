@@ -7,6 +7,9 @@ import ProjectSideBar from './ProjectGallerySideBar';
 import MainFooter from '../Components/Footer.js'
 import { Button, } from '@material-ui/core';
 import {makeStyles} from '@material-ui/styles'
+import { Link } from 'react-router-dom';
+import StudentProjectBuilder from './StudentProjectBuilder'
+
 // import { yellow } from '@material-ui/core/colors';
 
 
@@ -54,7 +57,7 @@ function StudentProjectLib() {
 
                         <h1>PROJECTS</h1>
                         <p>Welcome to the project library. You can use filters on the right to help you search for specific projects.</p>
-
+                        <Link to='/StudentProjectBuilder'> TAKE ME TO MY SIDEBAR</Link>
                         <LibButton />
 
                     </div>
