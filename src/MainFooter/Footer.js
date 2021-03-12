@@ -90,10 +90,6 @@ const MainFooter = () => {
                 </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
-              <li>
-                <Link to="/StudentProfileGrid">StudentGrid thingy</Link>{" "}
-                {/* Be sure to update this properly once finalized - Johnny */}
-              </li>
             </ul>
           </div>
         </div>
