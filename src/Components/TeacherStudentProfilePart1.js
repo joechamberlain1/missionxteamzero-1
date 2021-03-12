@@ -2,7 +2,7 @@ import React from "react";
 import TopNav2 from "./TopNavPart2";
 import "../CSS/ProfileMainBackground.css";
 import MainFooter2 from "./Footer2";
-import MainFooter from "./Footer";
+import MainFooter from "../MainFooter/Footer.js";
 import "../CSS/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
 import SideNavTestv2 from "./SideNavTestv2";
