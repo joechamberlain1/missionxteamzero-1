@@ -1,0 +1,8 @@
+.nav-text{
+    color:black;
+    background-color: #43C0F6;
+}
+
+.nav-text:hover{
+    background-color: #B2E4FA;
+}
