@@ -2,6 +2,8 @@ import React from "react";
 import "../ofa/css/learning.css";
 
 import ProgressTracker from "./progress-tracker";
+import Dprogress from "./dashboard-progress";
+import { ProIcons } from "../ofa/components/icons";
 import Tavitar from "../ofa/components/tavitar";
 import { Link } from "react-router-dom";
 
@@ -85,41 +87,39 @@ function TeacherDashboardTest() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+  const handleDrawerOpen = () => {setOpen(true);};
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  const handleDrawerClose = () => {setOpen(false);};
 
   return (
    
     <div className="mainL">
 
-          <CssBaseline />
-      
           <Drawer variant="permanent" className={clsx(classes.drawer, { [classes.drawerOpen]: open, [classes.drawerClose]: !open, })} classes={{ paper: clsx({ [classes.drawerOpen]: open, [classes.drawerClose]: !open, }), }}>
 
                 <Tavitar />
 
-                <div class="list-group">
-                  <LeftNavigation />
-                </div>
+                {/*left-side menu */}
+                {ProIcons.map((item, index) => {
+                  return (
+                    <li key={index} className={item.cName}>
+                      <Link to={item.path}>
+                        {item.icon}
+                        <span>{item.title}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
 
                 {/* close button */}     
                 <div className="arrowclose">
-                  <IconButton onClick={handleDrawerClose}>
-                    <img src={closeicon} />
-                  </IconButton>
+                  <Link to="/dashboard"><img src={closeicon}/></Link>
                 </div>
-                    
+
                 {/* open button */}     
                 <div className="arrowopen">
-                <IconButton color="inherit" aria-label="open drawer" onClick={handleDrawerOpen} edge="start" className={clsx(classes.menuButton, { [classes.hide]: open, })}>
-                  <img src={openicon} />
-                </IconButton>
-              </div>
+                  <Link to="/dashboard-progress"><img src={openicon} /></Link>
+                </div>
 
           </Drawer>
           
