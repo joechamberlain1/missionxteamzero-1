@@ -4,7 +4,7 @@ import './css/StudentProjectLib.css';
 import ProjectGallery from './ProjectGallery.js';
 import LibButton from './ProjectLibButtons.js';
 import ProjectSideBar from './ProjectGallerySideBar';
-import MainFooter from '../Components/Footer.js'
+import MainFooter from '../MainFooter/Footer.js'
 import { Button, } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles'
 import { Link } from 'react-router-dom';
