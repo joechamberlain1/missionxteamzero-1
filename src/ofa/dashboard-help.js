@@ -1,17 +1,17 @@
 import React from "react";
 import "../ofa/css/teacherpro.css";
 
-import TopNav2 from "../TeacherDashboard/TopNavPart2";
+import DashboardHeader from "../ofa/dashboard-header";
 
 import Teacherb from "./help-request";
-import TeacherLNav from "../ofa/TeacherLNav";
-import Tavitar from "../ofa/tavitar";
+import LeftNavigation from "./left-navigation";
+import Tavitar from "../ofa/components/tavitar";
 import MainFooter2 from "../TeacherDashboard/Footer2";
 
 function DashboardHelp() {
   return (
     <div className="teacherpro-body">
-      <TopNav2 />
+      <DashboardHeader />
 
       <div className="teacherbody">
         <div className="left-side">
@@ -20,7 +20,7 @@ function DashboardHelp() {
           </div>
 
           <div class="list-group">
-            <TeacherLNav />
+            <LeftNavigation />
           </div>
         </div>
 

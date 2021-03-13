@@ -1,17 +1,18 @@
 import React from "react";
 import "../ofa/css/teacherpro.css";
 
-import TopNav2 from "./TopNavPart2";
+import DashboardHeader from "../ofa/dashboard-header";
 
 import Teacherb from "./progress-tracker";
-import TeacherLNav from "./TeacherLNav";
-import Tavitar from "./tavitar";
+import LeftNavigation from "./left-navigation";
+
+import Tavitar from "../ofa/components/tavitar";
 import MainFooter2 from "../TeacherDashboard/Footer2";
 
 function DashboardProgress() {
   return (
     <div className="teacherpro-body">
-      <TopNav2 />
+      <DashboardHeader />
 
       <div className="teacherbody">
         <div className="left-side">
@@ -20,7 +21,7 @@ function DashboardProgress() {
           </div>
 
           <div class="list-group">
-            <TeacherLNav />
+            <LeftNavigation />
           </div>
         </div>
 
