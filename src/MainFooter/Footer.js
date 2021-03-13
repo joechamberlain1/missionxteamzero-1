@@ -25,13 +25,13 @@ const MainFooter = () => {
               </li>
 
               <li>
-                <Link to="/dashboard-progress">DashboardTest</Link>{" "}
-                {/* access to my test Dashboard 1 - Ofa */}
+                <Link to="/dashboard-progress">DashboardLayout1</Link>{" "}
+                {/* access to my test DashboardLayout1 - Ofa */}
               </li>
 
               <li>
-                <Link to="/dashboard">CollapseDashboardTest</Link>{" "}
-                {/* use to access to my CollapseDashboardTest page- Ofa */}
+                <Link to="/leftNavLayout2">LeftNavLayout2</Link>{" "}
+                {/* use to access to my LeftNavLayout2 page- Ofa */}
               </li>
             </ul>
           </div>
