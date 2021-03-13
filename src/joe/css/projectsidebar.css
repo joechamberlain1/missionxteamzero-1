@@ -1,16 +1,21 @@
-.SideBarBottomMenu{
+.ProjectBuilderSideBarFooter{
     background-color: hotpink;
     border: 1px solid black;
-    margin: 0px;
     padding: 0px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.SideBarBottomMenu i{
-    float:none;
+.ButtonContainer{
+    height:100vh
+}
+
+
+
+.StudentProjectBuilderLink{
+    color: inherit;
 }
 
