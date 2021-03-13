@@ -32,9 +32,8 @@ function Nav() {
             
             <li>
             <a href="#" className="a1">
-              <Link to="/teacherpro">TEACHERS</Link>{" "}
-              {/* I'm using this to navigate to my Teacher Progress page - Ofa */}
-              </a>
+                TEACHERS{" "}
+              </a>  
             </li>
 
           </ul>
