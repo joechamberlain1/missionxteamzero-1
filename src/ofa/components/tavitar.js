@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Avatar from '@material-ui/core/Avatar';
-import teachid from "../ofa/img/teacherpro.png";
-import "../ofa/css/tavitar.css";
+import teachid from "../img/teacherpro.png";
+import "../css/tavitar.css";
 
 
 
