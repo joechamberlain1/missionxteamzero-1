@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../CSS/SideNavTest.css";
+import "./css/projectsidebar.css";
 import { ProjectSideBarData } from "./ProjectBuilderSideBarData.js";
-
 
 function ProjectBuilderSideBar() {
   return (
@@ -20,9 +19,9 @@ function ProjectBuilderSideBar() {
       })}
       <div className="sideBarInnerContainerFooter">
         <div className="SideBarBottomMenu">
-          <p>Profile</p>
-          <p>Settings</p>
-          <p>Logout</p>
+        <i class="fa fa-user-circle" aria-hidden="true"></i><p>Profile</p>
+        <i class="fa fa-user-circle" aria-hidden="true"></i><p>Settings</p>
+        <i class="fa fa-user-circle" aria-hidden="true"></i> <p>Logout</p>
         </div>
       </div>
     </div>
