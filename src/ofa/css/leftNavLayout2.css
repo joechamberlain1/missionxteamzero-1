@@ -1,0 +1,23 @@
+.mainL{
+    background-color: #43C0F6;
+    width:100px;
+    height:720px;
+}
+
+
+.arrowopen {
+    text-align: left;
+    position: absolute;
+    bottom: 150px;
+
+}
+
+li{
+    list-style-type:none;
+}
+
+.bottomicon{
+    position: absolute;
+    padding-left:33px;
+    bottom: 10px;
+}
