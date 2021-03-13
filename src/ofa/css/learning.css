@@ -1,31 +1,15 @@
-.learning {
-    background-color:white;
-}
-
-.bkObj{
-    background-color:green;
-}
-
-.mainbk1{
-    background-color:green;
-}
-
 .mainL{
-    background-color: #B2E4FA;
+    background-color: #43C0F6;
+    width:105px;
+    height:100%;
 }
 
 .arrowclose {
-   
-    
     text-align: right;
-    padding: 5px;
-
 }
 
 .arrowopen {
     text-align: left;
 }
 
-.test {
-    background-color: #B2E4FA;
-}
+

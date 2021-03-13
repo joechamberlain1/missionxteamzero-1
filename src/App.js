@@ -25,7 +25,7 @@ import Checkboxes from "./ofa/checkbox";
 import RadioButton from "./ofa/radio-button";
 
 
-import TeacherDashboardTest from "./ofa/dashboard";
+import LeftNavL2 from "./ofa/leftNavLayout2";
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
       <Route exact path="/ImageAvatars" component={ImageAvatars} />
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/dashboard-help" component={DashboardHelp} />
-      <Route exact path="/dashboard" component={TeacherDashboardTest} />
+      <Route exact path="/leftNavLayout2" component={LeftNavL2} />
       <Route exact path="/ProjectBuilderSideBar" component={ProjectBuilderSideBar} />
       <Route exact path="/StudentProfileGrid" component={StudentProfileGrid} />
       <Route
