@@ -16,8 +16,7 @@ import SignUp from "./joe/SignUp.js";
 import StudentProjectLib from "./joe/StudentProjectLib.js";
 import ProfilePage from "./ProfilePage/ProfilePage";
 import LearningPg from "./Project/learning";
-import StudentProfileGrid from "./Components/StudentProfileGrid";
-import SideBarJoe from './joe/sidebar';
+import ProjectBuilderSideBar from './joe/ProjectBuilderSideBar';
 import StudentProjectBuilder from './joe/StudentProjectBuilder';
 
 function App() {
@@ -36,7 +35,7 @@ function App() {
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/teacherstu" component={Teacherstu} />
       <Route exact path="/Project/learning" component={LearningPg} />
-      <Route exact path="/SideBarJoe" component={SideBarJoe} />
+      <Route exact path="/ProjectBuilderSideBar" component={ProjectBuilderSideBar} />
       <Route exact path="/StudentProfileGrid" component={StudentProfileGrid} />
       <Route
         exact
