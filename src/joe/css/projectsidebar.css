@@ -1,0 +1,16 @@
+.SideBarBottomMenu{
+    background-color: hotpink;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.SideBarBottomMenu i{
+    float:none;
+}
+
