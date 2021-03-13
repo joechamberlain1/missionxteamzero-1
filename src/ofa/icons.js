@@ -2,13 +2,13 @@ import React from "react";
 import "../ofa/css/icons.css";
 
 
-import learningicon from "../ofa/project-icons/1.png";
-import learningicon2 from "../ofa/project-icons/2.png";
-import learningicon3 from "../ofa/project-icons/3.png";
-import learningicon4 from "../ofa/project-icons/4.png";
-import learningicon5 from "../ofa/project-icons/5.png";
-import learningicon6 from "../ofa/project-icons/6.png";
-import learningicon7 from "../ofa/project-icons/7.png";
+import learningicon from "../ofa/img/project-icons/1.png";
+import learningicon2 from "../ofa/img/project-icons/2.png";
+import learningicon3 from "../ofa/img/project-icons/3.png";
+import learningicon4 from "../ofa/img/project-icons/4.png";
+import learningicon5 from "../ofa/img/project-icons/5.png";
+import learningicon6 from "../ofa/img/project-icons/6.png";
+import learningicon7 from "../ofa/img/project-icons/7.png";
 
 export const ProIcons = [
   {
