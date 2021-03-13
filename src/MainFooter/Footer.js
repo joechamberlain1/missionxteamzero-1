@@ -15,23 +15,23 @@ const MainFooter = () => {
               <li>Careers</li>
               <li>Partners</li>
               <li>
-                <Link to="/teacher1">Teacher</Link>{" "}
-                {/* use to access to my teacher1 js - Ofa */}
+                <Link to="/progress-tracker">ProgressTrackerPg</Link>{" "}
+                {/* use to access to my Progress Tracker Page - Ofa */}
               </li>
 
               <li>
-                <Link to="/helpT">Help</Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
+                <Link to="/help-request">HelpRequestsPg</Link>{" "}
+                {/* use to access to my Help Requests Page - Ofa */}
               </li>
 
               <li>
-                <Link to="/teacherstu">TeacherStudent</Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
+                <Link to="/dashboard-progress">DashboardTest</Link>{" "}
+                {/* access to my test Dashboard 1 - Ofa */}
               </li>
 
               <li>
-                <Link to="./Project/learning">Learning Page</Link>{" "}
-                {/* use to access to my teacher2 js - Ofa */}
+                <Link to="/learning">CollapseDashboardTest</Link>{" "}
+                {/* use to access to my CollapseDashboardTest page- Ofa */}
               </li>
             </ul>
           </div>
