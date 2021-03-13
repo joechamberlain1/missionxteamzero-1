@@ -1,8 +1,8 @@
 import React from "react";
 import "../ofa/css/learning.css";
+import { Link } from "react-router-dom";
 import { ProIcons } from "./components/icons";
 import Tavitar from "./components/tavitar";
-import { Link } from "react-router-dom";
 import openicon from "../ofa/img/open.png";
 import closeicon from "../ofa/img/close.png";
 
@@ -11,7 +11,7 @@ function LeftNavL2() {
 
   return (
     <div className="mainL">
-            
+              
                 <Tavitar />
 
                 {/*left-side menu */}
@@ -26,12 +26,8 @@ function LeftNavL2() {
                   );
                 })}
 
-                {/* close button     
-                <div className="arrowclose">
-                  <Link to="#"><img src={closeicon}/></Link>
-                </div>
-                */} 
 
+                
                 {/* open button */}     
                 <div className="arrowopen">
                   <Link to="#"><img src={openicon} /></Link>
