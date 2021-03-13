@@ -1,22 +1,20 @@
 import React from "react";
 import "../ofa/css/learning.css";
 
-import TeacherBody from "./progress-tracker";
-import Tavitar from "./tavitar";
-import { ProIcons } from "./icons";
+import ProgressTracker from "./progress-tracker";
+import Tavitar from "../ofa/components/tavitar";
 import { Link } from "react-router-dom";
-import TopNav2 from "./TopNavPart2";
+
+import openicon from "../ofa/img/open.png";
+import closeicon from "../ofa/img/close.png";
+import LeftNavigation from "./left-navigation";
 
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import IconButton from "@material-ui/core/IconButton";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import DoubleArrowIcon from "@material-ui/icons/DoubleArrow";
+
 
 const drawerWidth = 240;
 
@@ -96,149 +94,47 @@ function TeacherDashboardTest() {
   };
 
   return (
+   
     <div className="mainL">
-      <CssBaseline />
-      <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, {
-              [classes.hide]: open,
-            })}
-          >
-            <DoubleArrowIcon />
-          </IconButton>
 
-          <p variant="h6" noWrap>
-            Click here to expand the Left Navigation Menu
-          </p>
-        </Toolbar>
-      </AppBar>
-
-      <TopNav2></TopNav2>
-
-      <Drawer
-        variant="permanent"
-        className={clsx(classes.drawer, {
-          [classes.drawerOpen]: open,
-          [classes.drawerClose]: !open,
-        })}
-        classes={{
-          paper: clsx({
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          }),
-        }}
-      >
-        <div className="learning">
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "rtl" ? (
-              <ChevronRightIcon />
-            ) : (
-              <ChevronLeftIcon />
-            )}
-          </IconButton>
-        </div>
-
-        <Tavitar />
-
-        {/* Adding icons to left-side menu */}
-        {ProIcons.map((item, index) => {
-          return (
-            <li key={index} className={item.cName}>
-              <Link to={item.path}>
-                {item.icon}
-                <span>{item.title}</span>
-              </Link>
-            </li>
-          );
-        })}
-
-        {/* <div className="sideBarInnerContainerFooter"> 
-
-
-          
-
-          <List>
-            {['LEARNING OBJECTIVES'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 1 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['INSTRUCTIONS'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['VIDEO TUTORIAL'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['PREVIEW PROJECT'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['CHECK SUBMISSIONS'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['OFFLINE ACTIVITIES'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-          <List>
-            {['VIEW QUIZ RESULTS'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <InboxIcon/> }</ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List>
+          <CssBaseline />
       
-*/}
-      </Drawer>
-      <main>
-        <div />
+          <Drawer variant="permanent" className={clsx(classes.drawer, { [classes.drawerOpen]: open, [classes.drawerClose]: !open, })} classes={{ paper: clsx({ [classes.drawerOpen]: open, [classes.drawerClose]: !open, }), }}>
 
-        {/* Pull out teacher.js */}
-        <TeacherBody />
-      </main>
+                <Tavitar />
+
+                <div class="list-group">
+                  <LeftNavigation />
+                </div>
+
+                {/* close button */}     
+                <div className="arrowclose">
+                  <IconButton onClick={handleDrawerClose}>
+                    <img src={closeicon} />
+                  </IconButton>
+                </div>
+                    
+                {/* open button */}     
+                <div className="arrowopen">
+                <IconButton color="inherit" aria-label="open drawer" onClick={handleDrawerOpen} edge="start" className={clsx(classes.menuButton, { [classes.hide]: open, })}>
+                  <img src={openicon} />
+                </IconButton>
+              </div>
+
+          </Drawer>
+          
+          {/* Pull out progress-tracker.js */}
+          <ProgressTracker />
+    
     </div>
+  
+  
+  
+  
+  
+  
+  
+  
   );
 }
 

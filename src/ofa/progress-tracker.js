@@ -1,12 +1,12 @@
 import React from "react";
 import "../ofa/css/teacher1.css";
 
-import Teacher2 from "./teacher2.js";
+import Teacher2 from "./radio-button.js";
 
 
 
 
-function Teacher1() {
+function ProgressTracker() {
   return (
     <div>
      
@@ -69,4 +69,4 @@ function Teacher1() {
   );
 }
 
-export default Teacher1;
+export default ProgressTracker;
