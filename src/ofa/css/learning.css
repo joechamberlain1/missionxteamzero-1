@@ -13,3 +13,15 @@
 .mainL{
     background-color: #B2E4FA;
 }
+
+.arrowclose {
+   
+    
+    text-align: right;
+    padding: 5px;
+
+}
+
+.arrowopen {
+    text-align: left;
+}
