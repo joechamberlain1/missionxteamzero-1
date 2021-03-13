@@ -17,12 +17,22 @@ function ProjectBuilderSideBar() {
           </li>
         );
       })}
-      <div className="sideBarInnerContainerFooter">
-        <div className="SideBarBottomMenu">
-        <i class="fa fa-user-circle" aria-hidden="true"></i><p>Profile</p>
-        <i class="fa fa-user-circle" aria-hidden="true"></i><p>Settings</p>
-        <i class="fa fa-user-circle" aria-hidden="true"></i> <p>Logout</p>
-        </div>
+
+      <div className="ProjectBuilderSideBarFooter">
+      
+      <Link to='/' ProfilePage className = 'StudentProjectBuilderLink'>
+        <i className="fa fa-user-circle" aria-hidden="true"></i>
+        <p>Profile</p>
+      </Link>
+      <Link to='/' className = 'StudentProjectBuilderLink'>
+        <i className="fa fa-cog" aria-hidden="true"></i>
+        <p>Settings</p>
+      </Link>
+      <Link to ='/' className = 'StudentProjectBuilderLink'>
+        <i className="fa fa-angle-right"></i>
+        <p>Sign Out</p>
+      </Link>
+
       </div>
     </div>
   );
