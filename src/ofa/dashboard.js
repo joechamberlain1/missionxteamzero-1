@@ -1,11 +1,11 @@
 import React from "react";
 import "../ofa/css/learning.css";
 
-import TeacherBody from "../ofa/progress-tracker";
-import Tavitar from "../ofa/tavitar";
-import { ProIcons } from "../ofa/icons";
+import TeacherBody from "./progress-tracker";
+import Tavitar from "./tavitar";
+import { ProIcons } from "./icons";
 import { Link } from "react-router-dom";
-import TopNav2 from "../ofa/TopNavPart2";
+import TopNav2 from "./TopNavPart2";
 
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LearningPg() {
+function TeacherDashboardTest() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -242,4 +242,4 @@ function LearningPg() {
   );
 }
 
-export default LearningPg;
+export default TeacherDashboardTest;

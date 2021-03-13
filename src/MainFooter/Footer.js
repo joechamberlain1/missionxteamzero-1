@@ -30,7 +30,7 @@ const MainFooter = () => {
               </li>
 
               <li>
-                <Link to="/learning">CollapseDashboardTest</Link>{" "}
+                <Link to="/dashboard">CollapseDashboardTest</Link>{" "}
                 {/* use to access to my CollapseDashboardTest page- Ofa */}
               </li>
             </ul>

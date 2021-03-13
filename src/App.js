@@ -21,7 +21,7 @@ import Teacher1 from "./ofa/progress-tracker";
 import Teacher2 from "./ofa/teacher2";
 import DashboardProgress from "./ofa/dashboard-progress";
 import DashboardHelp from "./ofa/dashboard-help";
-import LearningPg from "./ofa/learning";
+import TeacherDashboardTest from "./ofa/dashboard";
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
       <Route exact path="/ImageAvatars" component={ImageAvatars} />
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/dashboard-help" component={DashboardHelp} />
-      <Route exact path="/learning" component={LearningPg} />
+      <Route exact path="/dashboard" component={TeacherDashboardTest} />
       <Route exact path="/ProjectBuilderSideBar" component={ProjectBuilderSideBar} />
       <Route exact path="/StudentProfileGrid" component={StudentProfileGrid} />
       <Route
