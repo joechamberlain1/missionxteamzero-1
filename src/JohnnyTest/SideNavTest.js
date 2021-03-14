@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import * as ImIcons from "react-icons/im";
 import { SideNavData } from "./SideNavData";
-import "../CSS/SideNavTest.css";
+import "./SideNavTest.css";
 
 function SideNavTest() {
   const [sidebar, setSidebar] = useState(false);
