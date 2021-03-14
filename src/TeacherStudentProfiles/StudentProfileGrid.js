@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/StudentProfileGrid.css";
+import "./StudentProfileGrid.css";
 import StudentProfileGridPic from "./StudentProfileGridPic";
 
 function StudentProfileGrid() {

@@ -4,18 +4,15 @@ import "./App.css";
 
 import HomePage from "./Components/HomePage";
 import ImageAvatars from "./Components/ImageAvatars";
-import StudentProfileGrid from "./Components/StudentProfileGrid";
-import TeacherStudentProfilePart1 from "./Components/TeacherStudentProfilePart1";
+import StudentProfileGrid from "./TeacherStudentProfiles/StudentProfileGrid";
+import TeacherStudentProfileMain from "./TeacherStudentProfiles/TeacherStudentProfileMain";
 import ProfilePage from "./ProfilePage/ProfilePage";
-
 
 import LogIn from "./joe/Login";
 import SignUp from "./joe/SignUp.js";
 import StudentProjectLib from "./joe/StudentProjectLib.js";
-import ProjectBuilderSideBar from './joe/ProjectBuilderSideBar';
-import StudentProjectBuilder from './joe/StudentProjectBuilder';
-
-
+import ProjectBuilderSideBar from "./joe/ProjectBuilderSideBar";
+import StudentProjectBuilder from "./joe/StudentProjectBuilder";
 
 import HelpRequest from "./ofa/help-request";
 import ProgressTracker from "./ofa/progress-tracker";
@@ -24,9 +21,7 @@ import DashboardHelp from "./ofa/dashboard-help";
 import Checkboxes from "./ofa/checkbox";
 import RadioButton from "./ofa/radio-button";
 
-
 import LeftNavL2 from "./ofa/leftNavLayout2";
-
 
 function App() {
   return (
@@ -44,14 +39,22 @@ function App() {
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/dashboard-help" component={DashboardHelp} />
       <Route exact path="/leftNavLayout2" component={LeftNavL2} />
-      <Route exact path="/ProjectBuilderSideBar" component={ProjectBuilderSideBar} />
+      <Route
+        exact
+        path="/ProjectBuilderSideBar"
+        component={ProjectBuilderSideBar}
+      />
       <Route exact path="/StudentProfileGrid" component={StudentProfileGrid} />
       <Route
         exact
-        path="/TeacherStudentProfilePart1"
-        component={TeacherStudentProfilePart1}
+        path="/TeacherStudentProfileMain"
+        component={TeacherStudentProfileMain}
       />
-      <Route exact path="/StudentProjectBuilder" component ={StudentProjectBuilder} />
+      <Route
+        exact
+        path="/StudentProjectBuilder"
+        component={StudentProjectBuilder}
+      />
     </div>
   );
 }

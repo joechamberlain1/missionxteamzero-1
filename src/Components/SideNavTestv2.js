@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../CSS/SideNavTest.css";
+import StudentProfileGridPic from "../TeacherStudentProfiles/StudentProfileGridPic";
 import { SideNavData } from "./SideNavData";
-import StudentProfileGridPic from "./StudentProfileGridPic";
 
 function SideNavTestv2() {
   return (

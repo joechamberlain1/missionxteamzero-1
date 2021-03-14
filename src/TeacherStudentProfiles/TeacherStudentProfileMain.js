@@ -5,12 +5,12 @@ import MainFooter2 from "../TeacherDashboard/Footer2";
 import MainFooter from "../MainFooter/Footer.js";
 import "../CSS/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
-import SideNavTestv2 from "./SideNavTestv2";
+import SideNavTestv2 from "../Components/SideNavTestv2";
 import TakeScreenShotButton from "../TeacherDashboard/TakeScreenShotButton";
 import HelpCenterButton from "../TeacherDashboard/HelpCenterButton";
 import MoreProjectsButton from "../TeacherDashboard/MoreProjectsButton";
 
-function TeacherStudentProfilePart1() {
+function TeacherStudentProfileMain() {
   return (
     <div className="webcontainer">
       <TopNav2 />
@@ -57,4 +57,4 @@ function TeacherStudentProfilePart1() {
   );
 }
 
-export default TeacherStudentProfilePart1;
+export default TeacherStudentProfileMain;
