@@ -22,6 +22,7 @@ import Checkboxes from "./ofa/checkbox";
 import RadioButton from "./ofa/radio-button";
 
 import LeftNavL2 from "./ofa/leftNavLayout2";
+import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
 
 function App() {
   return (
@@ -54,6 +55,11 @@ function App() {
         exact
         path="/StudentProjectBuilder"
         component={StudentProjectBuilder}
+      />
+      <Route
+        exact
+        path="/TeacherProjectsPage"
+        component={TeacherProjectsPage}
       />
     </div>
   );
