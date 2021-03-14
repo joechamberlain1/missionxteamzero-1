@@ -90,6 +90,12 @@ const MainFooter = () => {
                 </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
+              <li>
+                <Link to="/TeacherProjectsPage">
+                  Teacher Projects Page HAHAHAH
+                </Link>{" "}
+                {/* Be sure to update this properly once finalized - Johnny */}
+              </li>
             </ul>
           </div>
         </div>

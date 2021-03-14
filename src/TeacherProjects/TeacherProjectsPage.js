@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "../Components/nav.js";
 import MainFooter from "../MainFooter/Footer.js";
+import "./TeacherProjectPageStyle.css";
+import ProjectGridImg from "./ProjectGridImg.js";
 
 function TeacherProjectsPage() {
   return (
@@ -12,13 +14,31 @@ function TeacherProjectsPage() {
           <h1>hello</h1>
         </div>
         <div className="projectContent">
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
-          <h1>Hello</h1>
+          <h1>Projects</h1>
+          <p>
+            Welcome to the project library. You can use the filters o nthe right
+            to help you search for specific projects.
+          </p>
+          <div className="ButtonsContainer">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+          </div>
+          <div className="ProjectItems">
+            <ProjectGridImg />
+            <ProjectGridImg />
+            <ProjectGridImg />
+          </div>
+          <div className="ProjectItems">
+            <ProjectGridImg />
+            <ProjectGridImg />
+            <ProjectGridImg />
+          </div>
+          <div className="ProjectItems">
+            <ProjectGridImg />
+            <ProjectGridImg />
+            <ProjectGridImg />
+          </div>
         </div>
       </div>
 
