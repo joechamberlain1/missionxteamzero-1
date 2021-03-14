@@ -1,5 +1,5 @@
 import React from "react";
-import SideNavTestv2 from "../Components/SideNavTestv2";
+import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
 import TopNav2 from "./TopNavPart2";
 import MainFooter2 from "./Footer2";
 import HelpCenterButton from "./HelpCenterButton";
