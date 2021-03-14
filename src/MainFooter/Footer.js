@@ -85,7 +85,7 @@ const MainFooter = () => {
                 {/* Be sure to update this properly once finalized - Johnny */}
               </li>
               <li>
-                <Link to="/TeacherStudentProfilePart1">
+                <Link to="/TeacherStudentProfileMain">
                   Teacher Student Profile Page TEST LOL
                 </Link>{" "}
                 {/* Be sure to update this properly once finalized - Johnny */}

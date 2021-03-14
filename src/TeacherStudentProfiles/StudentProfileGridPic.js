@@ -1,6 +1,6 @@
 import React from "react";
 import ProfilePic from "../img/profilepicplaceholder.png";
-import "../CSS/StudentProfileGrid.css";
+import "./StudentProfileGrid.css";
 
 function StudentProfileGridPic() {
   return (
