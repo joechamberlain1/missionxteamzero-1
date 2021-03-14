@@ -14,7 +14,7 @@ export const SideNavData = [
   },
   {
     title: "Student Profiles",
-    path: "/TeacherStudentProfilePart1",
+    path: "/TeacherStudentProfileMain",
     icon: <Io5Icons.IoSchool />,
     cName: "nav-text",
   },
