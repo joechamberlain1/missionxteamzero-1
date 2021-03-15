@@ -3,6 +3,7 @@ import Nav from "../Components/nav.js";
 import MainFooter from "../MainFooter/Footer.js";
 import "./TeacherProjectPageStyle.css";
 import ProjectGridImg from "./ProjectGridImg.js";
+import TeacherProjectButtonsTop from "./TeacherProjectButtonsTop";
 
 function TeacherProjectsPage() {
   return (
@@ -19,11 +20,8 @@ function TeacherProjectsPage() {
             Welcome to the project library. You can use the filters o nthe right
             to help you search for specific projects.
           </p>
-          <div className="ButtonsContainer">
-            <button>Button 1</button>
-            <button>Button 2</button>
-            <button>Button 3</button>
-          </div>
+          <TeacherProjectButtonsTop />
+
           <div className="ProjectItems">
             <ProjectGridImg />
             <ProjectGridImg />

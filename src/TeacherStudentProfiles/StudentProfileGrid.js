@@ -6,7 +6,7 @@ function StudentProfileGrid() {
   return (
     <div className="MainReusableSmallContainer">
       <StudentProfileGridPic />
-      <p>Student Name Function</p>
+      <h2>Student Name Function</h2>
     </div>
   );
 }

@@ -2,35 +2,40 @@
   background-color: #b2e4fa;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: 100%; */
   /* justify-content: center; */
   /* align-items: center; */
   /* text-align: center; */
-  flex: 1;
+  /* flex: 1; */
   /* position: absolute; */
 }
 
-.ButtonContainer {
+.DashboardContent {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: flex-end;
+  flex-direction: column;
+  width: 80%;
+}
+
+.DashboardButtonContainer {
+  display: flex;
+justify-content: flex-end;
+margin-right: 5%; /* 5% from the right to make it align with the inner container on both 1080p and 2k monitors */
+
   /* background-color: black; */
   /* top: 0; */
-  right: 0;
-  position: absolute;
-  justify-content: space-evenly;
 }
 
 .profile-maininner-container {
-  /* display: flex; */
-  margin: 40px;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 95%;
   border-radius: 20px;
 
   background-color: #d8f1fc;
   /* opacity: 50%; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .grid-container {
@@ -48,7 +53,7 @@
   display: flex;
   flex-direction: column;
   width: 20%;
-  /* align-items: center; */
+  align-items: center;
   color: white;
   font-size: 14;
   /* position: relative; */
@@ -58,7 +63,6 @@
 .sideBarInnerContainerFooter {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .SideBarBottomMenu {

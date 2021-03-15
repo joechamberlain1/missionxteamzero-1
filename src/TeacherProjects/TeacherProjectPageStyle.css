@@ -18,9 +18,13 @@
   justify-content: space-evenly;
 }
 
-.ButtonsContainer {
-  display: flex;
-  flex-direction: row;
+
+.ButtonsLeft {
+float: left;
+}
+
+.ButtonsRight {
+float: right;
 }
 
 .ProjectItems {
