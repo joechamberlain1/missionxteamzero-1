@@ -12,6 +12,12 @@
   margin: 40px;
 }
 
+.MainReusableSmallContainer h2{
+  text-align: center;
+  font-size: 12px;
+}
+
+
 .student-profile-pic {
   display: flex;
   width: 104px;

@@ -6,9 +6,7 @@ import MainFooter from "../MainFooter/Footer.js";
 import "../JohnnyTest/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
 import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
-import TakeScreenShotButton from "../TeacherDashboard/TakeScreenShotButton";
-import HelpCenterButton from "../TeacherDashboard/HelpCenterButton";
-import MoreProjectsButton from "../TeacherDashboard/MoreProjectsButton";
+import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
 
 function TeacherStudentProfileMain() {
   return (
@@ -17,32 +15,30 @@ function TeacherStudentProfileMain() {
 
       <div className="profile-main-container">
         <SideNavTestv2 />
-        <div className="ButtonContainer">
-          <TakeScreenShotButton />
-          <HelpCenterButton />
-          <MoreProjectsButton />
-        </div>
-        <div className="profile-maininner-container">
-          <div className="grid-container">
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-          </div>
-          <div className="grid-container">
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-          </div>
-          <div className="grid-container">
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
-            <StudentProfileGrid />
+        <div className="DashboardContent">
+          <DashboardTopButtons />
+          <div className="profile-maininner-container">
+            <div className="grid-container">
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+            </div>
+            <div className="grid-container">
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+            </div>
+            <div className="grid-container">
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+              <StudentProfileGrid />
+            </div>
           </div>
         </div>
       </div>
