@@ -33,6 +33,7 @@ margin-right: 5%; /* 5% from the right to make it align with the inner container
   width: 95%;
   border-radius: 20px;
   background-color: #d8f1fc;
+  justify-content: space-evenly;
   /* opacity: 50%; */
   /* align-items: center; */
   /* justify-content: center; */

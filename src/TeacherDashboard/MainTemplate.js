@@ -11,19 +11,15 @@ function MainTemplate() {
   return (
     <div className="webcontainer">
       <TopNav3 />
-
       <div className="profile-main-container">
         <SideNavTestv2 />
         <div className="DashboardContent">
           <DashboardTopButtons />
           <div className="profile-maininner-container"></div>
         </div>
-
-        {/* Temp code so I can switch back and forth between profile info page and teachers students page */}
-        {/* <MainFooter /> */}
-
-        <MainFooter2 />
       </div>
+
+      <MainFooter2 />
     </div>
   );
 }
