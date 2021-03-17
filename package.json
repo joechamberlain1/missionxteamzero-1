@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "latest",
     "clsx": "latest",
     "react": "latest",
@@ -40,7 +40,7 @@
   },
   "title": "Material demo",
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "^4.0.3"
   },
   "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/drawers/MiniDrawer.js"
 }
