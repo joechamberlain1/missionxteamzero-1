@@ -23,6 +23,7 @@ import RadioButton from "./ofa/radio-button";
 
 import LeftNavL2 from "./ofa/leftNavLayout2";
 import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
+import MainTemplate from "./TeacherDashboard/MainTemplate";
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
         path="/TeacherProjectsPage"
         component={TeacherProjectsPage}
       />
+      <Route exact path="/maintemplate" component={MainTemplate} />
     </div>
   );
 }

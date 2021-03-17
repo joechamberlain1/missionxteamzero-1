@@ -16,10 +16,10 @@ function TeacherProjectsPage() {
         </div>
         <div className="projectContent">
           <h1>Projects</h1>
-          <p>
+          <h4>
             Welcome to the project library. You can use the filters o nthe right
             to help you search for specific projects.
-          </p>
+          </h4>
           <TeacherProjectButtonsTop />
 
           <div className="ProjectItems">

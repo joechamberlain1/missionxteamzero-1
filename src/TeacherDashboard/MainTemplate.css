@@ -28,11 +28,12 @@ margin-right: 5%; /* 5% from the right to make it align with the inner container
 .profile-maininner-container {
   display: flex;
   flex-direction: column;
-  margin: 3%;
+  margin-inline: 3%;
+  margin-bottom: 3%;
   width: 95%;
   border-radius: 20px;
-
   background-color: #d8f1fc;
+  justify-content: space-evenly;
   /* opacity: 50%; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -47,26 +48,4 @@ margin-right: 5%; /* 5% from the right to make it align with the inner container
   width: 100%;
 }
 
-.SideBarContainer {
-  background-color: #43c0f6;
-  /* height: 100%; */
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-items: center;
-  color: white;
-  font-size: 14;
-  /* position: relative; */
-  /* justify-content: flex-end; */
-}
 
-.sideBarInnerContainerFooter {
-  display: flex;
-  flex-direction: column;
-}
-
-.SideBarBottomMenu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
