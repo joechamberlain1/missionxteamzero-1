@@ -8,9 +8,10 @@ import SideNavBottom from "./SideNavBottom";
 function SideNavTestv2() {
   return (
     <div className="SideBarMainContainer">
-      {/* <SideNavTest /> */}
-      <div className="SideBarTopContent">
+      <div className="ProfilePicPlacementSideBar">
         <StudentProfileGridPic />
+      </div>
+      <div className="SideBarTopContent">
         {SideNavData.map((item, index) => {
           return (
             <li key={index} className={item.cName}>
@@ -21,6 +22,9 @@ function SideNavTestv2() {
             </li>
           );
         })}
+      </div>
+      <div className="SideBarButton">
+        <h4>Button to pull menu</h4>
       </div>
       <SideNavBottom />
     </div>

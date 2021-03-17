@@ -28,10 +28,10 @@ margin-right: 5%; /* 5% from the right to make it align with the inner container
 .profile-maininner-container {
   display: flex;
   flex-direction: column;
-  margin: 3%;
+  margin-inline: 3%;
+  margin-bottom: 3%;
   width: 95%;
   border-radius: 20px;
-
   background-color: #d8f1fc;
   /* opacity: 50%; */
   /* align-items: center; */
