@@ -80,3 +80,40 @@
 span {
   margin-left: 16px;
 }
+
+.SideBarMainContainer {
+  background-color: #43c0f6;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  /* align-items: center; */
+  color: white;
+  /* position: relative; */
+  /* justify-content: flex-end; */
+  justify-content: space-around;
+}
+
+.SideBarTopContent{
+  background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 30px; */
+}
+
+.SideBarButton{
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end
+  /* display: flex; */
+
+}
+
+.SideBarBottomMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: purple;
+}
