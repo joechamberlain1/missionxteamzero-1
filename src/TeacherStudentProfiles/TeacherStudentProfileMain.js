@@ -6,12 +6,13 @@ import MainFooter from "../MainFooter/Footer.js";
 import "../JohnnyTest/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
 import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
+import TopNav3 from "../JohnnyTest/TopNavPart3";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
 
 function TeacherStudentProfileMain() {
   return (
     <div className="webcontainer">
-      <TopNav2 />
+      <TopNav3 />
 
       <div className="profile-main-container">
         <SideNavTestv2 />

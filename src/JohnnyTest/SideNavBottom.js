@@ -1,17 +1,26 @@
 import React from "react";
+import { SideNavBottomData } from "./SideNavBottomData";
+import { Link } from "react-router-dom";
 import "./SideNavTest.css";
 
 function SideNavBottom() {
   return (
     <div>
-      <div className="SideBarButton">
+      {/* <div className="SideBarButton">
         <h4>Button to pull menu</h4>
-      </div>
+      </div> */}
 
       <div className="SideBarBottomMenu">
-        <h4>Profile</h4>
-        <h4>Settings</h4>
-        <h4>Log Out</h4>
+        {SideNavBottomData.map((item, index) => {
+          return (
+            <li key={index} className={item.BottomIconText}>
+              <Link to={item.path}>
+                {item.icon}
+                <span>{item.title}</span>
+              </Link>
+            </li>
+          );
+        })}
       </div>
     </div>
   );
