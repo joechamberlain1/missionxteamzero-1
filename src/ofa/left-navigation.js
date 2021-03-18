@@ -27,7 +27,7 @@ function LeftNavigation() {
     <List component="nav" className={classes.root} aria-label="mailbox folders">
       
       <ListItem button>
-      <Link to="/dashboard"><img src={learningicon} /> PROGRESS TRACKER</Link>
+      <Link to="/dashboard"><img src={learningicon} alt="Learning Icon"/> PROGRESS TRACKER</Link>
       </ListItem>
 
       <ListItem button >

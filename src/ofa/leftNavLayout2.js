@@ -5,14 +5,14 @@ import { ProIcons } from "./components/icons";
 import { SetIcon } from "./components/icons2";
 import Tavitar from "./components/tavitar";
 import openicon from "../ofa/img/open.png";
-import closeicon from "../ofa/img/close.png";
+
 
 
 function LeftNavL2() {
 
   return (
     <div className="mainL">
-              
+              <div className="arrowopen">
                 <Tavitar />
 
 
@@ -30,8 +30,8 @@ function LeftNavL2() {
 
                 
                 {/* open button */}     
-                <div className="arrowopen">
-                  <Link to="#"><img src={openicon} /></Link>
+                <div className="arrowopen1">
+                  <Link to="#"><img src={openicon} alt="Open Icon"/></Link>
                 </div>
           
 
@@ -47,6 +47,7 @@ function LeftNavL2() {
                           </li>
                         );
                       })}
+                </div>
                 </div>
     </div>
   

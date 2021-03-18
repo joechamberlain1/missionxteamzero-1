@@ -1,13 +1,20 @@
 .mainL{
     background-color: #43C0F6;
     width:100px;
-    height:720px;
+    
 }
 
 
 .arrowopen {
     text-align: left;
-    position: absolute;
+    
+    
+
+}
+
+.arrowopen1 {
+    text-align: left;
+    padding-top: 70px;
     bottom: 150px;
 
 }
@@ -19,5 +26,5 @@ li{
 .bottomicon{
     position: absolute;
     padding-left:33px;
-    bottom: 10px;
+    
 }
