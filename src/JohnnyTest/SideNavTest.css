@@ -27,7 +27,7 @@
 
 .nav-menu ul {
   display: inline;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav-menu.active {
@@ -54,7 +54,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 0 16px;
   /* border-radius: 4px; */
 }
@@ -62,7 +62,6 @@
 .nav-text a:hover {
   background-color: #b2e4fa;
   color: #707070;
-  
 }
 
 .nav-menu-items {
@@ -83,7 +82,7 @@ span {
   margin-left: 16px;
 }
 
-.ProfilePicPlacementSideBar{
+.ProfilePicPlacementSideBar {
   display: flex;
   justify-content: center;
 }
@@ -101,7 +100,7 @@ span {
   justify-content: space-around;
 }
 
-.SideBarTopContent{
+.SideBarTopContent {
   background-color: thistle;
   display: flex;
   flex-direction: column;
@@ -109,11 +108,11 @@ span {
   /* margin-top: 30px; */
 }
 
-.SideBarButton{
+.SideBarButton {
   background-color: pink;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end
+  justify-content: flex-end;
   /* display: flex; */
 }
 
@@ -124,15 +123,19 @@ span {
   /* background-color: purple; */
 }
 
-.SideBarBottomMenu a{
-font-size: 10;
-color: white;
-text-decoration: none;
-  font-family: 'Open Sans';
+.SideBarBottomMenu a {
+  font-size: 10;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .SideBarBottomMenu a:hover {
-  background-color: #b2e4fa;
+  /* background-color: #b2e4fa; */
   color: #707070;
 }
-

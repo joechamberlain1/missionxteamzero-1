@@ -16,7 +16,7 @@ function SideNavBottom() {
             <li key={index} className={item.BottomIconText}>
               <Link to={item.path}>
                 {item.icon}
-                <span>{item.title}</span>
+                {item.title}
               </Link>
             </li>
           );
