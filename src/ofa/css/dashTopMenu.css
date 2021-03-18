@@ -1,20 +1,21 @@
 .dashTopNav{
     background: white;
     display:flex;
-    align-items: center;
-    margin-inline: 3%;
+    margin-left:3%;
+    margin-right:3%;        
+
 }
   
 .dashTopLogo{
-    
     flex: 20%;
 }
 
 .topButtons{   
-    flex: 70%;
+    flex: 75%;
     text-align: right;
     color: Black;
-    
+    padding-top: 15px;
+
 }
 
 .dashTopFlag{
@@ -28,6 +29,8 @@
     color: white;
     width: 200px;
     height: 36px;
+    margin-bottom: 0px;
+    border:none;
 }
 
 .btHelp{
@@ -35,6 +38,8 @@
     color: white;
     width: 200px;
     height: 36px;
+    margin-bottom: 0px;
+    border:none;
 }
 
 .btMore{
@@ -42,4 +47,6 @@
     color: white;
     width: 200px;
     height: 36px;
+    margin-bottom: 0px;
+    border:none;
 }
