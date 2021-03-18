@@ -12,8 +12,8 @@
 
 .arrowopen1 {
     text-align: left;
-    padding-top: 100px;
-    bottom: 150px;
+    padding-top:230px;
+    
 
 }
 
@@ -24,5 +24,6 @@ li{
 .bottomicon{
     position: absolute;
     padding-left:33px;
+    bottom:70px;
     
 }

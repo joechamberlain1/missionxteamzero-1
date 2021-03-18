@@ -9,15 +9,15 @@ import DashFooter from "../TeacherDashboard/Footer2";
 
 function MainDashboard() {
   return (
-    <div className="webcontainer">
+    <div >
       <DashTopMenu />
-      <div className="profile-main-container">
+      <div className="dashboard-body">
         <DashLeftNav />
-        <div className="DashboardContent">
+        <div className="dashboard-content">
          
-          <div className="profile-maininner-container">
+          
 
-          </div>
+          
         </div>
       </div>
 
