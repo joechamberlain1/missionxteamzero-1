@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from '@material-ui/core/Avatar';
 
-import "../CSS/helpT.css";
+import "../ofa/css/helpT.css";
 
 
 import Checkbox from "./checkbox.js";

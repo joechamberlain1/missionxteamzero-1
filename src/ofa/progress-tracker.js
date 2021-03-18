@@ -10,8 +10,8 @@ function ProgressTracker() {
   return (
     <div>
      
-      <div className="divt1">
-        <div className="divt2">
+      <div className="divt11">
+        <div className="divt21">
           
          
         <div className="divt3">

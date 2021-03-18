@@ -35,9 +35,15 @@ const MainFooter = () => {
               </li>
 
               <li>
-                <Link to="/mainDash">Dash2Test</Link>{" "}
+                <Link to="/mainDash-progress">DashProgress</Link>{" "}
                 {/* use to access to my Dashboard Layout 2 Test page- Ofa */}
               </li>
+
+              <li>
+                <Link to="/mainDash-help">DashHelp</Link>{" "}
+                {/* use to access to my Dashboard Layout 2 Test page- Ofa */}
+              </li>
+
             </ul>
           </div>
 

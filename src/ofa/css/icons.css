@@ -5,8 +5,8 @@
     padding:7px;
 }
 
-.layicon:hover{
+/*Active background*/
+.layicon1{
     background-color: #B2E4FA;
-    text-align: center;
     padding:7px;
 }
