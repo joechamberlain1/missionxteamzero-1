@@ -8,7 +8,7 @@ import progressbar from "../img/icons/progresscustom.png";
 export const SideNavData = [
   {
     title: "Progress Tracker",
-    path: "/teacherpro",
+    path: "/mainDash-progress",
     icon: <img src={progressbar} />,
     cName: "nav-text",
   },
@@ -20,7 +20,7 @@ export const SideNavData = [
   },
   {
     title: "Help Requests",
-    path: "/",
+    path: "/mainDash-help",
     icon: <RiIcons.RiQuestionnaireFill />,
     cName: "nav-text",
   },
