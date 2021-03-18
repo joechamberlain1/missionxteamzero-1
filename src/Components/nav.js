@@ -4,11 +4,13 @@ import flagnz from "../img/nz.jpg";
 import flagmaori from "../img/maori.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
+// import ModalFunction from '../joe/modalfunction.js'
 //these will need to be the modal parts for the home page -joe
 // import LogInModal from '../joe/LoginModal.js'
 // import SignUpModal from '../joe/SignUpModal.js'
 
 function Nav() {
+  
   return (
     <div className="topNav"> 
 
@@ -55,8 +57,8 @@ function Nav() {
                   <div className="topNavLogin">
                     
                     <a href="#" className="a2">
-                    {/* <SignUpModal />
-                    this is where the signup modal will go <SignUpModal />  */}
+                    
+                    
                         <Link to="/SignUp">
                           
                           
@@ -66,14 +68,16 @@ function Nav() {
                     </a>
 
                     <a href="#" className="a2">
-                      {/* <LogInModal />
-                      this is where the login modal will go <LoginModal /> */}
+                      
+                      
                         <Link to='/Login'>
                         
                         {" | "}
                            LOGIN 
                         </Link> 
                     </a>                
+
+                    {/* <ModalFunction /> */}
                         
                   </div>
               </div>

@@ -30,10 +30,12 @@ const ProjectGallery = () => {
         <div className='ProjectGallery'>
 
             {/*this first project needs to go the project builder pages*/}
-            <div className='ProjectPic'><Link className = 'studentlibrarylink' to='/StudentProjectBuilder'>
-                <img src={project1} className='ProjectPic1' alt="Project 1" />
-                <h3>Introduction</h3><p>BEGINNER | Animation</p>
-            </Link></div>
+            <div className='ProjectPic'>
+                <Link className='studentlibrarylink' to='/StudentProjectBuilder'>
+                    <img src={project1} className='ProjectPic1' alt="Project 1" />
+                    <h3>Introduction</h3><p>BEGINNER | Animation</p>
+                </Link>
+            </div>
             <div className='ProjectPic'>
                 <img src={project2} className='ProjectPic2' alt="Project 2" />
                 <h3>My Birthday</h3><p>BEGINNER | Animation</p>
