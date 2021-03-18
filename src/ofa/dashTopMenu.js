@@ -7,16 +7,36 @@ import flagmaori from "../ofa/img/maori.jpg";
 
 function TopNav3() {
   return (
-    <div className="topNav3">
+    <div className="dashTopNav">
+      
+      
       {/*Logo */}
-      <div className="topLogo3">
+      <div className="dashTopLogo">
         <img src={star} alt="starlogo" />
       </div>
+      
+      
+      {/*Links Buttons */}
+      <div className="topButtons">
+        <button className="btTake"> Take Screenshot </button>
+        <button className="btHelp"> Help Centre </button>
+        <button className="btMore"> More Projects </button>
+
+      </div>
+
+
+
       {/*nz flag and maori flag */}
-      <div className="topFlagLang3">
+      <div className="dashTopFlag">
         <img src={flagnz} alt="NZ Flag" />{" "}
         <img src={flagmaori} alt="Maori Flag" />
       </div>
+
+
+
+
+
+
     </div>
   );
 }
