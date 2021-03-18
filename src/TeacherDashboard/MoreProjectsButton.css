@@ -9,3 +9,7 @@
   border: 0;
   cursor: pointer;
 }
+
+.moreprojectsbutton a {
+  color: white;
+}
