@@ -31,7 +31,11 @@ function LeftNavL2() {
                 
                 {/* open button */}     
                 <div className="arrowopen1">
-                  <Link to="#"><img src={openicon} alt="Open Icon"/></Link>
+                  <Link to="/TeacherStudentProfileMain"><img src={openicon} alt="Open Icon"/></Link>
+
+                 
+
+
                 </div>
           
 
