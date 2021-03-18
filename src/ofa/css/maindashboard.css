@@ -1,42 +1,17 @@
-.profile-main-container {
+.dashboard-body {
   background-color: #b2e4fa;
   display: flex;
   flex-direction: row;
 }
 
-.DashboardContent {
+.dashboard-content {
   display: flex;
   flex-direction: column;
-  width: 80%;
-}
-
-.DashboardButtonContainer {
-  display: flex;
-justify-content: flex-end;
-margin-right: 5%; 
-}
-
-.profile-maininner-container {
-  display: flex;
-  flex-direction: column;
-  margin-inline: 3%;
-  margin-bottom: 3%;
-  width: 95%;
-  border-radius: 20px;
-  background-color: #d8f1fc;
-  justify-content: space-evenly;
-  /* opacity: 50%; */
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-.grid-container {
-  display: flex;
-  flex-direction: row;
-  /* background-color: blue; */
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
 }
+
+
+
+
 
 
