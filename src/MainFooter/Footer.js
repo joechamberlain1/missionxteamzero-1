@@ -33,6 +33,11 @@ const MainFooter = () => {
                 <Link to="/leftNavLayout2">LeftNavLayout2</Link>{" "}
                 {/* use to access to my LeftNavLayout2 page- Ofa */}
               </li>
+
+              <li>
+                <Link to="/mainDash">Dash2Test</Link>{" "}
+                {/* use to access to my Dashboard Layout 2 Test page- Ofa */}
+              </li>
             </ul>
           </div>
 

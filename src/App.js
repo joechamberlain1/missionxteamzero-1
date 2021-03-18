@@ -20,7 +20,7 @@ import DashboardProgress from "./ofa/dashboard-progress";
 import DashboardHelp from "./ofa/dashboard-help";
 import Checkboxes from "./ofa/checkbox";
 import RadioButton from "./ofa/radio-button";
-
+import DashMain from "./ofa/mainDash";
 import LeftNavL2 from "./ofa/leftNavLayout2";
 import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
 import MainTemplate from "./TeacherDashboard/MainTemplate";
@@ -41,6 +41,7 @@ function App() {
       <Route exact path="/checkbox" component={Checkboxes} />
       <Route exact path="/dashboard-help" component={DashboardHelp} />
       <Route exact path="/leftNavLayout2" component={LeftNavL2} />
+      <Route exact path="/mainDash" component={DashMain} />
       <Route
         exact
         path="/ProjectBuilderSideBar"
