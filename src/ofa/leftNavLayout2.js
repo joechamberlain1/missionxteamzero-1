@@ -12,7 +12,7 @@ function LeftNavL2() {
 
   return (
     <div className="mainL">
-              <div className="arrowopen">
+              <div className="leftnavbody">
                 <Tavitar />
 
 
