@@ -1,15 +1,14 @@
 import React from "react";
-import * as GiIcons from "react-icons/gi";
+import * as ImIcons from "react-icons/im";
 import * as Io5Icons from "react-icons/io5";
 import * as RiIcons from "react-icons/ri";
 import * as AiIcons from "react-icons/ai";
-import progressbar from "../img/icons/progresscustom.png";
 
 export const SideNavData = [
   {
     title: "Progress Tracker",
     path: "/mainDash-progress",
-    icon: <img src={progressbar} />,
+    icon: <ImIcons.ImStatsBars />,
     cName: "nav-text",
   },
   {
