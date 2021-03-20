@@ -3,16 +3,17 @@ import "../TeacherDashboard/MainTemplate.css";
 import MainFooter2 from "../TeacherDashboard/Footer2";
 import "../JohnnyTest/SideNavTest.css";
 import StudentProfileGrid from "./StudentProfileGrid";
-import SideNavTest from "../JohnnyTest/SideNavTest";
+// import SideNavTest from "../JohnnyTest/SideNavTest";
 import TopNav3 from "../JohnnyTest/TopNavPart3";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
+import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
 
 function TeacherStudentProfileMain() {
   return (
     <div className="webcontainer">
       <TopNav3 />
       <div className="profile-main-container">
-        <SideNavTest />
+        <SideNavTestv2 />
         <div className="DashboardContent">
           <DashboardTopButtons />
           <div className="profile-maininner-container">
