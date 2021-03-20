@@ -5,23 +5,17 @@ import "./SideNavTest.css";
 
 function SideNavBottom() {
   return (
-    <div>
-      {/* <div className="SideBarButton">
-        <h4>Button to pull menu</h4>
-      </div> */}
-
-      <div className="SideBarBottomMenu">
-        {SideNavBottomData.map((item, index) => {
-          return (
-            <li key={index} className={item.BottomIconText}>
-              <Link to={item.path}>
-                {item.icon}
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-      </div>
+    <div className="SideBarBottomMenu">
+      {SideNavBottomData.map((item, index) => {
+        return (
+          <li key={index} className={item.BottomIconText}>
+            <Link to={item.path}>
+              {item.icon}
+              {item.title}
+            </Link>
+          </li>
+        );
+      })}
     </div>
   );
 }

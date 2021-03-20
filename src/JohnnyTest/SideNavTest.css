@@ -42,21 +42,11 @@
   display: flex;
   flex-direction: column;
   color: white;
-  position: relative;
+  /* position: absolute; */
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 3em;
 }
-
-/* .SideBarMainContainerToggle {
-  background-color: #b2e4fa;
-  border-radius: 20px;
-  width: 35%;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-} */
 
 .SideBarMainContainer {
   background-color: #43c0f6;
@@ -69,7 +59,7 @@
   position: relative;
   /* justify-content: flex-end; */
   /* position: fixed; */
-  /* left: -100%; */
+  left: -100%;
   transition: 850ms;
   justify-content: space-around;
 }
@@ -96,7 +86,7 @@
 
 .menuArrows {
   color: #f91c84;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .SideBarBottomMenu {
