@@ -25,13 +25,13 @@ export const SideNavData = [
   },
   {
     title: "Project Submissions",
-    path: "/",
+    // path: "/",
     icon: <AiIcons.AiFillProject />,
     cName: "nav-text",
   },
   {
     title: "Project Library",
-    path: "/",
+    // path: "/",
     icon: <Io5Icons.IoLibraryOutline />,
     cName: "nav-text",
   },
