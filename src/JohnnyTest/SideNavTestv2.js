@@ -14,7 +14,7 @@ function SideNavTestv2() {
 
   return (
     <>
-      {/* Inactive Side bar / Collapsed */}
+      {/* Collapsed Sidebar */}
       <div className="SideBarCollapsed">
         <div className="ProfilePicPlacementSideBar">
           <StudentProfileGridPic />
@@ -35,6 +35,7 @@ function SideNavTestv2() {
             <RiIcons.RiArrowRightSFill onClick={showSideBar} />
           </Link>
         </div>
+
         <div className="SideBarBottomCollapsed">
           {SideNavBottomData.map((item, index) => {
             return (
@@ -53,31 +54,29 @@ function SideNavTestv2() {
           sidebar ? "SideBarMainContainer active" : "SideBarMainContainer"
         }
       >
-        <div className="SideBarMainContainerToggle">
-          <div className="ProfilePicPlacementSideBar">
-            <StudentProfileGridPic />
-          </div>
-
-          <div className="SideBarTopContent">
-            {SideNavData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </div>
-
-          <div className="SideBarButton">
-            <Link to="#" className="menuArrows">
-              <RiIcons.RiArrowLeftSFill onClick={showSideBar} />
-            </Link>
-          </div>
-          <SideNavBottom />
+        <div className="ProfilePicPlacementSideBar">
+          <StudentProfileGridPic />
         </div>
+
+        <div className="SideBarTopContent">
+          {SideNavData.map((item, index) => {
+            return (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </div>
+
+        <div className="SideBarButton">
+          <Link to="#" className="menuArrows">
+            <RiIcons.RiArrowLeftSFill onClick={showSideBar} />
+          </Link>
+        </div>
+        <SideNavBottom />
       </nav>
     </>
   );
