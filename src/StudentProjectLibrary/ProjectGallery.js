@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Students from '../img/Project -1@2x.jpg'
-import './css/StudentProjectLib.css';
-import project1 from '../img/Project -1@2x.jpg';
+import './StudentProjectLib.css';
+// import project1 from '../img/Project -1@2x.jpg';
 import project2 from '../img/Project -2@2x.jpg';
 import project3 from '../img/Project -3@2x.jpg';
 import project4 from '../img/Project -4@2x.jpg';
@@ -18,9 +16,11 @@ import project12 from '../img/Project -12@2x.jpg';
 import project13 from '../img/Project -13@2x.jpg';
 import project14 from '../img/Project -14@2x.jpg';
 import project15 from '../img/Project -15@2x.jpg';
+import LibraryPicture from './ProjectLibraryPicture'
+
 // import {Grid} from '@material-ui/core'
-// import {makeStyles} from '@material-ui/styles'
 // import SimpleCard from './galleryComponent'
+// import { makeStyles } from '@material-ui/core/styles';
 
 
 
@@ -32,8 +32,9 @@ const ProjectGallery = () => {
             {/*this first project needs to go the project builder pages*/}
             <div className='ProjectPic'>
                 <Link className='studentlibrarylink' to='/StudentProjectBuilder'>
-                    <img src={project1} className='ProjectPic1' alt="Project 1" />
-                    <h3>Introduction</h3><p>BEGINNER | Animation</p>
+                {/* <img src={project1} className='ProjectPic2' alt="Project 1" />
+                <h3>Introduction</h3><p>BEGINNER | Animation</p> */}
+                <LibraryPicture />
                 </Link>
             </div>
             <div className='ProjectPic'>

@@ -8,11 +8,11 @@ import StudentProfileGrid from "./TeacherStudentProfiles/StudentProfileGrid";
 import TeacherStudentProfileMain from "./TeacherStudentProfiles/TeacherStudentProfileMain";
 import ProfilePage from "./ProfilePage/ProfilePage";
 
-import LogIn from "./joe/Login";
-import SignUp from "./joe/SignUp.js";
-import StudentProjectLib from "./joe/StudentProjectLib.js";
-import ProjectBuilderSideBar from "./joe/ProjectBuilderSideBar";
-import StudentProjectBuilder from "./joe/StudentProjectBuilder";
+import LogIn from "./LogInSignUp/Login";
+import SignUp from "./LogInSignUp/SignUp.js";
+import StudentProjectLib from "./StudentProjectLibrary/StudentProjectLib.js";
+import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
+import StudentProjectBuilder from "./StudentProjectBuilder/StudentProjectBuilder";
 
 import HelpRequest from "./ofa/help-request";
 import ProgressTracker from "./ofa/progress-tracker";
