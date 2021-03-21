@@ -44,8 +44,9 @@
   color: white;
   /* position: absolute; */
   align-items: center;
-  justify-content: space-between;
-  font-size: 3em;
+  justify-content: space-around;
+  font-size: 1.5em;
+  visibility: visible;
 }
 
 .SideBarMainContainer {
@@ -56,17 +57,19 @@
   /* width: 14%; */
   /* align-items: center; */
   color: white;
-  position: relative;
+  /* position: relative; */
   /* justify-content: flex-end; */
   /* position: fixed; */
-  left: -100%;
-  transition: 850ms;
+  /* left: -100%; */
+  visibility: collapse;
+  transition: 0.3s;
   justify-content: space-around;
 }
 
 .SideBarMainContainer.active {
-  left: 0;
-  transition: 350ms;
+  /* left: 0; */
+  visibility: visible;
+  transition: 0.5s;
 }
 
 .SideBarTopContent {

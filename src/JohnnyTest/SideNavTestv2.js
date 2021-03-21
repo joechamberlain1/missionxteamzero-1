@@ -10,11 +10,17 @@ import * as RiIcons from "react-icons/ri";
 function SideNavTestv2() {
   const [sidebar, setSidebar] = useState(false);
 
-  const showSideBar = () => setSidebar(!sidebar);
+  const showSideBar = () => {
+    setSidebar(true);
+  };
+  const hideSideBar = () => {
+    setSidebar(false);
+  };
 
   return (
     <>
       {/* Collapsed Sidebar */}
+
       <div className="SideBarCollapsed">
         <div className="ProfilePicPlacementSideBar">
           <StudentProfileGridPic />
@@ -51,7 +57,7 @@ function SideNavTestv2() {
 
       <nav
         className={
-          sidebar ? "SideBarMainContainer active" : "SideBarMainContainer"
+          sidebar ? "SideBarMainContainer active " : "SideBarMainContainer"
         }
       >
         <div className="ProfilePicPlacementSideBar">
@@ -73,7 +79,7 @@ function SideNavTestv2() {
 
         <div className="SideBarButton">
           <Link to="#" className="menuArrows">
-            <RiIcons.RiArrowLeftSFill onClick={showSideBar} />
+            <RiIcons.RiArrowLeftSFill onClick={hideSideBar} />
           </Link>
         </div>
         <SideNavBottom />

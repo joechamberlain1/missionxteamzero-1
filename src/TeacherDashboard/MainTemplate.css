@@ -13,13 +13,13 @@
 .DashboardContent {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 .DashboardButtonContainer {
   display: flex;
-justify-content: flex-end;
-margin-right: 5%; /* 5% from the right to make it align with the inner container on both 1080p and 2k monitors */
+  justify-content: flex-end;
+  margin-right: 5%; /* 5% from the right to make it align with the inner container on both 1080p and 2k monitors */
 
   /* background-color: black; */
   /* top: 0; */
@@ -47,5 +47,3 @@ margin-right: 5%; /* 5% from the right to make it align with the inner container
   justify-content: space-evenly;
   width: 100%;
 }
-
-
