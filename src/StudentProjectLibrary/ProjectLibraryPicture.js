@@ -2,20 +2,16 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import project1 from '../img/Project -1@2x.jpg'
 import { CardMedia } from '@material-ui/core';
-
-
-// const {Image, title, subtitle} = props; 
-
+import { StudentProjectContent } from './StudentProjectContent.js'
+ 
 const useStyles = makeStyles({
 
 
     CardSize:{
         height: 250,
-        width: 350,
+        width: 350, 
     },
  
     FontSize:{
@@ -24,6 +20,7 @@ const useStyles = makeStyles({
 
     textAlign:{
       textAlign: 'center',
+      fontFamily: 'Nunito'
     },
 
     cardBorder: {
@@ -34,7 +31,7 @@ const useStyles = makeStyles({
   
 
 
-  function SimpleCard() {
+  function LibraryPicture() {
     const classes = useStyles();
   
     return (
@@ -42,9 +39,9 @@ const useStyles = makeStyles({
       <Card className = {classes.cardBorder}>
         <CardContent>
 
-        {/*project image*/}<CardMedia component = 'img' alt = 'Project 1' height = 'auto' image = {project1}/>
-        {/* title*/}<Typography className = {classes.textAlign}>Introduction</Typography> 
-        {/* subtitle*/}<Typography className = {classes.textAlign}>BEGINNER | Animation</Typography>
+        {/*project image*/}<CardMedia>{StudentProjectContent[0].Image}</CardMedia>
+        {/* title*/}<Typography className = {classes.textAlign}>{StudentProjectContent[0].Title}</Typography> 
+        {/* subtitle*/}<Typography className = {classes.textAlign}>{StudentProjectContent[0].Difficulty}</Typography>
 
         </CardContent>
       </Card>
@@ -52,4 +49,4 @@ const useStyles = makeStyles({
     );
   }
 
-  export default SimpleCard
+  export default LibraryPicture

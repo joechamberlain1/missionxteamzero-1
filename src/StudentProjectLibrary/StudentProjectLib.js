@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Components/nav.js';
-import './css/StudentProjectLib.css';
+import './StudentProjectLib.css';
 import ProjectGallery from './ProjectGallery.js';
 import LibButton from './ProjectLibButtons.js';
 import ProjectSideBar from './ProjectGallerySideBar';
@@ -13,7 +13,7 @@ import { makeStyles } from '@material-ui/styles'
 
 
 const useStyles = makeStyles((theme) => ({
-    paper: {
+    buttonStyles: {
         
         display: "flex",
         float: "right",
@@ -63,7 +63,7 @@ function StudentProjectLib() {
 
                     </div>
                     <div>
-                    <Button href = '#top' variant = 'contained' className= {classes.paper} size='small' >Back to the top</Button>
+                    <Button href = '#top' variant = 'contained' className= {classes.buttonStyles} size='small' >Back to the top</Button>
                     </div>
                 </div>
             </div>

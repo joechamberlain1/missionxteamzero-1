@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/SignUp.css';
+import './SignUp.css';
 import students from '../Students.jpg'
 import teachers from '../teacher-1.jpg'
 import {Link } from 'react-router-dom'
