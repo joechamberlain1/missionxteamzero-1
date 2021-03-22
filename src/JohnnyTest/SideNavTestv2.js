@@ -26,7 +26,7 @@ function SideNavTestv2() {
           <StudentProfileGridPic />
         </div>
 
-        <div className="SideBarTopContent">
+        <div className="SideBarTopContentCollapsed">
           {SideNavData.map((item, index) => {
             return (
               <li key={index} className={item.cName}>

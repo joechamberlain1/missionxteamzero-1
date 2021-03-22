@@ -43,7 +43,7 @@
   flex-direction: column;
   color: white;
   /* position: absolute; */
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
   font-size: 1.5em;
   visibility: visible;
@@ -67,7 +67,6 @@
 }
 
 .SideBarMainContainer.active {
-  /* left: 0; */
   visibility: visible;
   transition: 0.5s;
 }
@@ -76,6 +75,15 @@
   /* background-color: thistle; */
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  /* margin-top: 30px; */
+}
+
+.SideBarTopContentCollapsed {
+  /* background-color: thistle; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* align-items: center; */
   /* margin-top: 30px; */
 }
@@ -90,6 +98,8 @@
 .menuArrows {
   color: #f91c84;
   font-size: 2em;
+  background-color: #b2e4fa;
+  border-radius: 10px 0 0 10px;
 }
 
 .SideBarBottomMenu {
