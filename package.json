@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "latest",
+    "chokidar": "^3.5.1",
     "clsx": "latest",
     "react": "latest",
     "react-dom": "latest",

@@ -82,7 +82,7 @@ function SideNavTestv2() {
             <RiIcons.RiArrowLeftSFill onClick={hideSideBar} />
           </Link>
         </div>
-        <SideNavBottom />
+        <SideNavBottom /> 
       </nav>
     </>
   );

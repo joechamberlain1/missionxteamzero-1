@@ -23,19 +23,19 @@ function Nav() {
           <ul>
 
             <li>
-                <a href="#" className="a1">
-                <Link to="/">HOME</Link></a>
+              
+                <Link to="/" className='a1'>HOME</Link>
             </li>
             <li>
-            <a href="#" className="a1">
-                FEATURES{" "}
-              </a>         
+
+                <Link to="/" className='a1'>FEATURES</Link>
+       
             </li>
             
             <li>
-            <a href="#" className="a1">
-                TEACHERS{" "}
-              </a>  
+            
+            <Link to="/" className='a1'>TEACHERS</Link>
+              
             </li>
 
           </ul>
@@ -56,26 +56,25 @@ function Nav() {
               <div>
                   <div className="topNavLogin">
                     
-                    <a href="#" className="a2">
+                   
                     
                     
-                        <Link to="/SignUp">
+                        <Link to="/SignUp" className='a2'>
                           
                           
-                        <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+                        <i class="fa fa-user-circle" aria-hidden="true"/>
                           REGISTER
                         </Link> 
-                    </a>
+         
 
-                    <a href="#" className="a2">
                       
                       
-                        <Link to='/Login'>
+                        <Link to='/Login' className='a2'>
                         
                         {" | "}
                            LOGIN 
                         </Link> 
-                    </a>                
+             
 
                     {/* <ModalFunction /> */}
                         

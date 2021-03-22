@@ -18,7 +18,7 @@ import HelpRequest from "./ofa/help-request";
 import ProgressTracker from "./ofa/progress-tracker";
 import DashboardProgress from "./ofa/dashboard-progress";
 import DashboardHelp from "./ofa/dashboard-help";
-import Checkboxes from "./ofa/checkbox";
+// import Checkboxes from "./ofa/checkbox";
 import RadioButton from "./ofa/radio-button";
 import MainDashProgress from "./ofa/mainDash-progress";
 import MainDashHelp from "./ofa/mainDash-help";
@@ -39,7 +39,7 @@ function App() {
       <Route exact path="/radio-button" component={RadioButton} />
       <Route exact path="/help-request" component={HelpRequest} />
       <Route exact path="/ImageAvatars" component={ImageAvatars} />
-      <Route exact path="/checkbox" component={Checkboxes} />
+      {/* <Route exact path="/checkbox" component={Checkboxes} /> */}
       <Route exact path="/dashboard-help" component={DashboardHelp} />
       <Route exact path="/leftNavLayout2" component={LeftNavL2} />
       <Route exact path="/mainDash-progress" component={MainDashProgress} />

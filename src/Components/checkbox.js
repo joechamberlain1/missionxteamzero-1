@@ -1,29 +1,29 @@
-import React from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
+// import React from 'react';
+// import Checkbox from '@material-ui/core/Checkbox';
 
-function Checkboxes() {
-  const [checked, setChecked] = React.useState(true);
+// function Checkboxes() {
+//   const [checked, setChecked] = React.useState(true);
 
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
+//   const handleChange = (event) => {
+//     setChecked(event.target.checked);
+//   };
 
-  return (
-    <div>
+//   return (
+//     <div>
       
       
-      <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} />
-      
-      
-      
+//       <Checkbox inputProps={{ 'aria-label': 'uncontrolled-checkbox' }} />
       
       
       
-    </div>
-  );
-}
+      
+      
+      
+//     </div>
+//   );
+// }
 
-export default Checkboxes;
+// export default Checkboxes;
 
 
 
