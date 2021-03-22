@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function TestingDummyBranch() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div>Hello world</div>;
 }
 
-export default TestingDummyBranch
+export default TestingDummyBranch;
