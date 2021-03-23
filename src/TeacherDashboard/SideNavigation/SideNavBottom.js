@@ -1,7 +1,7 @@
 import React from "react";
 import { SideNavBottomData } from "./SideNavBottomData";
 import { Link } from "react-router-dom";
-import "./SideNavTest.css";
+import "./SideNavStyle.css";
 
 function SideNavBottom() {
   return (
