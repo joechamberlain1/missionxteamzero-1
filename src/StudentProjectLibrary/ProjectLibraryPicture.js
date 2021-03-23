@@ -8,7 +8,6 @@ import { StudentProjectContent } from './StudentProjectContent.js'
  
 const useStyles = makeStyles({
 
-
     CardSize:{
         height: 250,
         width: 350, 
@@ -50,3 +49,5 @@ const useStyles = makeStyles({
   }
 
   export default LibraryPicture
+
+  //new line test for branch commit
