@@ -49,7 +49,7 @@ function App() {
         path="/ProjectBuilderSideBar"
         component={ProjectBuilderSideBar}
       />
-      <Route exact path="/StudentProfileGrid" component={StudentProfileGrid} />
+
       <Route
         exact
         path="/TeacherStudentProfileMain"
