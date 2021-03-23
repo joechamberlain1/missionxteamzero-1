@@ -1,6 +1,6 @@
 import React from "react";
-import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
-import TopNav3 from "../JohnnyTest/TopNavPart3.js";
+import SideNav from "./SideNavigation/SideNav";
+import TopNav3 from "../TeacherDashboard/TopNavPart3";
 import MainFooter2 from "./Footer2";
 import DashboardTopButtons from "./DashboardTopButtons";
 import "./MainTemplate.css";
@@ -12,7 +12,7 @@ function MainTemplate() {
     <div className="webcontainer">
       <TopNav3 />
       <div className="profile-main-container">
-        <SideNavTestv2 />
+        <SideNav />
         <div className="DashboardContent">
           <DashboardTopButtons />
           <div className="profile-maininner-container"></div>
