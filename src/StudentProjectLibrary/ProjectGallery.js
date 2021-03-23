@@ -1,26 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './StudentProjectLib.css';
-// import project1 from '../img/Project -1@2x.jpg';
-import project2 from '../img/Project -2@2x.jpg';
-import project3 from '../img/Project -3@2x.jpg';
-import project4 from '../img/Project -4@2x.jpg';
-import project5 from '../img/Project -5@2x.jpg';
-import project6 from '../img/Project -6@2x.jpg';
-import project7 from '../img/Project -7@2x.jpg';
-import project8 from '../img/Project -8@2x.jpg';
-import project9 from '../img/Project -9@2x.jpg';
-import project10 from '../img/Project -10@2x.jpg';
-import project11 from '../img/Project -11@2x.jpg';
-import project12 from '../img/Project -12@2x.jpg';
-import project13 from '../img/Project -13@2x.jpg';
-import project14 from '../img/Project -14@2x.jpg';
-import project15 from '../img/Project -15@2x.jpg';
-import LibraryPicture from './ProjectLibraryPicture'
 
-// import {Grid} from '@material-ui/core'
-// import SimpleCard from './galleryComponent'
-// import { makeStyles } from '@material-ui/core/styles';
+import './StudentProjectLib.css';
+import LibraryPicture from './ProjectLibraryPicture'
+import {Grid} from "@material-ui/core"
+
 
 
 
@@ -30,14 +13,17 @@ const ProjectGallery = () => {
         <div className='ProjectGallery'>
 
             {/*this first project needs to go the project builder pages*/}
-            <div className='ProjectPic'>
-                <Link className='studentlibrarylink' to='/StudentProjectBuilder'>
+            <div>
+                
                 {/* <img src={project1} className='ProjectPic2' alt="Project 1" />
                 <h3>Introduction</h3><p>BEGINNER | Animation</p> */}
+                <Grid container>
+                    <Grid item xs={4}>
                 <LibraryPicture />
-                </Link>
+                    </Grid>
+                </Grid>
             </div>
-            <div className='ProjectPic'>
+            {/* <div className='ProjectPic'>
                 <img src={project2} className='ProjectPic2' alt="Project 2" />
                 <h3>My Birthday</h3><p>BEGINNER | Animation</p>
             </div>
@@ -93,7 +79,7 @@ const ProjectGallery = () => {
             <div className='ProjectPic'>
                 <img src={project15} className='ProjectPic15' alt="Project 15" />
                 <h3>The Lion and the Mouse Part 2</h3><p>BEGINNER | Animation</p>
-            </div>
+            </div> */}
         </div>
 
 
