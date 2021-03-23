@@ -1,19 +1,18 @@
 import React from "react";
 import "../TeacherDashboard/MainTemplate.css";
 import MainFooter2 from "../TeacherDashboard/Footer2";
-import "../JohnnyTest/SideNavTest.css";
+
 import StudentProfileGrid from "./StudentProfileGrid";
-// import SideNavTest from "../JohnnyTest/SideNavTest";
-import TopNav3 from "../JohnnyTest/TopNavPart3";
+import TopNav3 from "../TeacherDashboard/TopNavPart3";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
-import SideNavTestv2 from "../JohnnyTest/SideNavTestv2";
+import SideNav from "../TeacherDashboard/SideNavigation/SideNav";
 
 function TeacherStudentProfileMain() {
   return (
     <div className="webcontainer">
       <TopNav3 />
       <div className="profile-main-container">
-        <SideNavTestv2 />
+        <SideNav />
         <div className="DashboardContent">
           <DashboardTopButtons />
           <div className="profile-maininner-container">

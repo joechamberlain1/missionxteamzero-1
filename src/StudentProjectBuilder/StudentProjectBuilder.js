@@ -3,9 +3,7 @@ import ProjectBuilderSideBar from "./ProjectBuilderSideBar";
 import MainFooter2 from "../TeacherDashboard/Footer2";
 import "../TeacherDashboard/MainTemplate.css";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
-import TopNav3 from "../JohnnyTest/TopNavPart3";
-
-// Use this as a template when creating a page
+import TopNav3 from "../TeacherDashboard/TopNavPart3";
 
 function StudentProjectBuilder() {
   return (

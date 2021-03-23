@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./SideNavTest.css";
-import StudentProfileGridPic from "../TeacherStudentProfiles/StudentProfileGridPic";
+import "./SideNavStyle.css";
+import StudentProfileGridPic from "../../TeacherStudentProfiles/StudentProfileGridPic";
 import { SideNavData } from "./SideNavData";
 import { SideNavBottomData } from "./SideNavBottomData";
 import SideNavBottom from "./SideNavBottom";
 import * as RiIcons from "react-icons/ri";
 
-function SideNavTestv2() {
+function SideNav() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSideBar = () => {
@@ -17,10 +17,9 @@ function SideNavTestv2() {
     setSidebar(false);
   };
 
-  return (
-    <>
-      {/* Collapsed Sidebar */}
-
+  // Collapsed Sidebar data
+  const showCollapsedSideBar = () => {
+    return (
       <div className="SideBarCollapsed">
         <div className="ProfilePicPlacementSideBar">
           <StudentProfileGridPic />
@@ -42,6 +41,7 @@ function SideNavTestv2() {
           </Link>
         </div>
 
+        {/* Manually added the collapsed icon so they appear in a collumn */}
         <div className="SideBarBottomCollapsed">
           {SideNavBottomData.map((item, index) => {
             return (
@@ -52,14 +52,13 @@ function SideNavTestv2() {
           })}
         </div>
       </div>
+    );
+  };
 
-      {/* Sidebar Active */}
-
-      <nav
-        className={
-          sidebar ? "SideBarMainContainer active " : "SideBarMainContainer"
-        }
-      >
+  // Main Sidebar when it is opened
+  const showMainSideBar = () => {
+    return (
+      <nav className="SideBarMainContainer active">
         <div className="ProfilePicPlacementSideBar">
           <StudentProfileGridPic />
         </div>
@@ -82,10 +81,12 @@ function SideNavTestv2() {
             <RiIcons.RiArrowLeftSFill onClick={hideSideBar} />
           </Link>
         </div>
-        <SideNavBottom /> 
+        <SideNavBottom />
       </nav>
-    </>
-  );
+    );
+  };
+
+  return <>{sidebar ? showMainSideBar() : showCollapsedSideBar()}</>;
 }
 
-export default SideNavTestv2;
+export default SideNav;
