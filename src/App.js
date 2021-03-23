@@ -4,7 +4,7 @@ import "./App.css";
 
 import HomePage from "./Components/HomePage";
 import ImageAvatars from "./Components/ImageAvatars";
-import StudentProfileGrid from "./TeacherStudentProfiles/StudentProfileGrid";
+
 import TeacherStudentProfileMain from "./TeacherStudentProfiles/TeacherStudentProfileMain";
 import ProfilePage from "./ProfilePage/ProfilePage";
 
