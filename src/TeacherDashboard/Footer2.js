@@ -1,11 +1,8 @@
 import React from "react";
+import "./Footer2Style.css";
 
 function MainFooter2() {
-  return (
-    <footer>
-      <p style={{ textAlign: "center" }}> © LevelUp Works 2020 </p>
-    </footer>
-  );
+  return <footer className="Footer2">© LevelUp Works 2020</footer>;
 }
 
 export default MainFooter2;
