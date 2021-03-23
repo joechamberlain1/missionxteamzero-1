@@ -1,9 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import { CardMedia } from '@material-ui/core';
+import { makeStyles, Card, CardContent, CardMedia, Typography } from '@material-ui/core';
 import { StudentProjectContent } from './StudentProjectContent.js'
  
 const useStyles = makeStyles({
@@ -32,22 +28,21 @@ const useStyles = makeStyles({
 
   function LibraryPicture() {
     const classes = useStyles();
-  
+    
     return (
-
-      <Card className = {classes.cardBorder}>
-        <CardContent>
-
-        {/*project image*/}<CardMedia>{StudentProjectContent[0].Image}</CardMedia>
-        {/* title*/}<Typography className = {classes.textAlign}>{StudentProjectContent[0].Title}</Typography> 
-        {/* subtitle*/}<Typography className = {classes.textAlign}>{StudentProjectContent[0].Difficulty}</Typography>
-
-        </CardContent>
-      </Card>
-
+        <div>
+          {StudentProjectContent.map((gallery) => (
+            <Card className={classes.CardSize}>
+              <CardContent className={classes.cardBorder}>
+                <CardMedia>{gallery.Image}</CardMedia>
+                <Typography>{gallery.Title}</Typography>
+                <Typography>{gallery.Difficulty}</Typography>
+              </CardContent>
+              </Card>
+          ))}
+        </div>
     );
   }
 
   export default LibraryPicture
 
-  //new line test for branch commit
