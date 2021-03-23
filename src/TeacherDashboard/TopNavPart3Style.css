@@ -1,13 +1,13 @@
-.topNav3{
-    background: white;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    margin-inline: 3%;
-    /* background-size:100%; */
-    /* object-fit:cover; */
-    /* width:100%; */
-    /* display: flex; */
+.topNav3 {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 3%;
+  height: 5%;
+  /* background-size:100%; */
+  /* object-fit:cover; */
+  /* width:100%; */
+  /* display: flex; */
 }
-  
