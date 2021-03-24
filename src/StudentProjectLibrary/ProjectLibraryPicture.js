@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Card, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { makeStyles, Card, CardContent, CardMedia, Typography, Grid } from '@material-ui/core';
 import { StudentProjectContent } from './StudentProjectContent.js'
  
 const useStyles = makeStyles({
@@ -7,21 +7,19 @@ const useStyles = makeStyles({
     CardSize:{
         height: 250,
         width: 350, 
+        border: "none",
+        boxShadow: "none"
     },
  
-    FontSize:{
-        fontSize: 50,
-    },
 
     textAlign:{
       textAlign: 'center',
-      fontFamily: 'Nunito'
+      fontFamily: 'Nunito',
+      color: 'grey',
+      fontWeight: 'bolder'
     },
 
-    cardBorder: {
-        border: "none",
-        boxShadow: "none"
-      }
+
 });
   
 
@@ -31,15 +29,17 @@ const useStyles = makeStyles({
     
     return (
         <div>
+          <Grid container spacing ={3}>
           {StudentProjectContent.map((gallery) => (
             <Card className={classes.CardSize}>
-              <CardContent className={classes.cardBorder}>
+              <CardContent>
                 <CardMedia>{gallery.Image}</CardMedia>
-                <Typography>{gallery.Title}</Typography>
-                <Typography>{gallery.Difficulty}</Typography>
+                <Typography className={classes.textAlign}>{gallery.Title}</Typography>
+                <Typography className={classes.textAlign}>{gallery.Difficulty}</Typography>
               </CardContent>
               </Card>
           ))}
+          </Grid>
         </div>
     );
   }
