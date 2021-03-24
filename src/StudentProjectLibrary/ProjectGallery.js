@@ -11,7 +11,7 @@ const ProjectGallery = () => {
 
     return (
         <div className='ProjectGallery'>
-            {/*this first project needs to go the project builder pages*/}
+            {/*not sure how to get the grid working so it's only got three in a row but I like it at the moment*/}
             <div>
                 <Grid container >
                     <Grid item xs={12}>
