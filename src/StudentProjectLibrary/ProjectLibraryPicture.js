@@ -16,8 +16,14 @@ const useStyles = makeStyles({
       textAlign: 'center',
       fontFamily: 'Nunito',
       color: 'grey',
-      fontWeight: 'bolder'
     },
+
+    textTitle:{
+      textAlign: 'center',
+      fontFamily: 'Nunito',
+      color: 'grey',
+      fontWeight: 'bolder'
+    }
 
 
 });
@@ -34,7 +40,7 @@ const useStyles = makeStyles({
             <Card className={classes.CardSize}>
               <CardContent>
                 <CardMedia>{gallery.Image}</CardMedia>
-                <Typography className={classes.textAlign}>{gallery.Title}</Typography>
+                <Typography className={classes.textTitle}>{gallery.Title}</Typography>
                 <Typography className={classes.textAlign}>{gallery.Difficulty}</Typography>
               </CardContent>
               </Card>
