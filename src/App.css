@@ -1,15 +1,4 @@
 .App {
-  font-family: 'Nunito';
-  color:#707070;
-  position: relative;
-  
-  
+  font-family: "Nunito";
+  color: #707070;
 }
-
-
-/* remove the underline for all link, and set background to inherit*/
-a{
-  text-decoration:none;
-}
-
-
