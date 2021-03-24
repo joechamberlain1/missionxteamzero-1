@@ -2,8 +2,8 @@ import React from "react";
 import "../ofa/css/TopNavPart2.css";
 
 import star from "../img/logo.png";
-import flagnz from "../img/nz.jpg";
-import flagmaori from "../img/maori.jpg";
+import flagnz from "../img/nzflag.png";
+import flagmaori from "../img/maoriflag.png";
 
 function DashboardHeader() {
   return (

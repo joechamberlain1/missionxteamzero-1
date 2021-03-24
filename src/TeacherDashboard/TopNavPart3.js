@@ -1,9 +1,9 @@
 import React from "react";
 import "./TopNavPart3Style.css";
 
-import star from "../img/logo.png";
-import flagnz from "../img/nz.jpg";
-import flagmaori from "../img/maori.jpg";
+import star from "../img/project-icons/Header2Logo.png";
+import flagnz from "../img/nzflag.png";
+import flagmaori from "../img/maoriflag.png";
 
 function TopNav3() {
   return (
@@ -14,7 +14,7 @@ function TopNav3() {
       </div>
       {/*nz flag and maori flag */}
       <div className="topFlagLang3">
-        <img src={flagnz} alt="NZ Flag" />{" "}
+        <img src={flagnz} alt="NZ Flag" />
         <img src={flagmaori} alt="Maori Flag" />
       </div>
     </div>
