@@ -6,7 +6,7 @@ import "./ProfilePage.css";
 
 function ProfilePage() {
   return (
-    <div className="webcontainer">
+    <div>
       <Nav />
       <div className="profile-background">
         <div className="profile-container">

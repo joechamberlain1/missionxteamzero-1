@@ -7,7 +7,7 @@ import TeacherProjectButtonsTop from "./TeacherProjectButtonsTop";
 
 function TeacherProjectsPage() {
   return (
-    <div className="webcontainer">
+    <div>
       <Nav />
 
       <div className="main-projectcontainer">
