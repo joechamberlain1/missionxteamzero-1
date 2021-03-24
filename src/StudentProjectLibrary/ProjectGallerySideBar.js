@@ -2,6 +2,10 @@ import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import './StudentProjectLib.css'
 
+const subscribeAlert = () =>{
+    alert('you have not subscribed')
+}
+
 function ProjectSideBar(){
     return(
 <div className='ProjectSideBar'> {/*sidebar container */}
@@ -15,11 +19,13 @@ function ProjectSideBar(){
                             defaultChecked
                             size = 'small'
                             color="primary"
+                            
                             inputProps={{ 'aria-label': 'secondary checkbox' }}/>
                             Free
                         </tr>
                         <tr>
                         <Checkbox
+                            onClick = {subscribeAlert}
                             size = 'small'
                             color="primary"
                             inputProps={{ 'aria-label': 'secondary checkbox' }}/>
