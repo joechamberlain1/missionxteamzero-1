@@ -1,11 +1,11 @@
 import React from "react";
-import MainFooter from "../MainFooter/Footer.js";
-import Nav from "../Components/nav.js";
-import ProfilePic from "../img/profilepicplaceholder.png";
-import "./ProfilePage.css";
-import TeacherProjectBottomButtons from "../TeacherProjects/TeacherProjectBottomButtons";
+import MainFooter from "../../MainFooter/Footer.js";
+import Nav from "../../Components/nav.js";
+import ProfilePic from "../../img/profilepicplaceholder.png";
+import "../ProfilePage.css";
+import TeacherProfileBottomButtons from "./TeacherProfileBottomButtons.js";
 
-function ProfilePage() {
+function TeacherProfilePage() {
 	return (
 		<div>
 			<Nav />
@@ -20,6 +20,7 @@ function ProfilePage() {
 						<div className="profile-buttons">
 							<button>Edit profile</button>
 							<button>Change Photo</button>
+							<button>Settings</button>
 						</div>
 					</div>
 					<div className="main-profile-details">
@@ -29,13 +30,12 @@ function ProfilePage() {
 							<div className="returnedFunction">Function for school name</div>
 						</div>
 						<div className="details-container">
-							<div className="requiredDetails">Teacher</div>
-							<div className="returnedFunction">Function for Teacher name</div>
+							<div className="requiredDetails">Courses Purchased</div>
+							<div className="returnedFunction">
+								Function for Course difficulty
+							</div>
 						</div>
-						<div className="details-container">
-							<div className="requiredDetails">Course</div>
-							<div className="returnedFunction">Function for Course name</div>
-						</div>
+
 						<div className="details-container">
 							<div className="requiredDetails">Date of Birth</div>
 							<div className="returnedFunction">Function for DOB</div>
@@ -50,11 +50,11 @@ function ProfilePage() {
 						</div>
 					</div>
 				</div>
-				<TeacherProjectBottomButtons />
+				<TeacherProfileBottomButtons />
 			</div>
 			<MainFooter />
 		</div>
 	);
 }
 
-export default ProfilePage;
+export default TeacherProfilePage;

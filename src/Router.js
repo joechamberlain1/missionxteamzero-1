@@ -3,6 +3,7 @@ import { BrowserRouter as Switch, Route } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import ImageAvatars from "./Components/ImageAvatars";
 import TeacherStudentProfileMain from "./TeacherStudentProfiles/TeacherStudentProfileMain";
+import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
 import ProfilePage from "./ProfilePage/ProfilePage";
 import LogIn from "./LogInSignUp/Login";
 import SignUp from "./LogInSignUp/SignUp.js";
@@ -25,6 +26,7 @@ function Router() {
 	return (
 		<Switch>
 			<Route exact path="/" component={HomePage} />
+			<Route exact path="/TeacherProfilePage" component={TeacherProfilePage} />
 			<Route exact path="/ProfilePage" component={ProfilePage} />
 			<Route exact path="/Login" component={LogIn} />
 			<Route exact path="/SignUp" component={SignUp} />
