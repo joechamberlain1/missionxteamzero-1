@@ -1,0 +1,67 @@
+.helpcenterbutton {
+	width: 200px;
+	height: 35px;
+	color: white;
+	font-size: 16;
+	text-align: center;
+	background-color: #f91c85;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	border: 0;
+	cursor: pointer;
+}
+
+.helpcenterbutton a {
+	color: white;
+	text-decoration: none;
+}
+
+.TakeScreenshot {
+	width: 200px;
+	height: 35px;
+	color: white;
+	font-size: 16;
+	text-align: center;
+	background-color: #e5ab2c;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	border: 0;
+	cursor: pointer;
+}
+
+.TakeScreenshot a {
+	color: white;
+	text-decoration: none;
+}
+
+.moreprojectsbutton {
+	width: 200px;
+	height: 35px;
+	color: white;
+	font-size: 16;
+	text-align: center;
+	background-color: #43c0f6;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	border: 0;
+	cursor: pointer;
+}
+
+.moreprojectsbutton a {
+	color: white;
+	text-decoration: none;
+}
+
+.BackToTopButton {
+	width: 175px;
+	height: 35px;
+	color: white;
+	font-size: 16;
+	text-align: center;
+	background-color: #e5ab2c;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	border: 0;
+	cursor: pointer;
+}
+
+.TakeScreenshot a {
+	color: white;
+	text-decoration: none;
+}
