@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 function SignUpStudent() {
     const { register, handleSubmit, errors, watch } = useForm();
   
-
-  
     const onSubmitStudent = data => {
       console.log(data);
     }
@@ -20,7 +18,7 @@ function SignUpStudent() {
         <img src={students} className='FormPic' alt='Students' />
         <p>Students</p>
         {/* these a tags will be changed to Link once we have added in the newer pages */}
-        <Link to='/Login' className='FormLinks'>Log In</Link> <Link className='FormLinks'>Sign Up</Link>
+        <Link className='FormLinks'>LOG IN</Link> <Link className='FormLinks'>SIGN UP</Link>
 
         <form action = 'student register' onSubmit={handleSubmit(onSubmitStudent)} className='UserInput' >
           <input placeholder='Full Name' type='text' name='fullName' required ref ={register}/>
