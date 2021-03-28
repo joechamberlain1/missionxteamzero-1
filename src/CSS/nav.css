@@ -46,7 +46,6 @@
   .a2{
     text-decoration:none;
     color:white;
-   
   }
 
 
@@ -62,7 +61,8 @@
   .topNavLogin{
     height:inherit;
     width:inherit;
-    ;
+    display: flex;
+    /* this was added so the modal links would go next to each other */
   }
   
 .p1{
