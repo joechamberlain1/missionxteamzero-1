@@ -10,16 +10,16 @@ function SignUp() {
     <div className='Form'>
 
       <div className='StudentSignUp'>
-      <SignUpStudent />
+        <SignUpStudent />
 
       </div>
 
       <div className='TeacherSignUp'>
-      <SignUpTeacher />
+        <SignUpTeacher />
       </div>
-      </div>
+    </div>
 
-    )
+  )
 }
 
 export default SignUp
