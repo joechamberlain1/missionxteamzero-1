@@ -1,8 +1,8 @@
 import React from "react";
-import "./TakeScreenShotButton.css";
+import "./ButtonStyle.css";
 
 function TakeScreenShotButton() {
-  return <button className="TakeScreenshot">Take Screenshot</button>;
+	return <button className="TakeScreenshot">Take Screenshot</button>;
 }
 
 export default TakeScreenShotButton;
