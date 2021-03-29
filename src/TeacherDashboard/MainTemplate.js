@@ -1,7 +1,7 @@
 import React from "react";
 import SideNav from "./SideNavigation/SideNav";
 import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
-import MainFooter2 from "./Footer2";
+import MainDashboardFooter from "./DashboardFooter";
 import DashboardTopButtons from "./DashboardTopButtons";
 import "./MainTemplate.css";
 
@@ -19,7 +19,7 @@ function MainTemplate() {
 				</div>
 			</div>
 
-			<MainFooter2 />
+			<MainDashboardFooter />
 		</div>
 	);
 }
