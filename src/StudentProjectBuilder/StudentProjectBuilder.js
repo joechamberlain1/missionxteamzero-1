@@ -1,26 +1,26 @@
 import React from "react";
 import ProjectBuilderSideBar from "./ProjectBuilderSideBar";
-import MainFooter2 from "../TeacherDashboard/Footer2";
+import MainDashboardFooter from "../TeacherDashboard/DashboardFooter";
 import "../TeacherDashboard/MainTemplate.css";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
-import TopNav3 from "../TeacherDashboard/TopNavPart3";
+import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
 
 function StudentProjectBuilder() {
-  return (
-    <div className="webcontainer">
-      <TopNav3 />
+	return (
+		<div className="webcontainer">
+			<DashboardTopNav />
 
-      <div className="profile-main-container">
-        <ProjectBuilderSideBar />
-        <div className="DashboardContent">
-          <DashboardTopButtons />
+			<div className="profile-main-container">
+				<ProjectBuilderSideBar />
+				<div className="DashboardContent">
+					<DashboardTopButtons />
 
-          <div className="profile-maininner-container"></div>
-        </div>
-      </div>
-      <MainFooter2 />
-    </div>
-  );
+					<div className="profile-maininner-container"></div>
+				</div>
+			</div>
+			<MainDashboardFooter />
+		</div>
+	);
 }
 
 export default StudentProjectBuilder;

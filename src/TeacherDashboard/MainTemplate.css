@@ -60,12 +60,11 @@
 	/* width: 95%; */
 }
 
-.Footer2 {
+.DashboardFooter {
 	text-align: center;
 	font-size: 1em;
 	font-weight: bold;
 	height: 5%;
-	padding: 10px 0 0 0;
 }
 
 .DashboardTopNavigation {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../TeacherDashboard/MainTemplate.css";
-import MainFooter2 from "../TeacherDashboard/Footer2";
+import MainDashboardFooter from "../TeacherDashboard/DashboardFooter";
 
 import StudentProfileGrid from "./StudentProfileGrid";
 import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
@@ -41,7 +41,7 @@ function TeacherStudentProfileMain() {
 				</div>
 			</div>
 
-			<MainFooter2 />
+			<MainDashboardFooter />
 		</div>
 	);
 }

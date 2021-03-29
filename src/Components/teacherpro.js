@@ -6,31 +6,31 @@ import TopNav2 from "../TeacherDashboard/TopNavPart2";
 import Teacherb from "./teacher1.js";
 import TeacherLNav from "./TeacherLNav";
 import Tavitar from "./tavitar";
-import MainFooter2 from "../TeacherDashboard/Footer2";
+import MainDashboardFooter from "../TeacherDashboard/DashboardFooter";
 
 function Teacherpro() {
-  return (
-    <div className="teacherpro-body">
-      <TopNav2 />
+	return (
+		<div className="teacherpro-body">
+			<TopNav2 />
 
-      <div className="teacherbody">
-        <div className="left-side">
-          <div className="leftnav">
-            <Tavitar />
-          </div>
+			<div className="teacherbody">
+				<div className="left-side">
+					<div className="leftnav">
+						<Tavitar />
+					</div>
 
-          <div class="list-group">
-            <TeacherLNav />
-          </div>
-        </div>
+					<div class="list-group">
+						<TeacherLNav />
+					</div>
+				</div>
 
-        <div className="rightSide-Body">
-          <Teacherb />
-        </div>
-      </div>
-      <MainFooter2 />
-    </div>
-  );
+				<div className="rightSide-Body">
+					<Teacherb />
+				</div>
+			</div>
+			<MainDashboardFooter />
+		</div>
+	);
 }
 
 export default Teacherpro;
