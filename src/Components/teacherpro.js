@@ -6,7 +6,7 @@ import TopNav2 from "../TeacherDashboard/TopNavPart2";
 import Teacherb from "./teacher1.js";
 import TeacherLNav from "./TeacherLNav";
 import Tavitar from "./tavitar";
-import MainDashboardFooter from "../TeacherDashboard/DashboardFooter";
+import DashboardFooter from "../TeacherDashboard/DashboardFooter";
 
 function Teacherpro() {
 	return (
@@ -28,7 +28,7 @@ function Teacherpro() {
 					<Teacherb />
 				</div>
 			</div>
-			<MainDashboardFooter />
+			<DashboardFooter />
 		</div>
 	);
 }
