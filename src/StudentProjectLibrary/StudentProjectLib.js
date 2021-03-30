@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Components/nav.js";
+import MainTopNav from "../MainTopNav/MainTopNav.js";
 import "./StudentProjectLib.css";
 import ProjectGallery from "./ProjectGallery.js";
 import LibButton from "./ProjectLibButtons.js";
@@ -33,10 +33,9 @@ function StudentProjectLib() {
 
 	return (
 		<div className="StudentProjectLibrary">
-			<Nav />
+			<MainTopNav />
 			<div className="MainPage">
 				<div className="ProjectSideBar">
-					{" "}
 					{/*sidebar container */}
 					<div>
 						<ProjectSideBar />
