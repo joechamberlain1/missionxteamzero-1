@@ -1,5 +1,6 @@
 import React from 'react';
 import '../CSS/hsec1.css'; 
+import SignUpButton from '../LogInSignUp/SignUpButton'
 
 function Hsec1() {
   return (
@@ -14,7 +15,7 @@ function Hsec1() {
 
         <button className='b1'>LEARN MORE</button>
 
-        <button className='b2'>SIGN UP</button>
+        <button className='b2'><SignUpButton /></button>
 
         <p className="psec11">*Basic subscription includes the first 15 project
         free of charge.

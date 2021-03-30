@@ -8,7 +8,7 @@ import SignUpStudent from "./SignUpStudent";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 
-function SignUpModal() {
+function SignUpButton() {
 	const [open, setOpen] = React.useState(false);
 	const theme = useTheme();
 	const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -25,7 +25,7 @@ function SignUpModal() {
 	return (
 		<div>
 			<Link onClick={handleClickOpen} className="a2">
-				<i class="fa fa-user-circle" aria-hidden="true" /> Register
+				 Sign Up
 				<Dialog
 					fullScreen={fullScreen}
 					open={open}
@@ -47,4 +47,4 @@ function SignUpModal() {
 	);
 }
 
-export default SignUpModal;
+export default SignUpButton;
