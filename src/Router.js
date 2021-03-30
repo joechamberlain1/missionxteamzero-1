@@ -31,15 +31,35 @@ function Router() {
 			<Route exact path="/Login" component={LogIn} />
 			<Route exact path="/SignUp" component={SignUp} />
 			<Route exact path="/StudentProjectLib" component={StudentProjectLib} />
+
+			{/* Ofa's DashboardProgress version 1  */}
 			<Route exact path="/dashboard-progress" component={DashboardProgress} />
+
+			{/* Ofa's duplicate of dashboard-progress, but with less components. May have to remove */}
 			<Route exact path="/progress-tracker" component={ProgressTracker} />
+
+			{/* Unsure why this 1 function has a page of its own, will most likely remove this. Unsure if this is a test? Ofa's work */}
 			<Route exact path="/radio-button" component={RadioButton} />
+
+			{/* Doesn't even work, function name is being exported as HelpT but componenet name is help-request. May have to fix for Ofa */}
 			<Route exact path="/help-request" component={HelpRequest} />
+
+			{/* Same as radio-button. Don't see this being used anywhere as well. */}
 			<Route exact path="/ImageAvatars" component={ImageAvatars} />
+
+			{/* Entire thing was giving a warning, have advised to clear warnings and look into it but ignored. */}
 			{/* <Route exact path="/checkbox" component={Checkboxes} /> */}
+
+			{/* Duplicate of help-request version 2, not working. Will remove */}
 			<Route exact path="/dashboard-help" component={DashboardHelp} />
+
+			{/* Not needed, unsure why an entire route page was needed to test 1 function. Componenet for functioning SideNav has been created. This needs to be removed  */}
 			<Route exact path="/leftNavLayout2" component={LeftNavL2} />
+
+			{/* Duplicate work of progress-tracker version 3, might use this one as it seems more complete. Can see multiple duplications of top nav and buttons as well, unsure of reasoning. */}
 			<Route exact path="/mainDash-progress" component={MainDashProgress} />
+
+			{/* Duplicate version 3 of dashboard-help, thorws alot of errors. */}
 			<Route exact path="/mainDash-help" component={MainDashHelp} />
 			<Route
 				exact
