@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectBuilderSideBar from "./ProjectBuilderSideBar";
-import MainDashboardFooter from "../TeacherDashboard/DashboardFooter";
+import DashboardFooter from "../TeacherDashboard/DashboardFooter";
 import "../TeacherDashboard/MainTemplate.css";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
 import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
@@ -18,7 +18,7 @@ function StudentProjectBuilder() {
 					<div className="profile-maininner-container"></div>
 				</div>
 			</div>
-			<MainDashboardFooter />
+			<DashboardFooter />
 		</div>
 	);
 }
