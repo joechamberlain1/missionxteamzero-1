@@ -1,6 +1,8 @@
 import React from "react";
 import "../CSS/hsec6.css";
 import project1 from "../img/class.png";
+import SignUpButton from '../LogInSignUp/SignUpButton'
+
 
 function Hsec6() {
   return (
@@ -20,7 +22,7 @@ function Hsec6() {
         </p>
 
         <button className="b1">ENQUIRE NOW</button>
-        <button className="b2">SIGN UP</button>
+        <button className="b2"><SignUpButton /></button>
       </div>
     </div>
   );
