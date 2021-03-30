@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Components/nav.js";
+import MainTopNav from "../MainTopNav/MainTopNav.js";
 import MainFooter from "../MainFooter/MainFooter.js";
 import "./TeacherProjectPageStyle.css";
 import ProjectGridImg from "./ProjectGridImg.js";
@@ -10,7 +10,7 @@ import TeacherProjectBottomButtons from "./TeacherProjectBottomButtons.js";
 function TeacherProjectsPage() {
 	return (
 		<div>
-			<Nav />
+			<MainTopNav />
 
 			<div className="main-projectcontainer">
 				<div className="projectSideBar">
