@@ -1,5 +1,5 @@
 import React from "react";
-import MainFooter from "../MainFooter/Footer.js";
+import MainFooter from "../MainFooter/MainFooter.js";
 import Nav from "../Components/nav.js";
 import ProfilePic from "../img/profilepicplaceholder.png";
 import "./ProfilePage.css";

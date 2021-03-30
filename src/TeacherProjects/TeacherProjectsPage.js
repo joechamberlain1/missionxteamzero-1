@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../Components/nav.js";
-import MainFooter from "../MainFooter/Footer.js";
+import MainFooter from "../MainFooter/MainFooter.js";
 import "./TeacherProjectPageStyle.css";
 import ProjectGridImg from "./ProjectGridImg.js";
 import LibButton from "../StudentProjectLibrary/ProjectLibButtons";
