@@ -80,4 +80,7 @@
 .DashboardTopNavFlags {
 	display: flex;
 	column-gap: 10%;
+	color: white;
+	font-size: 0.5em;
+	font-family: "Open Sans";
 }
