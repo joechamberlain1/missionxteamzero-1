@@ -5,9 +5,9 @@ import "./TeacherProjectPageStyle.css";
 function ProjectGridImg() {
 	return (
 		<div className="ProjectGridImg">
-			<img src={project1} className="ProjectPic" alt="Project 1" />
+			<img src={project1} alt="Project" />
 			<h2>Video Name Function</h2>
-			<p>Level of content function</p>
+			Level of content function
 		</div>
 	);
 }
