@@ -1,7 +1,6 @@
 .TopNavMainBackground {
 	background-color: #43c0f6;
 	border: solid 2px #41baef;
-	/* height: 10%; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -12,17 +11,19 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	width: 40%;
 }
 
 .TopNavigation {
 	display: flex;
 	flex-direction: row;
 	color: white;
-	column-gap: 25%;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: "Open Sans";
 	font-size: 1em;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 .TopNavigation a {
