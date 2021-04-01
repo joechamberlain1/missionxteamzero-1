@@ -2,6 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import students from "../img/LoginSignUp Modal/Students.png";
 import { Link } from "react-router-dom";
+import "../CSS/nav.css";
+
 
 function SignUpStudent() {
 	const { register, handleSubmit, errors, watch } = useForm();
@@ -13,10 +15,10 @@ function SignUpStudent() {
 	return (
 		<div className="StudentSignUp">
 			<img src={students} className="FormPic" alt="Students" />
-			<p>Students</p>
+			<p className='FormHeader'>Students</p>
 			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link className="FormLinks">LOG IN</Link>{" "}
-			<Link className="FormLinks">SIGN UP</Link>
+			<Link to="/LogIn" className="FormLinks">LOG IN</Link>{" "}
+			<Link className="SignUpLinkON">SIGN UP</Link>
 			<form
 				action="student register"
 				onSubmit={handleSubmit(onSubmitStudent)}
@@ -50,7 +52,7 @@ function SignUpStudent() {
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
 				{/* <Link><input type='submit'><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></input></Link> */}
-				<input type="Submit" value="Register" />
+				<button className='registerButton'>Sign Up</button>
 				{/* have added link to the student project library page. User data has not been added yet */}
 			</form>
 			<br />

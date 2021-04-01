@@ -13,12 +13,10 @@ const SignUpTeacher = () => {
 	return (
 		<div>
 			<img src={teachers} className="FormPic" alt="Teacher" />
-			<p>Teachers</p>
+			<p className = 'FormHeader'>Teachers</p>
 			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link to="/Login" className="FormLinks">
-				Log In
-			</Link>{" "}
-			<Link className="FormLinks">Sign Up</Link>
+			<Link to= "/LogIn" className="FormLinks">LOG IN</Link>{" "}
+			<Link className="SignUpLinkON">SIGN UP</Link>
 			<form onSubmit={handleSubmit(onSubmitTeacher)} className="UserInput">
 				<input
 					placeholder="Full Name"
@@ -49,7 +47,7 @@ const SignUpTeacher = () => {
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
 				{errors.password && <h6>{errors.password.message}</h6>}
-				<input type="Submit" value="Register" />
+				<button className='registerButton'>Sign Up</button>
 			</form>
 		</div>
 	);
