@@ -5,7 +5,7 @@ import ImageAvatars from "./Components/ImageAvatars";
 import TeacherStudentProfileMain from "./TeacherStudentProfiles/TeacherStudentProfileMain";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
 import ProfilePage from "./ProfilePage/ProfilePage";
-import LogIn from "./LogInSignUp/LogIn";
+import LogIn from "./LogInSignUp/Login";
 import SignUp from "./LogInSignUp/SignUp.js";
 import StudentProjectLib from "./StudentProjectLibrary/StudentProjectLib.js";
 import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
