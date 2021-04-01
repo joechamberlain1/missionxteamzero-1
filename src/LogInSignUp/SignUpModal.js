@@ -1,22 +1,14 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import "./SignUp.css";
-import { Link } from "react-router-dom";
-import "../CSS/nav.css";
 import SignUpTeacher from "./SignUpTeachers";
 import SignUpStudent from "./SignUpStudent";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/styles";
-import { DialogContent } from "@material-ui/core";
+// import { Link } from 'react-router-dom'
 
-const useStyles = makeStyles((theme) => ({
-	paper: {
 
-		minWidth: 900,
-		backgroundColor:  'green'
-	},
-}));
+
 
 function SignUpModal() {
 	const [open, setOpen] = React.useState(false);
@@ -30,22 +22,19 @@ function SignUpModal() {
 	const handleClose = () => {
 		setOpen(false);
 	};
-
-	const classes = useStyles();
+	
 	return (
 
 		<div>
-			<Link onClick={handleClickOpen} className="a2">
-				<i class="fa fa-user-circle" aria-hidden="true" /> Register
+			<div onClick={handleClickOpen} className="a2">
+			<i class="fa fa-user-circle" aria-hidden="true" /> Register
 				<Dialog
-
-					className={classes.paper}
+					fullWidth
 					fullScreen={fullScreen}
 					open={open}
 					onClose={handleClose}
 					aria-labelledby="form-dialog-title"
 				>
-				<DialogContent className={classes.paper}>
 						<div className="Form">
 							<div className="StudentSignUp">
 								<SignUpStudent />
@@ -55,9 +44,9 @@ function SignUpModal() {
 								<SignUpTeacher />
 							</div>
 						</div>
-					</DialogContent>
 				</Dialog>
-			</Link>
+				
+			</div>
 		</div>
 	);
 }
