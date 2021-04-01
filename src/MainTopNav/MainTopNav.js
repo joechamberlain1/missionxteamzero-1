@@ -6,7 +6,7 @@ import flagnz from "../img/nzflag.png";
 import flagmaori from "../img/maoriflag.png";
 import "../TeacherDashboard/MainTemplate.css";
 import SignUpModal from "../LogInSignUp/SignUpModal";
-import LogInModal from "../LogInSignUp/LogInModal";
+import LogInModal from "../LogInSignUp/LoginModal";
 
 const MainTopNav = () => {
 	return (

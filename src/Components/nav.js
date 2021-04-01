@@ -4,7 +4,7 @@ import flagnz from "../img/nzflag.png";
 import flagmaori from "../img/maoriflag.png";
 import { Link } from "react-router-dom";
 import "../CSS/nav.css";
-import LogInModal from "../LogInSignUp/LogInModal";
+import LogInModal from "../LogInSignUp/LoginModal";
 import SignUpModal from '../LogInSignUp/SignUpModal';
 
 

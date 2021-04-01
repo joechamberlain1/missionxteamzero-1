@@ -1,6 +1,6 @@
 import React from "react";
 import "./SignUp.css";
-import LogInModal from './LogInModal'
+import LogInModal from './LoginModal'
 
 
 function LogIn() {
