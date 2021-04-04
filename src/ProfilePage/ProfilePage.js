@@ -1,6 +1,6 @@
 import React from "react";
 import MainFooter from "../MainFooter/MainFooter.js";
-import Nav from "../Components/nav.js";
+import MainTopNav from "../MainTopNav/MainTopNav.js";
 import ProfilePic from "../img/profilepicplaceholder.png";
 import "./ProfilePage.css";
 import TeacherProjectBottomButtons from "../TeacherProjects/TeacherProjectBottomButtons";
@@ -8,7 +8,7 @@ import TeacherProjectBottomButtons from "../TeacherProjects/TeacherProjectBottom
 function ProfilePage() {
 	return (
 		<div>
-			<Nav />
+			<MainTopNav />
 			<div className="profile-background">
 				<div className="profile-container">
 					<div className="main-profile-left">
