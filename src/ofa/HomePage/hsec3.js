@@ -10,9 +10,8 @@ function Hsec3() {
 		<div className="sec3">
 			<div className="sec31">
 				<h2>
-					{" "}
 					Teaching kids programming and digital skills is MORE than just writing
-					code.{" "}
+					code.
 				</h2>
 
 				<img src={pxt1} className="pxt" alt="pxt" />

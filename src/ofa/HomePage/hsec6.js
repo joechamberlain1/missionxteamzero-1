@@ -15,7 +15,6 @@ function Hsec6() {
 				<h3> Start teaching Digital Technologies today. </h3>
 
 				<p>
-					{" "}
 					If you need more information, we are happy to answer any questions you
 					may have.
 				</p>

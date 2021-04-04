@@ -1,56 +1,52 @@
-.sec1{
-    background-image:url("/src/img/baloonkid.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    padding-bottom:10px;
-    padding-top:50px;
-    padding-left:5%;
-    padding-right:5%;   
-    display: flex;
-    
-  }
+.sec1 {
+	background-image: url("/src/img/baloonkid.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	padding-top: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+}
 
-  .sec11{
-    flex: 50%;
-    height: 300px;
-    padding-left: 5%;
-   
-  }
+.sec11 {
+	flex: 50%;
+	height: 300px;
+	padding-left: 5%;
+}
 
-  .psec1{
-    font-size:15px;
-   
-  }
-  .psec11{
-    font-size:10px;
-  }
+.psec1 {
+	font-size: 15px;
+}
+.psec11 {
+	font-size: 10px;
+}
 
-  .sec12{
-    width:65%;
-  
-  }
+.sec12 {
+	width: 65%;
+}
 
-  h1{
-    font-size:40px;
-    
-    font-weight: 900px;
-  }
+h1 {
+	font-size: 40px;
 
-  button{
-    text-decoration:none;
-    margin:10px;
-    border:solid;
-    color:#707070;
-    border-color:#43C0F6;
-    border-radius: 5px;
-    font-size:11px;
-    font-weight: bold;
-  }
-  
+	font-weight: 900px;
+}
 
-  .b2 {
-    background-color:#F91C85;
-    border-color:#F91C85;
-    color:white;
-  }
+button {
+	text-decoration: none;
+	margin: 10px;
+	border: solid;
+	color: #707070;
+	border-color: #43c0f6;
+	background-color: #ffffff;
+	border-radius: 5px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.b2 {
+	background-color: #f91c85;
+	border-color: #f91c85;
+	color: white;
+}

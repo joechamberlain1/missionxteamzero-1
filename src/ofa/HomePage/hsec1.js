@@ -9,7 +9,6 @@ function Hsec1() {
 				<h1> Prepare young minds for a better future.</h1>
 
 				<p className="psec1">
-					{" "}
 					Let us help you advance students in Digital Technologies and other
 					learning areas with our project-based learning programme.
 				</p>
