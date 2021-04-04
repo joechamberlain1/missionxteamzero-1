@@ -15,7 +15,7 @@ const SignUpTeacher = () => {
 			<img src={teachers} className="FormPic" alt="Teacher" />
 			<p className = 'FormHeader'>Teachers</p>
 			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link to= "/LogIn" className="FormLinks">LOG IN</Link>{" "}
+			<Link className="FormLinks">LOG IN</Link>{" "}
 			<Link className="SignUpLinkON">SIGN UP</Link>
 			<form onSubmit={handleSubmit(onSubmitTeacher)} className="UserInput">
 				<input
