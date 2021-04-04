@@ -47,7 +47,7 @@ const MainFooter = () => {
 				<div className="ContentContainer">
 					<h4>Johnny Temp Test</h4>
 					<Link to="/TeacherProfilePage">Teacher Profile Page Test</Link>
-					<Link to="/TeacherStudentProfileMain">
+					<Link to="/TeacherStudentProfile">
 						Teacher Student Dashboard Profile Page TEST
 					</Link>
 					<Link to="/TeacherProjectsPage">Teacher Projects Page Test</Link>
@@ -56,14 +56,6 @@ const MainFooter = () => {
 					<h4>Joseph Temp Test</h4>
 					<Link to="/studentProjectLib">Student Project Library Test</Link>
 					<Link to="/StudentProjectBuilder">Student Project Builder Test</Link>
-				</div>
-				<div className="ContentContainer">
-					<h4>Ofa Temp Test</h4>
-					<Link to="/progress-tracker">ProgressTrackerPg</Link>
-					<Link to="/help-request">HelpRequestsPg</Link>
-					<Link to="/leftNavLayout2">LeftNavLayout2</Link>
-					<Link to="/mainDash-progress">DashProgress</Link>
-					<Link to="/mainDash-help">DashHelp</Link>
 				</div>
 			</div>
 		</div>

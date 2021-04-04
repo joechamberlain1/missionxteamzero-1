@@ -34,7 +34,12 @@
 .TopNavRegistrationContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
+}
+
+.TopNavRegistrationContainer a {
+	text-decoration: none;
+	color: white;
 }
 
 .TopNavRegistrationSection {

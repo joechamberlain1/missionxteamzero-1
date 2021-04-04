@@ -1,23 +1,16 @@
-
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Modal from "@material-ui/core/Modal";
 import { Link } from "react-router-dom";
 import SignUpTeacher from "./SignUpTeachers";
 import SignUpStudent from "./SignUpStudent";
 
-
-
 const useStyles = makeStyles((theme) => ({
-
-
 	modal: {
-
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-
-	}
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center",
+	},
 }));
 
 export default function SignUpModal() {
@@ -32,36 +25,22 @@ export default function SignUpModal() {
 		setOpen(false);
 	};
 
-
-
 	const body = (
-		
-			<div className="Form">
-				
-					<SignUpStudent />
-				
-					<SignUpTeacher />
-				
-			</div>
-		
+		<div className="Form">
+			<SignUpStudent />
+
+			<SignUpTeacher />
+		</div>
 	);
 
 	return (
-
 		<div>
-			<Link onClick={handleOpen} className="a2">
-				<i class="fa fa-user-circle"/> Register
+			<Link onClick={handleOpen}>
+				<i class="fa fa-user-circle" /> Register
 			</Link>
-			<Modal
-				open={open}
-				onClose={handleClose}
-				className={classes.modal}
-			>
+			<Modal open={open} onClose={handleClose} className={classes.modal}>
 				{body}
 			</Modal>
 		</div>
 	);
 }
-
-
-
