@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -16,11 +15,12 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
+		textDecoration: 'none'
 
 	}
 }));
 
-export default function SignUpModal() {
+export default function SignUpToLogIn() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
 
@@ -49,8 +49,8 @@ export default function SignUpModal() {
 	return (
 
 		<div>
-			<Link onClick={handleOpen} className="a2">
-				<i class="fa fa-user-circle"/> Register
+			<Link onClick={handleOpen}>
+				SIGN UP
 			</Link>
 			<Modal
 				open={open}
@@ -62,6 +62,3 @@ export default function SignUpModal() {
 		</div>
 	);
 }
-
-
-

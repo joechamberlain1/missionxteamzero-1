@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import teachers from "../img/LoginSignUp Modal/teacher-1.png";
 import { Link } from "react-router-dom";
+import LogInToSignUp from './LogInToSignUp'
 
 const SignUpTeacher = () => {
 	const { register, handleSubmit, errors, watch } = useForm();
@@ -11,12 +12,13 @@ const SignUpTeacher = () => {
 	};
 
 	return (
-		<div>
+		<div className ='TeacherRight'>
 			<img src={teachers} className="FormPic" alt="Teacher" />
 			<p className = 'FormHeader'>Teachers</p>
-			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link className="FormLinks">LOG IN</Link>{" "}
+			<div className='FormLinks'>
+			<Link className="FormLinkModal"><LogInToSignUp /></Link>{" "}
 			<Link className="SignUpLinkON">SIGN UP</Link>
+			</div>
 			<form onSubmit={handleSubmit(onSubmitTeacher)} className="UserInput">
 				<input
 					placeholder="Full Name"
@@ -47,7 +49,7 @@ const SignUpTeacher = () => {
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
 				{errors.password && <h6>{errors.password.message}</h6>}
-				<button className='registerButton'>Sign Up</button>
+				<button className='registerButton'>SIGN UP</button>
 			</form>
 		</div>
 	);

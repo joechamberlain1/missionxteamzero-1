@@ -1,50 +1,72 @@
-import React from "react";
-import Dialog from "@material-ui/core/Dialog";
-import "./SignUp.css";
-import { Link } from "react-router-dom";
-import "../CSS/nav.css";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
 import SignUpTeacher from "./SignUpTeachers";
 import SignUpStudent from "./SignUpStudent";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
+import { Link } from '@material-ui/core';
+
+
+
+const useStyles = makeStyles((theme) => ({
+
+
+	modal: {
+
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		
+
+	},
+
+	
+	
+}));
 
 function SignUpButton() {
+	const classes = useStyles();
+	// getModalStyle is not a pure function, we roll the style only on the first render
 	const [open, setOpen] = React.useState(false);
-	const theme = useTheme();
-	const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-	const handleClickOpen = () => {
+	const handleOpen = () => {
 		setOpen(true);
 	};
 
 	const handleClose = () => {
 		setOpen(false);
 	};
-	// const classes = useStyles();
+
+
+
+	const body = (
+		
+			<div className="Form">
+				
+					<SignUpStudent />
+				
+					<SignUpTeacher />
+				
+			</div>
+		
+	);
 
 	return (
-		<div>
-			<Link onClick={handleClickOpen} className="a2">
-				 Sign Up
-				<Dialog
-					fullScreen={fullScreen}
-					open={open}
-					onClose={handleClose}
-					aria-labelledby="form-dialog-title"
-				>
-					<div className="Form">
-						<div className="StudentSignUp">
-							<SignUpStudent />
-						</div>
 
-						<div className="TeacherSignUp">
-							<SignUpTeacher />
-						</div>
-					</div>
-				</Dialog>
+		<div>
+			<Link className={classes.button} onClick={handleOpen}>
+				SIGN UP
 			</Link>
+			<Modal
+				open={open}
+				onClose={handleClose}
+				className={classes.modal}
+			>
+				{body}
+			</Modal>
 		</div>
 	);
 }
 
-export default SignUpButton;
+
+
+export default SignUpButton
