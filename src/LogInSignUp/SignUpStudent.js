@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import students from "../img/LoginSignUp Modal/Students.png";
 import { Link } from "react-router-dom";
-import "../CSS/nav.css";
+import LogInToSignUp from './LogInToSignUp'
 
 
 function SignUpStudent() {
@@ -13,12 +13,13 @@ function SignUpStudent() {
 	};
 
 	return (
-		<div className="StudentSignUp">
+		<div className="StudentLeft">
 			<img src={students} className="FormPic" alt="Students" />
 			<p className='FormHeader'>Students</p>
-			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link className="FormLinks">LOG IN</Link>{" "}
+			<div className='FormLinks'>
+			<Link className="FormLinkModal"><LogInToSignUp /></Link>{" "}
 			<Link className="SignUpLinkON">SIGN UP</Link>
+			</div>
 			<form
 				action="student register"
 				onSubmit={handleSubmit(onSubmitStudent)}
@@ -52,7 +53,7 @@ function SignUpStudent() {
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
 				{/* <Link><input type='submit'><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></input></Link> */}
-				<button className='registerButton'>Sign Up</button>
+				<button className='registerButton'>SIGN UP</button>
 				{/* have added link to the student project library page. User data has not been added yet */}
 			</form>
 			<br />
