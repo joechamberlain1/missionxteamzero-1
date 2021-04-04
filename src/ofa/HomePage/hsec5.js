@@ -1,4 +1,5 @@
 import React from "react";
+import "./hsec5.css";
 
 function Hsec5() {
 	return (
