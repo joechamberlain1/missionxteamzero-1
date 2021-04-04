@@ -49,7 +49,7 @@ export default function SignUpToLogIn() {
 	return (
 
 		<div>
-			<Link onClick={handleOpen}>
+			<Link onClick={handleOpen} >
 				SIGN UP
 			</Link>
 			<Modal
