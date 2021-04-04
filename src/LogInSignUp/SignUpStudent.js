@@ -17,7 +17,7 @@ function SignUpStudent() {
 			<img src={students} className="FormPic" alt="Students" />
 			<p className='FormHeader'>Students</p>
 			{/* these a tags will be changed to Link once we have added in the newer pages */}
-			<Link to="/LogIn" className="FormLinks">LOG IN</Link>{" "}
+			<Link className="FormLinks">LOG IN</Link>{" "}
 			<Link className="SignUpLinkON">SIGN UP</Link>
 			<form
 				action="student register"
