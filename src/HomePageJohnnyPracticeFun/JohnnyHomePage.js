@@ -11,7 +11,15 @@ import robotIcon from "./StudentsIcons/robotic.png";
 import AugmentedRealityIcon from "./StudentsIcons/augmentedReality.png";
 import TeachingKidsIcon from "./StudentsIcons/TeachingKidsIcon.js";
 import idea from "./StudentsIcons/idea.png";
-import "./Images/girlcuttingimage.jpg";
+import girlcuttingimage from "./Images/girlcuttingimage.jpg";
+import crticalThinking from "./StudentsIcons/criticalThinking.png";
+import puzzle from "./Images/puzzling.jpg";
+import girlsplaying from "./Images/girlsplaying.jpg";
+import teamhands from "./StudentsIcons/teamhands.png";
+import Atom from "./StudentsIcons/atom.png";
+import laptopgirl from "./Images/girlonlaptop.jpg";
+import Section4Content from "./Section4Content.js";
+import happyboys from "./Images/happystudents.jpg";
 
 const JohnnyHomePage = () => {
 	return (
@@ -26,8 +34,8 @@ const JohnnyHomePage = () => {
 					Let us help you advance students in Digital Technologies and other
 					learning areas with our project-based learning programme.
 					<div className="Content1ButtonsContainer">
-						<button>LEARN MORE</button>
-						<div className="Content1ButtonsSignUpButton">
+						<button>Learn More</button>
+						<div className="SignUpButtonCSS">
 							<button>
 								<SignUpButton />
 							</button>
@@ -81,9 +89,24 @@ const JohnnyHomePage = () => {
 				</h3>
 				<div className="Section3Icons">
 					<TeachingKidsIcon
-						background={"./Images/girlcuttingimage.jpg"}
+						background={girlcuttingimage}
 						text="Creativity & Individuality"
 						icon={<img src={idea} alt="Idea"></img>}
+					/>
+					<TeachingKidsIcon
+						background={puzzle}
+						text="Critical Thinking & Problem Solving"
+						icon={<img src={crticalThinking} alt="Critical Thinking"></img>}
+					/>
+					<TeachingKidsIcon
+						background={girlsplaying}
+						text="Communication & Collaboration"
+						icon={<img src={teamhands} alt="Team"></img>}
+					/>
+					<TeachingKidsIcon
+						background={laptopgirl}
+						text="Technology & Future Focus"
+						icon={<img src={Atom} alt="Atom"></img>}
 					/>
 				</div>
 				<h3>How our programme helps teachers and schools</h3>
@@ -92,6 +115,50 @@ const JohnnyHomePage = () => {
 					<button>Digital Technologies</button>
 					<button className="KeyCompetenciesButton">Key Competencies</button>
 					<button>IR4.0</button>
+				</div>
+			</div>
+
+			<div className="Section4">
+				<h3>Enhance key competencies</h3>
+				<p>
+					The programe enhances capabilities of students in the 5 Key
+					Competencies identified in the New Zealand Curriculum:
+				</p>
+				<Section4Content
+					heading="Thinking"
+					text="In particular the programme focused on problem solving, design thinking and computational thinking."
+				/>
+				<Section4Content
+					heading="Discerning Codes"
+					text="Analysing language, symbols, and texts in order to understand and make sense of the codes in which knowledge is expressed."
+				/>
+				<Section4Content
+					heading="Self-Management"
+					text="Projects and challenges are designed to motivate students to explore and experiment with self-motivation"
+				/>
+				<Section4Content
+					heading="Relationships with peers"
+					text="The programme is designed with unplugged sessions where students interact in a range of different situations, including things like being able to listen well, recognise different points of view, and share ideas."
+				/>
+				<Section4Content
+					heading="Participation and Collaboration"
+					text="The programme encourages students to be involved in communities, such as family, whānau, school, and contribute and make connections with other people"
+				/>
+			</div>
+
+			<div className="Section5">
+				<img src={happyboys} alt="Happy Students"></img>
+				<div className="Section5content">
+					<h3>What are you waiting for?</h3>
+					<h5>Start teaching Digital Technologies today.</h5>
+					If you need more infomration, we are happy to answer any questions you
+					may have.
+					<div className="Content5ButtonsContainer">
+						<button>Enquire Now</button>
+						<button>
+							<SignUpButton />
+						</button>
+					</div>
 				</div>
 			</div>
 

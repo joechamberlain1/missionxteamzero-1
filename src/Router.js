@@ -10,7 +10,7 @@ import MainDashProgress from "./ofa/mainDash-progress";
 import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
 import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 
-function Router() {
+const Router = () => {
 	return (
 		<Switch>
 			<Route exact path="/" component={HomePage} />
@@ -40,6 +40,6 @@ function Router() {
 			<Route exact path="/JohnnyHomePage" component={JohnnyHomePage} />
 		</Switch>
 	);
-}
+};
 
 export default Router;
