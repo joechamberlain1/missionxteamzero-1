@@ -34,8 +34,8 @@ const useStyles = makeStyles({
     const classes = useStyles();
     
     return (
-        <div>
-          <Grid container spacing ={3}>
+        <div className ='ProjectGallery'>
+  
           {StudentProjectContent.map((gallery) => (
             <Card className={classes.CardSize}>
               <CardContent>
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
               </CardContent>
               </Card>
           ))}
-          </Grid>
+         
         </div>
     );
   }

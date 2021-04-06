@@ -40,7 +40,7 @@ export const StudentProjectContent =[
 {
     Image : <img src = {project4} alt="Project 4"/>,
     Title: 'Build a band',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: ['BEGINNER|Animation']
 },
 
 {

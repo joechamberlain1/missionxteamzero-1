@@ -28,59 +28,60 @@ function LogInModal() {
 
 	const body = (
 		<div className="Form">
-			<div className="StudentLeft">
-				<img src={students} className="FormPic" alt="Students" />
-				<p className="FormHeader">Students</p>
-				<div className="FormLinks">
-					<Link className="LogInLinkON">LOG IN</Link>{" "}
-					<Link className="FormLinkModal">
-						<SignUpToLogIn />
-					</Link>
-				</div>
-				<div className="UserInput">
-					<input placeholder="Email Address"></input>
-					<input placeholder="Password"></input>
-					{/* have added link to the student project library page. User data has not been added yet */}
-				</div>
-				<Link to="/StudentProjectLib">
-					<button className="registerButton" type="button">
-						LOG IN
-					</button>
-				</Link>
-			</div>
-			<div className="TeacherRight">
-				<img src={teachers} className="FormPic" alt="Teacher" />
+            <div className="StudentLeft">
 
-				<p className="FormHeader">Teachers</p>
-				<div className="FormLinks">
-					{/* these a tags will be changed to Link once we have added in the newer pages */}
-					<Link className="LogInLinkON">LOG IN</Link>{" "}
-					<Link className="FormLinkModal">
-						<SignUpToLogIn />
-					</Link>
+                <img src={students} className="FormPic" alt="Students" />
+                <p className='FormHeader'>Students</p>
+                <div className ='FormLinks'>
+				<Link className="LogInLinkON">LOG IN</Link>{" "}
+				<Link className="FormLinkModal"><SignUpToLogIn /></Link>
 				</div>
-				<div className="UserInput">
-					<input type="email" required placeholder="Email Address" />
-					<input placeholder="Password" />
+
+
+                <div className="UserInput">
+                    <input placeholder="Email Address"></input>
+                    <input placeholder="Password"></input>
+                    {/* have added link to the student project library page. User data has not been added yet */}
+                </div>
+                <Link to="/StudentProjectLib">
+                    <button className='registerButton' type="button">LOG IN</button>
+                </Link>
+            </div>
+
+            <div className="TeacherRight">
+                <img src={teachers} className="FormPic" alt="Teacher" />
+
+                <p className='FormHeader'>Teachers</p>
+                <div className = 'FormLinks'>
+				<Link className="LogInLinkON">LOG IN</Link>{" "}
+				<Link className="FormLinkModal"><SignUpToLogIn /></Link>
 				</div>
-				{/* Will be changed to teachers page once the page has been made */}
-				<Link to="/teacherpro">
-					<button className="registerButton" type="button">
-						LOG IN
-					</button>
-				</Link>
-			</div>{" "}
-		</div>
+                <div className="UserInput">
+                    <input
+                        type="email"
+                        required
+                        placeholder="Email Address"
+                    />
+                    <input placeholder="Password" />
+                </div>
+                <Link to="/TeacherProjectsPage">
+                    <button className='registerButton' type="button">LOG IN</button>
+                </Link>
+            </div>		
+            </div>
 	);
 
 	return (
 		<div>
-			<Link onClick={handleOpen}>LOG IN</Link>
+			{/* this is the part that will show on the nav bar */}
+			<Link onClick={handleOpen} >LOG IN</Link>
 			<Modal open={open} onClose={handleClose} className={classes.modal}>
 				{body}
 			</Modal>
 		</div>
 	);
+	
+	// return <>{sidebar ? showMainSideBar() : showCollapsedSideBar()}</>;
 }
 
 export default LogInModal;
