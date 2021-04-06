@@ -1,0 +1,247 @@
+.Section1 {
+	background-image: url("./Images/HeroImageTopSection.jpg");
+	display: flex;
+	flex-direction: row;
+	background-size: cover;
+	/* background-repeat: no-repeat; */
+	padding: 4%;
+}
+
+.Section1 h1 {
+	font-size: 3em;
+}
+
+.Content1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	width: 40%;
+	margin-left: 6%;
+}
+
+.Content1ButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 2%;
+}
+
+.Content1ButtonsContainer button {
+	text-decoration: none;
+	border: solid;
+	color: #707070;
+	border-color: #43c0f6;
+	background-color: #ffffff;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	width: 20%;
+	text-transform: uppercase;
+}
+
+.SignUpButtonCSS {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 0.5em;
+}
+
+.SignUpButtonCSS button {
+	background-color: #f91c85;
+	border-color: #f91c85;
+	border-radius: 5px;
+	color: white;
+	width: 100%;
+	font-size: 2em;
+}
+
+.SignUpButtonCSS a {
+	text-decoration: none;
+	color: white;
+}
+
+.Section2 {
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Section2LeftContent {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Section2LeftStudentCreate {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.IconContainer {
+	height: 152px;
+	width: 152px;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	border-radius: 15%;
+	font-family: "Open Sans";
+	font-weight: bold;
+	background: rgb(136, 219, 255);
+	background: radial-gradient(
+		circle,
+		rgba(136, 219, 255, 1) 0%,
+		rgba(66, 192, 246, 1) 100%
+	);
+}
+
+.IconContainer img {
+	width: 75px;
+	height: 75px;
+}
+
+.Section3 {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Section3Icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.TeachingKidsIconContainer {
+	height: 221px;
+	width: 314px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	border-radius: 10%;
+	font-weight: bold;
+}
+
+.TeachingKidsIconContainer img {
+	width: 100px;
+	height: 100px;
+}
+
+.Section3Buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.Section3Buttons button {
+	text-decoration: none;
+	border: solid;
+	color: #707070;
+	border-color: #43c0f6;
+	background-color: #ffffff;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	width: 20%;
+	text-transform: uppercase;
+}
+
+.KeyCompetenciesButton {
+	text-decoration: none;
+	border: solid;
+	color: #707070;
+
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	width: 20%;
+}
+
+.Section4 {
+	background-color: #efeff1;
+	border: solid 1px #efeff1;
+	display: flex;
+	flex-direction: column;
+	/* margin: 2%; */
+	padding: 6%;
+	justify-content: space-around;
+	/* align-items: center; */
+	text-align: left;
+	/* width: 100%; */
+}
+
+.Section4Content {
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.Section4Content img {
+	width: 40px;
+	height: 37px;
+}
+
+.ContentDescription {
+	flex-direction: column;
+}
+
+.ContentDescription h3 {
+	flex-direction: column;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.Section5 {
+	display: flex;
+	flex-direction: row;
+	margin: 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.Section5 img {
+	width: 625px;
+	height: 417;
+	border-radius: 15px;
+}
+
+.Section5content {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Content5ButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/* margin: 1%; */
+}
+
+.Content5ButtonsContainer button {
+	text-decoration: none;
+	border: solid;
+	color: #707070;
+	border-color: #43c0f6;
+	background-color: #ffffff;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	width: 30%;
+	text-transform: uppercase;
+	margin-left: 0;
+}

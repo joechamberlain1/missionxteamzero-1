@@ -51,6 +51,7 @@ const MainFooter = () => {
 						Teacher Student Dashboard Profile Page TEST
 					</Link>
 					<Link to="/TeacherProjectsPage">Teacher Projects Page Test</Link>
+					<Link to="JohnnyHomePage">Home Page Resurection</Link>
 				</div>
 				<div className="ContentContainer">
 					<h4>Joseph Temp Test</h4>

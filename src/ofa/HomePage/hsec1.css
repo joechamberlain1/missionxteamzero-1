@@ -27,13 +27,13 @@
 	width: 65%;
 }
 
-h1 {
+.h1 {
 	font-size: 40px;
 
 	font-weight: 900px;
 }
 
-button {
+.b1 {
 	text-decoration: none;
 	margin: 10px;
 	border: solid;
