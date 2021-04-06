@@ -7,7 +7,7 @@ import students from "../img/LoginSignUp Modal/Students.png";
 import teachers from "../img/LoginSignUp Modal/teacher-1.png";
 import SignUpToLogIn from "./SignUpToLogIn";
 
-
+//this page will take the user from the log in to the sign up with the modal still running
 
 const useStyles = makeStyles((theme) => ({
 
@@ -42,7 +42,7 @@ function LogInToSignUp() {
 
                 <img src={students} className="FormPic" alt="Students" />
                 <p className='FormHeader'>Students</p>
-                <div className = 'FormLinks'>
+                <div className ='FormLinks'>
 				<Link className="LogInLinkON">LOG IN</Link>{" "}
 				<Link className="FormLinkModal"><SignUpToLogIn /></Link>
 				</div>
@@ -74,19 +74,19 @@ function LogInToSignUp() {
                     />
                     <input placeholder="Password" />
                 </div>
-                {/* Will be changed to teachers page once the page has been made */}
-                <Link to="/teacherpro">
+                <Link to="/TeacherProjectsPage">
                     <button className='registerButton' type="button">LOG IN</button>
                 </Link>
-            </div>		</div>
+            </div>		
+            </div>
 
 
     );
 
     return (
-
+//this is the part that will show on the SignUp Page
         <div>
-            <Link onClick={handleOpen}>
+            <Link onClick={handleOpen} className="FormLinks">
                 LOG IN
 			</Link>
             <Modal
