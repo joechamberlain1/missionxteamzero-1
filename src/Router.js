@@ -8,8 +8,9 @@ import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar
 import StudentProjectBuilder from "./StudentProjectBuilder/StudentProjectBuilder";
 import MainDashProgress from "./ofa/mainDash-progress";
 import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
+import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 
-function Router() {
+const Router = () => {
 	return (
 		<Switch>
 			<Route exact path="/" component={HomePage} />
@@ -36,8 +37,9 @@ function Router() {
 				path="/TeacherProjectsPage"
 				component={TeacherProjectsPage}
 			/>
+			<Route exact path="/JohnnyHomePage" component={JohnnyHomePage} />
 		</Switch>
 	);
-}
+};
 
 export default Router;

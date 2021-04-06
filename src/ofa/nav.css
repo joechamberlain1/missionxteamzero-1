@@ -24,7 +24,7 @@
 	align-content: flex-end;
 }
 
-ul {
+.ul {
 	list-style-type: none;
 	display: flex;
 	text-decoration: none;

@@ -6,8 +6,8 @@ import "./MainTemplate.css";
 function DashboardTopButtons() {
 	return (
 		<div className="DashboardButtonContainer">
-			<button className="TakeScreenshot">Take Screenshot</button>;
-			<button className="helpcenterbutton">Help Center</button>;
+			<button className="TakeScreenshot">Take Screenshot</button>
+			<button className="helpcenterbutton">Help Center</button>
 			<button className="moreprojectsbutton">
 				<Link to="/TeacherProjectsPage">More Projects</Link>
 			</button>
