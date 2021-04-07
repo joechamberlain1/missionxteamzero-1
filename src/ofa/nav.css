@@ -24,11 +24,11 @@
 	align-content: flex-end;
 }
 
-ul {
+/* ul {
 	list-style-type: none;
 	display: flex;
 	text-decoration: none;
-}
+} */
 .a1 {
 	text-decoration: none;
 	margin: 10px;
