@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function SignUpModal() {
+function SignUpModal() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
 
@@ -36,11 +36,18 @@ export default function SignUpModal() {
 	return (
 		<div>
 			<Link onClick={handleOpen}>
-				<i class="fa fa-user-circle" /> Register
+				<i className="fa fa-user-circle" /> Register
 			</Link>
 			<Modal open={open} onClose={handleClose} className={classes.modal}>
 				{body}
 			</Modal>
 		</div>
 	);
+	
+	// return(
+	// <div>{open ? handleOpen() : handleClose()}</div>
+	// );
+
 }
+
+export default SignUpModal

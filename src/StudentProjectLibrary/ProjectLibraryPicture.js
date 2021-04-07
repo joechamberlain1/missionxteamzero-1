@@ -1,28 +1,30 @@
 import React from 'react';
-import { makeStyles, Card, CardContent, CardMedia, Typography, Grid } from '@material-ui/core';
+import { makeStyles, Card, CardContent, CardMedia, Typography,} from '@material-ui/core';
 import { StudentProjectContent } from './StudentProjectContent.js'
  
 const useStyles = makeStyles({
-
+//controls the whole card size which is the picture and the text as one
     CardSize:{
-        height: 250,
+        height: 360,
         width: 350, 
         border: "none",
-        boxShadow: "none"
+        boxShadow: "none",
     },
  
-
+//these two classes control the text under the pictures
     textAlign:{
       textAlign: 'center',
       fontFamily: 'Nunito',
       color: 'grey',
+      fontSize: 16,
     },
 
     textTitle:{
       textAlign: 'center',
       fontFamily: 'Nunito',
       color: 'grey',
-      fontWeight: 'bolder'
+      fontWeight: '900',
+      fontSize: 30,
     }
 
 

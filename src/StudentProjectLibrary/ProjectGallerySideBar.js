@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
 import './StudentProjectLib.css'
-
+import SideBarCheckbox from './checkboxSideBar'
 
 
 function ProjectSideBar() {
 
-    const [checkboxes, setCheckboxes ] = useState([
+    const [checkboxes  ] = useState([
 
         { title: 'Subscription', itemTypes: ['Free', 'Premium'], id:1 },
         { title: 'Activity Type', itemTypes: ['Animation', 'Game', 'Chatbot', 'Augmented Reality'], id: 2 },
@@ -16,16 +15,16 @@ function ProjectSideBar() {
     ])
         
     return (
-        <div className='ProjectSideBar'>
+        <div>
             {checkboxes.map((checkbox) => (
-                <ul>
-                    <li className= 'TableHeader'>{checkbox.title}</li>
-                    <li><Checkbox
-                            defaultChecked
-                            size='small'
-                            color="primary"
-                             />{checkbox.itemTypes[0]}</li>
-                </ul>
+                <div className='ProjectSideBar'>
+                    <h1 className= 'TableHeader'>{checkbox.title}</h1>
+                   <div>
+                    <SideBarCheckbox className = 'CheckBoxContainer'/>{checkbox.itemTypes[0]}
+                    </div>
+                    
+                </div>    
+                
             )
                 
                 
