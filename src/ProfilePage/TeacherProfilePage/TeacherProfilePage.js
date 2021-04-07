@@ -2,6 +2,7 @@ import React from "react";
 import MainFooter from "../../MainFooter/MainFooter.js";
 import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import ProfilePic from "../../img/profilepicplaceholder.png";
+import ProfilePicPlaceHolder from "../ProfilePicPlaceHolder.js";
 import "../ProfilePage.css";
 import TeacherProfileBottomButtons from "./TeacherProfileBottomButtons.js";
 
@@ -12,11 +13,7 @@ function TeacherProfilePage() {
 			<div className="profile-background">
 				<div className="profile-container">
 					<div className="main-profile-left">
-						<img
-							className="profile-pic"
-							src={ProfilePic}
-							alt="profileplaceholder"
-						/>
+						<ProfilePicPlaceHolder ProfilePic={ProfilePic} />
 						<div className="profile-buttons">
 							<button>Edit profile</button>
 							<button>Change Photo</button>

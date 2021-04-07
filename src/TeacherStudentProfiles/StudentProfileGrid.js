@@ -1,14 +1,17 @@
 import React from "react";
 import "./StudentProfileGrid.css";
-import StudentProfileGridPic from "./StudentProfileGridPic";
 
-function StudentProfileGrid() {
-  return (
-    <div className="MainReusableSmallContainer">
-      <StudentProfileGridPic />
-      <h2>Student Name Function</h2>
-    </div>
-  );
+function StudentProfileGrid(props) {
+	return (
+		<div className="MainReusableSmallContainer">
+			<img
+				className="student-profile-pic"
+				alt="Student Profile Pic"
+				src={props.StudentImage}
+			></img>
+			<h5>{props.StudentName}</h5>
+		</div>
+	);
 }
 
 export default StudentProfileGrid;
