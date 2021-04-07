@@ -7,6 +7,7 @@
 	"sidebar gallery gallery gallery"
 	"sidebar gallery gallery gallery";
 	/*gives the 3x3 in the gallery grid when using flex wrap*/
+	color: #767676;
 }
 
 .ProjectContainer {
@@ -25,7 +26,7 @@
 	flex-wrap: wrap;
 	/* margin: 50px 10px;
 	padding: 10px; */
-	justify-content: center;
+	justify-content: space-between;
 	text-align: center;
 	grid-area: gallery;
 
@@ -53,13 +54,23 @@
 	grid-area: sidebar;
 	display: flex;
 	flex-direction: column;
-	margin-top: 100px;
+	margin-top: 60px;
 	text-align: left;
+	font-family: 'Open Sans';
 }
 
 .TableHeader {
-	margin: 10px 20px;
-	border-bottom: 1px solid grey;
-	padding: 10px;
+
+	margin: 10px;
+	border-bottom: 1px solid #767676;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 900;
+
 }
 
+.CheckBoxContainer{
+	display: flex;
+	flex-direction: column;
+
+}
