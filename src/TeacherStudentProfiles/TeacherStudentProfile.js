@@ -6,6 +6,7 @@ import StudentProfileGrid from "./StudentProfileGrid";
 import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
 import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
 import SideNav from "../TeacherDashboard/SideNavigation/SideNav";
+import PlaceHolderPic from "../img/profilepicplaceholder.png";
 
 function TeacherStudentProfile() {
 	return (
@@ -17,26 +18,25 @@ function TeacherStudentProfile() {
 					<DashboardTopButtons />
 					<div className="profile-maininner-container">
 						<div className="grid-container">
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
+							<StudentProfileGrid
+								StudentImage={PlaceHolderPic}
+								StudentName="Student Name Function"
+							/>
+							<StudentProfileGrid
+								StudentImage={PlaceHolderPic}
+								StudentName="Student Name Function"
+							/>
+							<StudentProfileGrid
+								StudentImage={PlaceHolderPic}
+								StudentName="Student Name Function"
+							/>
+							<StudentProfileGrid
+								StudentImage={PlaceHolderPic}
+								StudentName="Student Name Function"
+							/>
 						</div>
-						<div className="grid-container">
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-						</div>
-						<div className="grid-container">
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-							<StudentProfileGrid />
-						</div>
+						<div className="grid-container"></div>
+						<div className="grid-container"></div>
 					</div>
 				</div>
 			</div>

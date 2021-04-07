@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SideNavStyle.css";
-import StudentProfileGridPic from "../../TeacherStudentProfiles/StudentProfileGridPic";
+// import StudentProfileGrid from "../../TeacherStudentProfiles/StudentProfileGrid";
+import PlaceHolderPic from "../../img/profilepicplaceholder.png";
 import { SideNavData } from "./SideNavData";
 import { SideNavBottomData } from "./SideNavBottomData";
 import SideNavBottom from "./SideNavBottom";
@@ -22,7 +23,11 @@ function SideNav() {
 		return (
 			<div className="SideBarCollapsed">
 				<div className="ProfilePicPlacementSideBar">
-					<StudentProfileGridPic />
+					<img
+						src={PlaceHolderPic}
+						alt="placeholder"
+						style={{ height: "79px", width: "79px", borderRadius: "50%" }}
+					/>
 				</div>
 
 				<div className="SideBarTopContentCollapsed">
@@ -60,7 +65,11 @@ function SideNav() {
 		return (
 			<nav className="SideBarMainContainer active">
 				<div className="ProfilePicPlacementSideBar">
-					<StudentProfileGridPic />
+					<img
+						src={PlaceHolderPic}
+						alt="placeholder"
+						style={{ height: "79px", width: "79px", borderRadius: "50%" }}
+					/>
 				</div>
 
 				<div className="SideBarTopContent">
