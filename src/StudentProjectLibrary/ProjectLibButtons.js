@@ -1,27 +1,46 @@
-import React from "react";
+import React, {useState} from "react";
 import "./StudentProjectLib.css";
 import { Button, ButtonGroup } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
+import { StudentProjectContent } from "./StudentProjectContent";
 
 // in case i want to add some styles to the buttons for the top part of the page using material UI
 const useStyles = makeStyles((theme) => ({
 	paper: {
-		// position: "static",
 		boxShadow: "none",
-		border: "1px solid",
-		color: "black",
-		// fontFamily: "Nunito",
+		border: "1px solid grey",
+		color: "white",
 		height: 20,
-
-		// width: 170,
-		// '&:hover': {
-		// boxShadow: 'none',
-		//   },
 	},
 }));
 
+//trying to make a function to filter when a different 
+// const filterFunction= () => {
+	
+// 	return StudentProjectContent ? StudentProjectContent.Difficulty !== 'BEGINNER|Animation': 'nothing'
+// };
+
+// console.log(filterFunction())
+
 // changes the button to show which selection is highlighted
 function LibButton() {
+
+
+const [beginner, setBeginner] = useState(true);
+
+  const handleClickOne = () => {
+    setBeginner(!beginner);
+  };
+  const [intermediate, setIntermediate] = useState(true);
+
+  const handleClickTwo = () => {
+    setIntermediate(!intermediate);
+  };
+  const [advanced, setAdvanced] = useState(true);
+
+  const handleClickThree = () => {
+    setAdvanced(!advanced);
+  };
 	const classes = useStyles();
 	return (
 		<div className="StudentLibButtonContainer">
@@ -29,12 +48,11 @@ function LibButton() {
 				<ButtonGroup
 					size="small"
 					variant="text"
-					color="primary"
-					aria-label="text primary button group"
+					className={classes.paper}
 				>
-					<Button className={classes.paper}>BEGINNER</Button>
-					<Button className={classes.paper}>INTERMEDIATE</Button>
-					<Button className={classes.paper}>ADVANCED</Button>
+					<Button color ={beginner ? 'black' : 'primary'} onClick={handleClickOne}>BEGINNER</Button>
+					<Button color ={intermediate ? 'black' : 'primary'} onClick={handleClickTwo}>INTERMEDIATE</Button>
+					<Button color ={advanced ? 'black' : 'primary'} onClick={handleClickThree}>ADVANCED</Button>
 				</ButtonGroup>
 			</div>
 
@@ -42,7 +60,7 @@ function LibButton() {
 				Show
 				<ButtonGroup
 					size="small"
-					variant="text"
+					variant="contained"
 					color="primary"
 					aria-label="text primary button group"
 				>
@@ -56,3 +74,5 @@ function LibButton() {
 }
 
 export default LibButton;
+
+

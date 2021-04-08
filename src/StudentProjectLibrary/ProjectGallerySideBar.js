@@ -5,7 +5,7 @@ import SideBarCheckbox from './checkboxSideBar'
 
 function ProjectSideBar() {
 
-    const [checkboxes, setCheckboxes  ] = useState([
+    const [checkboxes] = useState([
 
         { title: 'Subscription', itemTypes: ['Free', 'Premium'], id:1 },
         { title: 'Activity Type', itemTypes: ['Animation', 'Game', 'Chatbot', 'Augmented Reality'], id: 2 },
