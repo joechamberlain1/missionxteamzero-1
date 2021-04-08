@@ -25,7 +25,7 @@ function LibButton() {
 	const classes = useStyles();
 	return (
 		<div className="StudentLibButtonContainer">
-			<div className="StudentLibLeftButtonContainer">
+			<div>
 				<ButtonGroup
 					size="small"
 					variant="text"
@@ -38,7 +38,7 @@ function LibButton() {
 				</ButtonGroup>
 			</div>
 
-			<div className="StudentLibRightButtonContainer">
+			<div>
 				Show
 				<ButtonGroup
 					size="small"
