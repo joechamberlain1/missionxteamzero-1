@@ -2,42 +2,32 @@ import React from "react";
 import MainTopNav from "../MainTopNav/MainTopNav.js";
 import MainFooter from "../MainFooter/MainFooter.js";
 import "./TeacherProjectPageStyle.css";
-import ProjectGridImg from "./ProjectGridImg.js";
 import LibButton from "../StudentProjectLibrary/ProjectLibButtons";
 import ProjectSideBar from "../StudentProjectLibrary/ProjectGallerySideBar";
 import TeacherProjectBottomButtons from "./TeacherProjectBottomButtons.js";
+import "../StudentProjectLibrary/StudentProjectLib.css";
+import LibraryPicture from "../StudentProjectLibrary/ProjectLibraryPicture";
 
 function TeacherProjectsPage() {
 	return (
 		<div>
 			<MainTopNav />
 
-			<div className="main-projectcontainer">
-				<div className="projectSideBar">
+			<div className="MainPage">
+				<div className="ProjectSideBar">
 					<ProjectSideBar />
 				</div>
-				<div className="projectContent">
-					<h1>Projects</h1>
-					<h4>
-						Welcome to the project library. You can use the filters on the right
-						to help you search for specific projects.
-					</h4>
-					<LibButton />
-
-					<div className="ProjectItems">
-						<ProjectGridImg />
-						<ProjectGridImg />
-						<ProjectGridImg />
+				<div className="ProjectContainer">
+					<div className="ProjectLibText">
+						<h1>Projects</h1>
+						<p>
+							Welcome to the project library. You can use the filters on the
+							right to help you search for specific projects.
+						</p>
+						<LibButton />
 					</div>
-					<div className="ProjectItems">
-						<ProjectGridImg />
-						<ProjectGridImg />
-						<ProjectGridImg />
-					</div>
-					<div className="ProjectItems">
-						<ProjectGridImg />
-						<ProjectGridImg />
-						<ProjectGridImg />
+					<div>
+						<LibraryPicture />
 					</div>
 					<TeacherProjectBottomButtons />
 				</div>
