@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../TeacherDashboard/ButtonStyle.css";
+import "../StudentProjectLibrary/StudentProjectLib.css";
 
 function TeacherProjectBottomButtons() {
 	return (

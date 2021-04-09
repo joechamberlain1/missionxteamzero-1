@@ -118,6 +118,7 @@ const JohnnyHomePage = () => {
 				</div>
 			</div>
 
+			{/* Section 4 is suppoes to be a clickable section from the Section3 Buttons If and else statements suppoes to be here */}
 			<div className="Section4">
 				<h3>Enhance key competencies</h3>
 				<p>

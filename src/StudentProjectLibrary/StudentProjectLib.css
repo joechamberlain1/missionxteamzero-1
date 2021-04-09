@@ -1,25 +1,42 @@
 .MainPage {
-	margin: 0px;
-	padding: 0px;
+	/* margin: 0px;
+	padding: 0px; */
 	display: grid;
 	grid-template-areas:
-	"sidebar header header header"
-	"sidebar gallery gallery gallery"
-	"sidebar gallery gallery gallery";
-	/*gives the 3x3 in the gallery grid when using flex wrap*/
-	color: #767676;
+		"sidebar header header header"
+		"sidebar gallery gallery gallery"
+		"sidebar gallery gallery gallery";
+	/*gives the 3x3 in the gallery grid when using flex wrap
+	*I have commented out the unecessary nor needed as it does nothing. The colour is coming from the App.css which is applying on EVERYTHING.
+	* If the colour must be that, then feel free to comment it back in, but it looks very identical even when I commented it out
+	
+	*/
+	/* color: #767676; */
 }
 
 .ProjectContainer {
 	margin-top: 3.125px;
 	grid-area: header;
 	font-style: strong;
+
+	/*This doesnt seem to do much overall, unless I am mistaken?
+	*/
 }
 
 .ProjectLibText {
+	/* margin-left: 45px; */
+	margin: 3%;
 
-margin-left: 45px;
+	/*Margin 3% is almost the equivalent to margin-left: 45px. However, we should stick to this so that our responsiveness
+* will adjust accordingly. Also pulls it downwards a little bit from the top. Also it looks better how its evenly inwards now instead of
+* having it cheaply only moved from the left side. 
+*/
+}
 
+.ProjectLibText h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.625em;
 }
 
 .ProjectGallery {
@@ -30,16 +47,15 @@ margin-left: 45px;
 	justify-content: space-evenly;
 	text-align: center;
 	grid-area: gallery;
-
-
 }
 
-.ProjectGallery img{
+.ProjectGallery img {
 	height: 180px;
 	width: 260px;
+	/* I think we should put in a border radius here when we merge our backend etc as the images will change
+	* So just incase, I think we should try border-radius: 15px; or 10px
+	*/
 }
-
-
 
 .StudentLibButtonContainer {
 	display: flex;
@@ -57,16 +73,20 @@ margin-left: 45px;
 	flex-direction: column;
 	margin-top: 60px;
 	text-align: left;
-	font-family: 'Open Sans';
+	font-family: "Open Sans";
 }
 
 .TableHeader {
-
 	margin: 10px;
 	border-bottom: 1px solid #767676;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 900;
-
 }
 
+.ProjectBottomButtonsContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 5%;
+}

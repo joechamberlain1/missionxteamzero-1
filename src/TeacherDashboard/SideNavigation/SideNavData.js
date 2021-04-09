@@ -7,7 +7,7 @@ import * as AiIcons from "react-icons/ai";
 export const SideNavData = [
 	{
 		title: "Progress Tracker",
-		path: "/mainDash-progress",
+		// path: "/mainDash-progress",
 		icon: <ImIcons.ImStatsBars />,
 		cName: "nav-text",
 	},

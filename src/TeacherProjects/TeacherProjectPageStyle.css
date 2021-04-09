@@ -20,13 +20,6 @@
 	margin: 5%;
 }
 
-.ProjectBottomButtonsContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin: 5%;
-}
-
 .ProjectItems {
 	display: flex;
 	flex: row;
