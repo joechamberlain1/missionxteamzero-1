@@ -43,7 +43,7 @@ function StudentProjectLib() {
 				</div>
 				<div className="ProjectContainer">
 					<div className="ProjectLibText">
-						<h1>PROJECTS</h1>
+						<h1>Projects</h1>
 						<p>
 							Welcome to the project library. You can use filters on the right
 							to help you search for specific projects.
