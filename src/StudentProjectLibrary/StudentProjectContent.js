@@ -21,91 +21,106 @@ export const StudentProjectContent =[
     {
     Image: <Link to="/StudentProjectBuilder"><img src = {project1}  alt="Project 1"/></Link>,
     Title: 'Introduction',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 1
      
 },
 
 {
     Image : <img src = {project2}  alt="Project 2"/>,
     Title: 'My Birthday',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 2
 },
 
 {
     Image : <img src = {project3} alt="Project 3"/>,
     Title: '10 Block Challenege',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 3
 },
 
 {
     Image : <img src = {project4} alt="Project 4"/>,
     Title: 'Build a band',
-    Difficulty: ['BEGINNER|Animation']
+    Difficulty: ['BEGINNER|Animation'],
+    ID: 4
 },
 
 {
     Image : <img src = {project5}  alt="Project 5"/>,
     Title: 'The bear and the monkey',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 5
 },
 
 {
     Image : <img src = {project6}  alt="Project 6"/>,
     Title: 'Debugging',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 6
 },
 {
     Image: <img src = {project7}  alt="Project 7"/>,
     Title: 'About me',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 7
      
 },
 {
     Image: <img src = {project8}  alt="Project 8"/>,
     Title: 'I am here!',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 8
      
 },
 {
     Image: <img src = {project9}  alt="Project 9"/>,
     Title: 'Funny Faces',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 9
      
 },
 {
     Image: <img src = {project10}  alt="Project 10"/>,
     Title: 'It tickles',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 10
      
 },
 {
     Image: <img src = {project11}  alt="Project 11"/>,
     Title: 'Penguin in a desert',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 11
      
 },
 {
     Image: <img src = {project12}  alt="Project 12"/>,
     Title: 'Time Travel',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 12
      
 },
 {
     Image: <img src = {project13}  alt="Project 13"/>,
     Title: 'Birthday Card',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 13
      
 },
 {
     Image: <img src = {project14}  alt="Project 14"/>,
     Title: 'The Lion and the Mouse Part 1',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 14
      
 },
 {
     Image: <img src = {project15}  alt="Project 15"/>,
     Title: 'The Lion and the Mouse Part 2',
-    Difficulty: 'BEGINNER|Animation'
+    Difficulty: 'BEGINNER|Animation',
+    ID: 15
      
 },
 ];
