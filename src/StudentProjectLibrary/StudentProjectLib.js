@@ -7,9 +7,7 @@ import MainFooter from "../MainFooter/MainFooter.js";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import LibraryPicture from "./ProjectLibraryPicture.js";
-// import { Link } from 'react-router-dom';
-// import { yellow } from '@material-ui/core/colors';
-// this controls the button at the botttom and still needs some configuring
+
 
 const useStyles = makeStyles((theme) => ({
 	buttonStyles: {
