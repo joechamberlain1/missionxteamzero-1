@@ -82,7 +82,7 @@ function LogInModal() {
 	);
 	
 	// return <>{sidebar ? showMainSideBar() : showCollapsedSideBar()}</>;
-	//test 
+	//test 2
 }
 
 export default LogInModal;
