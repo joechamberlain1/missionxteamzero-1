@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Switch, Route } from "react-router-dom";
-import HomePage from "./ofa/HomePage/HomePage.js";
+import { Switch, Route } from "react-router-dom";
 import TeacherStudentProfile from "./TeacherStudentProfiles/TeacherStudentProfile";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
 import StudentProjectLib from "./StudentProjectLibrary/StudentProjectLib.js";
@@ -13,7 +12,7 @@ import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 const Router = () => {
 	return (
 		<Switch>
-			<Route exact path="/" component={HomePage} />
+			<Route exact path="/" component={JohnnyHomePage} />
 			<Route exact path="/TeacherProfilePage" component={TeacherProfilePage} />
 			<Route exact path="/StudentProjectLib" component={StudentProjectLib} />
 			<Route exact path="/mainDash-progress" component={MainDashProgress} />
@@ -26,6 +25,7 @@ const Router = () => {
 				exact
 				path="/TeacherStudentProfile"
 				component={TeacherStudentProfile}
+				activeStyle={{ color: "red" }}
 			/>
 			<Route
 				exact
@@ -37,7 +37,6 @@ const Router = () => {
 				path="/TeacherProjectsPage"
 				component={TeacherProjectsPage}
 			/>
-			<Route exact path="/JohnnyHomePage" component={JohnnyHomePage} />
 		</Switch>
 	);
 };

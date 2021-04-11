@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./SideNavStyle.css";
 // import StudentProfileGrid from "../../TeacherStudentProfiles/StudentProfileGrid";
 import PlaceHolderPic from "../../img/profilepicplaceholder.png";
@@ -41,9 +41,13 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarButtonCollapsed">
-					<Link to="#" className="menuArrowsCollapsed">
-						<RiIcons.RiArrowRightSFill onClick={showSideBar} />
-					</Link>
+					{/* <Link to="#"> */}
+					<RiIcons.RiArrowRightSFill
+						onClick={showSideBar}
+						className="menuArrowsCollapsed"
+						style={{ cursor: "pointer" }}
+					/>
+					{/* </Link> */}
 				</div>
 
 				{/* Manually added the collapsed icon so they appear in a collumn */}
@@ -86,9 +90,13 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarButton">
-					<Link to="#" className="menuArrows">
-						<RiIcons.RiArrowLeftSFill onClick={hideSideBar} />
-					</Link>
+					{/* <Link to="#" className="menuArrows"> */}
+					<RiIcons.RiArrowLeftSFill
+						onClick={hideSideBar}
+						className="menuArrows"
+						style={{ cursor: "pointer" }}
+					/>
+					{/* </Link> */}
 				</div>
 				<SideNavBottom />
 			</nav>
