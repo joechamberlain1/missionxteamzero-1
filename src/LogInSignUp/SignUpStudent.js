@@ -1,8 +1,5 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import students from "../img/LoginSignUp Modal/Students.png";
-import { Link } from "react-router-dom";
-import LogInToSignUp from './LogInToSignUp'
 
 
 function SignUpStudent() {
@@ -14,13 +11,7 @@ function SignUpStudent() {
 
 	return (
 		<div className="StudentLeft">
-			<img src={students} className="FormPic" alt="Students" />
-			<p className='FormHeader'>Students</p>
-			<div className='FormLinks'>
-			<Link className="FormLinkModal"><LogInToSignUp /></Link>{" "}
-			<Link className="SignUpLinkON">SIGN UP</Link>
-			</div>
-			<form
+		<form
 				action="student register"
 				onSubmit={handleSubmit(onSubmitStudent)}
 				className="UserInput"
@@ -52,11 +43,11 @@ function SignUpStudent() {
 					name="confirmPassword"
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
+				{errors.password && <h6>{errors.password.message}</h6>}
 				{/* <Link><input type='submit'><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></input></Link> */}
 				<button className='registerButton'>SIGN UP</button>
 				{/* have added link to the student project library page. User data has not been added yet */}
 			</form>
-			<br />
 		</div>
 	);
 }

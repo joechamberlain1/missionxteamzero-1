@@ -1,10 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import teachers from "../img/LoginSignUp Modal/teacher-1.png";
-import { Link } from "react-router-dom";
-import LogInToSignUp from './LogInToSignUp'
 
-const SignUpTeacher = () => {
+
+function SignUpTeacher() {
 	const { register, handleSubmit, errors, watch } = useForm();
 
 	const onSubmitTeacher = (data) => {
@@ -12,14 +10,12 @@ const SignUpTeacher = () => {
 	};
 
 	return (
-		<div className ='TeacherRight'>
-			<img src={teachers} className="FormPic" alt="Teacher" />
-			<p className = 'FormHeader'>Teachers</p>
-			<div className='FormLinks'>
-			<Link className="FormLinkModal"><LogInToSignUp /></Link>{" "}
-			<Link className="SignUpLinkON">SIGN UP</Link>
-			</div>
-			<form onSubmit={handleSubmit(onSubmitTeacher)} className="UserInput">
+		<div>
+		<form
+				action="student register"
+				onSubmit={handleSubmit(onSubmitTeacher)}
+				className="UserInput"
+			>
 				<input
 					placeholder="Full Name"
 					type="text"
@@ -33,14 +29,13 @@ const SignUpTeacher = () => {
 					type="text"
 					name="email"
 					required
-					ref={register({ required: true })}
+					ref={register}
 				/>
-				{errors.email && <h6>This is required</h6>}
 				<input
 					placeholder="Password"
 					type="password"
 					name="password"
-					ref={register({ required: "Password is required", minLength: 8 })}
+					ref={register({ required: true, minLength: 8 })}
 				/>
 				<input
 					placeholder="Confirm Password"

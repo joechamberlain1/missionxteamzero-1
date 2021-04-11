@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import flagnz from "../img/nzflag.png";
 import flagmaori from "../img/maoriflag.png";
 import "../TeacherDashboard/MainTemplate.css";
-import SignUpModal from "../LogInSignUp/SignUpModal";
-import LogInModal from "../LogInSignUp/LoginModal";
+// import SignUpModal from "../LogInSignUp/SignUpModal";
+// import LogInModal from "../LogInSignUp/LoginModal";
+import FormModal from "../LogInSignUp/MissionXModal";
 
 const MainTopNav = () => {
 	return (
@@ -28,7 +29,7 @@ const MainTopNav = () => {
 					<img src={flagmaori} alt="Maori Flag" />
 				</div>
 				<div className="TopNavRegistrationSection">
-					<SignUpModal /> | <LogInModal />
+					<FormModal />
 				</div>
 			</div>
 		</div>
