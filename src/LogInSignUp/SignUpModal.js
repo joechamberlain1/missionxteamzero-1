@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import { Link } from "react-router-dom";
@@ -14,16 +14,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SignUpModal() {
-	const classes = useStyles();
-	const [open, setOpen] = React.useState(false);
+	const classes = useStyles()
+	const [signUp, setSignUp] = useState(false);
 
-	const handleOpen = () => {
-		setOpen(true);
-	};
 
 	const handleClose = () => {
-		setOpen(false);
-	};
+		setSignUp(false)
+	}
 
 	const body = (
 		<div className="Form">
@@ -35,12 +32,18 @@ function SignUpModal() {
 
 	return (
 		<div>
-			<Link onClick={handleOpen}>
-				<i className="fa fa-user-circle" /> Register
-			</Link>
-			<Modal open={open} onClose={handleClose} className={classes.modal}>
-				{body}
-			</Modal>
+		<Link onClick ={()=> setSignUp(!signUp)}>
+			{signUp? 'FUCNTION': 'Register'}
+		</Link>
+
+			{signUp? (
+				<Modal open ={signUp} onClose={handleClose} className={classes.modal}>
+					{body}
+				</Modal>
+			) : (
+				<Modal close = {signUp}></Modal>
+			)}
+		
 		</div>
 	);
 	
