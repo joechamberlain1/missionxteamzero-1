@@ -120,7 +120,7 @@ const OpenSignCloseLog=()=>{
 			<img src={teachers} className="FormPic" alt="Teacher" />
 			<p className = 'FormHeader'>Teachers</p>
 			<div className='FormLinks'>
-			<Link className="FormLinkModal">LOG IN</Link>{" "}
+			<Link className="FormLinkModal" onClick={OpenLogCloseSign}>LOG IN</Link>{" "}
 			<Link className="SignUpLinkON">SIGN UP</Link>
 			</div>
 			<SignUpTeacher />
