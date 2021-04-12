@@ -6,7 +6,7 @@ import * as CgIcons from "react-icons/cg";
 export const SideNavBottomData = [
 	{
 		title: "Profile",
-		path: "/profilepage",
+		path: "/TeacherProfilePage",
 		icon: <CgIcons.CgProfile />,
 		cName: "BottomIconText",
 	},

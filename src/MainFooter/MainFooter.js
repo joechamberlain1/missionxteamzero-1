@@ -1,6 +1,6 @@
 import React from "react";
 // Remove import link once finalized
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./MainFooterStyle.css";
 
 const MainFooter = () => {
@@ -46,12 +46,15 @@ const MainFooter = () => {
 				{/* Remove these temp test once finalized  */}
 				<div className="ContentContainer">
 					<h4>Johnny Temp Test</h4>
-					<Link to="/TeacherProfilePage">Teacher Profile Page Test</Link>
+					<NavLink to="/TeacherProfilePage" activeClassName="haha">
+						Teacher Profile Page Test
+					</NavLink>
 					<Link to="/TeacherStudentProfile">
 						Teacher Student Dashboard Profile Page TEST
 					</Link>
-					<Link to="/TeacherProjectsPage">Teacher Projects Page Test</Link>
-					<Link to="JohnnyHomePage">Home Page Resurection</Link>
+					<NavLink to="/TeacherProjectsPage" activeClassName="haha">
+						Teacher Projects Page Test
+					</NavLink>
 				</div>
 				<div className="ContentContainer">
 					<h4>Joseph Temp Test</h4>

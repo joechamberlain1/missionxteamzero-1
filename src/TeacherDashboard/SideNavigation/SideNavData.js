@@ -1,8 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import * as ImIcons from "react-icons/im";
 import * as Io5Icons from "react-icons/io5";
 import * as RiIcons from "react-icons/ri";
 import * as AiIcons from "react-icons/ai";
+import "../../MainFooter/MainFooterStyle.css";
 
 export const SideNavData = [
 	{
@@ -13,7 +15,7 @@ export const SideNavData = [
 	},
 	{
 		title: "Student Profiles",
-		path: "/TeacherStudentProfile",
+		path: <NavLink to="/TeacherStudentProfile" activeClassName="haha" />,
 		icon: <Io5Icons.IoSchool />,
 		cName: "nav-text",
 	},

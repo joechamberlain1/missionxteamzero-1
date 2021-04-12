@@ -31,9 +31,9 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarTopContentCollapsed">
-					{SideNavData.map((item, index) => {
+					{SideNavData.map((item) => {
 						return (
-							<li key={index} className={item.cName}>
+							<li className={item.cName}>
 								<Link to={item.path}>{item.icon}</Link>
 							</li>
 						);
@@ -52,9 +52,9 @@ function SideNav() {
 
 				{/* Manually added the collapsed icon so they appear in a collumn */}
 				<div className="SideBarBottomCollapsed">
-					{SideNavBottomData.map((item, index) => {
+					{SideNavBottomData.map((item) => {
 						return (
-							<li key={index} className={item.BottomIconText}>
+							<li className={item.BottomIconText}>
 								<Link to={item.path}>{item.icon}</Link>
 							</li>
 						);
@@ -77,9 +77,9 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarTopContent">
-					{SideNavData.map((item, index) => {
+					{SideNavData.map((item) => {
 						return (
-							<li key={index} className={item.cName}>
+							<li className={item.cName}>
 								<Link to={item.path}>
 									{item.icon}
 									<span>{item.title}</span>
