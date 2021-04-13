@@ -1,13 +1,12 @@
 import React from "react";
-import MainTopNav from "../MainTopNav/MainTopNav.js";
+import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import "./StudentProjectLib.css";
 import LibButton from "./ProjectLibButtons.js";
 import ProjectSideBar from "./ProjectGallerySideBar";
-import MainFooter from "../MainFooter/MainFooter.js";
+import MainFooter from "../../MainFooter/MainFooter";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import LibraryPicture from "./ProjectLibraryPicture.js";
-
 
 const useStyles = makeStyles((theme) => ({
 	buttonStyles: {
@@ -54,9 +53,9 @@ function StudentProjectLib() {
 					</div>
 					<div>
 						<Button
-							href="#top"
-							variant="contained"
+							onClick={scrollToTop}
 							className={classes.buttonStyles}
+							variant="contained"
 							size="small"
 						>
 							Back to the top
@@ -68,6 +67,13 @@ function StudentProjectLib() {
 			<MainFooter />
 		</div>
 	);
+}
+
+function scrollToTop() {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
 }
 
 export default StudentProjectLib;

@@ -6,19 +6,19 @@ import * as CgIcons from "react-icons/cg";
 export const SideNavBottomData = [
 	{
 		title: "Profile",
-		path: "/profilepage",
+		path: "/TeacherProfilePage",
 		icon: <CgIcons.CgProfile />,
 		cName: "BottomIconText",
 	},
 	{
 		title: "Settings",
-		// path: "/",
+		path: "/",
 		icon: <FaIcons.FaCog />,
 		cName: "BottomIconText",
 	},
 	{
 		title: "Log out",
-		// path: "/",
+		path: "/",
 		icon: <FiIcons.FiLogOut />,
 		cName: "BottomIconText",
 	},
