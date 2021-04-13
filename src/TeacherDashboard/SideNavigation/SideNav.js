@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./SideNavStyle.css";
-// import StudentProfileGrid from "../../TeacherStudentProfiles/StudentProfileGrid";
 import PlaceHolderPic from "../../img/profilepicplaceholder.png";
 import { SideNavData } from "./SideNavData";
 import { SideNavBottomData } from "./SideNavBottomData";
@@ -31,30 +30,30 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarTopContentCollapsed">
-					{SideNavData.map((item) => {
+					{SideNavData.map((item, index) => {
 						return (
-							<li className={item.cName}>
-								<Link to={item.path}>{item.icon}</Link>
+							<li key={index} className={item.cName}>
+								<NavLink to={item.path} activeClassName="activeTab">
+									{item.icon}
+								</NavLink>
 							</li>
 						);
 					})}
 				</div>
 
 				<div className="SideBarButtonCollapsed">
-					{/* <Link to="#"> */}
 					<RiIcons.RiArrowRightSFill
 						onClick={showSideBar}
 						className="menuArrowsCollapsed"
 						style={{ cursor: "pointer" }}
 					/>
-					{/* </Link> */}
 				</div>
 
 				{/* Manually added the collapsed icon so they appear in a collumn */}
 				<div className="SideBarBottomCollapsed">
-					{SideNavBottomData.map((item) => {
+					{SideNavBottomData.map((item, index) => {
 						return (
-							<li className={item.BottomIconText}>
+							<li key={index} className={item.cName}>
 								<Link to={item.path}>{item.icon}</Link>
 							</li>
 						);
@@ -77,26 +76,24 @@ function SideNav() {
 				</div>
 
 				<div className="SideBarTopContent">
-					{SideNavData.map((item) => {
+					{SideNavData.map((item, index) => {
 						return (
-							<li className={item.cName}>
-								<Link to={item.path}>
+							<li key={index} className={item.cName}>
+								<NavLink to={item.path} activeClassName="activeTab">
 									{item.icon}
 									<span>{item.title}</span>
-								</Link>
+								</NavLink>
 							</li>
 						);
 					})}
 				</div>
 
 				<div className="SideBarButton">
-					{/* <Link to="#" className="menuArrows"> */}
 					<RiIcons.RiArrowLeftSFill
 						onClick={hideSideBar}
 						className="menuArrows"
 						style={{ cursor: "pointer" }}
 					/>
-					{/* </Link> */}
 				</div>
 				<SideNavBottom />
 			</nav>

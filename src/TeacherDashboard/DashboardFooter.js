@@ -2,7 +2,18 @@ import React from "react";
 import "./MainTemplate.css";
 
 const DashboardFooter = () => {
-	return <h1 className="DashboardFooter">© LevelUp Works 2020</h1>;
+	return (
+		<h2
+			style={{
+				textAlign: "center",
+				fontSize: "1em",
+				fontWeight: "bold",
+				height: "5%",
+			}}
+		>
+			© LevelUp Works 2020
+		</h2>
+	);
 };
 
 export default DashboardFooter;

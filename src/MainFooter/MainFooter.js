@@ -46,13 +46,11 @@ const MainFooter = () => {
 				{/* Remove these temp test once finalized  */}
 				<div className="ContentContainer">
 					<h4>Johnny Temp Test</h4>
-					<NavLink to="/TeacherProfilePage" activeClassName="haha">
-						Teacher Profile Page Test
-					</NavLink>
+					<NavLink to="/TeacherProfilePage">Teacher Profile Page Test</NavLink>
 					<Link to="/TeacherStudentProfile">
 						Teacher Student Dashboard Profile Page TEST
 					</Link>
-					<NavLink to="/TeacherProjectsPage" activeClassName="haha">
+					<NavLink to="/TeacherProjectsPage">
 						Teacher Projects Page Test
 					</NavLink>
 				</div>

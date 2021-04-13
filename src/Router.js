@@ -1,13 +1,15 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import TeacherStudentProfile from "./TeacherStudentProfiles/TeacherStudentProfile";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
-import StudentProjectLib from "./StudentProjectLibrary/StudentProjectLib.js";
 import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
 import StudentProjectBuilder from "./StudentProjectBuilder/StudentProjectBuilder";
-import MainDashProgress from "./ofa/mainDash-progress";
-import TeacherProjectsPage from "./TeacherProjects/TeacherProjectsPage";
 import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
+import ProgressTrackerDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDummy";
+import HelpRequestDummy from "./TeacherDashboard/DummyPages/HelpRequestDummy";
+import ProjectLibraryDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDummy";
+import TeacherProjectsPage from "./ProjectLibrary/TeacherProjects/TeacherProjectsPage";
+import StudentProjectLib from "./ProjectLibrary/StudentProjectLibrary/StudentProjectLib";
+import TeacherStudentProfile from "./TeacherDashboard/TeacherStudentProfiles/TeacherStudentProfile";
 
 const Router = () => {
 	return (
@@ -15,7 +17,6 @@ const Router = () => {
 			<Route exact path="/" component={JohnnyHomePage} />
 			<Route exact path="/TeacherProfilePage" component={TeacherProfilePage} />
 			<Route exact path="/StudentProjectLib" component={StudentProjectLib} />
-			<Route exact path="/mainDash-progress" component={MainDashProgress} />
 			<Route
 				exact
 				path="/ProjectBuilderSideBar"
@@ -25,7 +26,6 @@ const Router = () => {
 				exact
 				path="/TeacherStudentProfile"
 				component={TeacherStudentProfile}
-				activeStyle={{ color: "red" }}
 			/>
 			<Route
 				exact
@@ -36,6 +36,22 @@ const Router = () => {
 				exact
 				path="/TeacherProjectsPage"
 				component={TeacherProjectsPage}
+			/>
+			<Route
+				exact
+				path="/ProgressTrackerDummy"
+				component={ProgressTrackerDummy}
+			/>
+			<Route
+				exact
+				path="/ProjectSubmissionsDummy"
+				component={ProgressTrackerDummy}
+			/>
+			<Route exact path="/HelpRequestDummy" component={HelpRequestDummy} />
+			<Route
+				exact
+				path="/ProjectLibraryDummy"
+				component={ProjectLibraryDummy}
 			/>
 		</Switch>
 	);

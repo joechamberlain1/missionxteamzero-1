@@ -1,6 +1,6 @@
 import React from "react";
-import MainTopNav from "../MainTopNav/MainTopNav.js";
-import MainFooter from "../MainFooter/MainFooter.js";
+import MainTopNav from "../../MainTopNav/MainTopNav.js";
+import MainFooter from "../../MainFooter/MainFooter.js";
 import "./TeacherProjectPageStyle.css";
 import LibButton from "../StudentProjectLibrary/ProjectLibButtons";
 import ProjectSideBar from "../StudentProjectLibrary/ProjectGallerySideBar";

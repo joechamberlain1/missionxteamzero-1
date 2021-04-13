@@ -1,12 +1,12 @@
 import React from "react";
-import "../TeacherDashboard/MainTemplate.css";
-import DashboardFooter from "../TeacherDashboard/DashboardFooter";
+import "../MainTemplate.css";
+import DashboardFooter from "../DashboardFooter";
 
 import StudentProfileGrid from "./StudentProfileGrid";
-import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
-import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
-import SideNav from "../TeacherDashboard/SideNavigation/SideNav";
-import PlaceHolderPic from "../img/profilepicplaceholder.png";
+import DashboardTopNav from "../DashboardTopNav";
+import DashboardTopButtons from "../DashboardTopButtons";
+import SideNav from "../SideNavigation/SideNav";
+import PlaceHolderPic from "../../img/profilepicplaceholder.png";
 
 function TeacherStudentProfile() {
 	return (

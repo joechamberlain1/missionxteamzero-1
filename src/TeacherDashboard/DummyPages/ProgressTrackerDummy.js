@@ -1,13 +1,13 @@
 import React from "react";
-import SideNav from "./SideNavigation/SideNav";
-import DashboardTopNav from "./DashboardTopNav";
-import MainDashboardFooter from "./DashboardFooter";
-import DashboardTopButtons from "./DashboardTopButtons";
-import "./MainTemplate.css";
+import SideNav from "../SideNavigation/SideNav";
+import DashboardTopNav from "../DashboardTopNav";
+import MainDashboardFooter from "../DashboardFooter";
+import DashboardTopButtons from "../DashboardTopButtons";
+import "../MainTemplate.css";
 
 // Use this as a template when creating a page
 
-function MainTemplate() {
+function ProjectLibraryDummy() {
 	return (
 		<div className="webcontainer">
 			<DashboardTopNav />
@@ -24,4 +24,4 @@ function MainTemplate() {
 	);
 }
 
-export default MainTemplate;
+export default ProjectLibraryDummy;

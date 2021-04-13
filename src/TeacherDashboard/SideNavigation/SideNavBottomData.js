@@ -12,13 +12,13 @@ export const SideNavBottomData = [
 	},
 	{
 		title: "Settings",
-		// path: "/",
+		path: "/",
 		icon: <FaIcons.FaCog />,
 		cName: "BottomIconText",
 	},
 	{
 		title: "Log out",
-		// path: "/",
+		path: "/",
 		icon: <FiIcons.FiLogOut />,
 		cName: "BottomIconText",
 	},
