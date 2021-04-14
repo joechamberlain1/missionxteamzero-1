@@ -1,11 +1,11 @@
 import React from "react";
-import ProjectBuilderSideBar from "./ProjectBuilderSideBar";
+import ProjectBuilderSideBar from "./ProjectBuilderSideBar.js";
 import DashboardFooter from "../TeacherDashboard/DashboardFooter";
 import "../TeacherDashboard/MainTemplate.css";
-import DashboardTopButtons from "../TeacherDashboard/DashboardTopButtons";
 import DashboardTopNav from "../TeacherDashboard/DashboardTopNav";
+import ProjectBuilderTopButtons from "./ProjectBuilderTopButtons";
 
-function StudentProjectBuilder() {
+function ObjectivesProjectBuilder() {
 	return (
 		<div className="webcontainer">
 			<DashboardTopNav />
@@ -13,7 +13,7 @@ function StudentProjectBuilder() {
 			<div className="profile-main-container">
 				<ProjectBuilderSideBar />
 				<div className="DashboardContent">
-					<DashboardTopButtons />
+					<ProjectBuilderTopButtons />
 
 					<div className="profile-maininner-container"></div>
 				</div>
@@ -23,4 +23,4 @@ function StudentProjectBuilder() {
 	);
 }
 
-export default StudentProjectBuilder;
+export default ObjectivesProjectBuilder;

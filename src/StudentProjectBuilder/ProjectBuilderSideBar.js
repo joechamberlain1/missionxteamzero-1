@@ -1,42 +1,106 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./projectsidebar.css";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../TeacherDashboard/SideNavigation/SideNavStyle.css";
+import PlaceHolderPic from "../img/profilepicplaceholder.png";
 import { ProjectSideBarData } from "./ProjectBuilderSideBarData.js";
+import { SideNavBottomData } from "../TeacherDashboard/SideNavigation/SideNavBottomData";
+import SideNavBottom from "../TeacherDashboard/SideNavigation/SideNavBottom";
+import * as RiIcons from "react-icons/ri";
 
 function ProjectBuilderSideBar() {
-  return (
-    <div className="SideBarContainer">
-      {/* <SideNavTest /> */}
-      {ProjectSideBarData.map((item, index) => {
-        return (
-          <li key={index} className={item.cName}>
-            <Link to={item.path}>
-              {item.icon}
-              <span>{item.title}</span>
-            </Link>
-          </li>
-        );
-      })}
+	const [sidebar, setSidebar] = useState(false);
 
-      <div className="ProjectBuilderSideBarFooter">
-      
-      <Link to='/' ProfilePage className = 'StudentProjectBuilderLink'>
-        <i className="fa fa-user-circle" aria-hidden="true"></i>
-        <p>Profile</p>
-      </Link>
-      <Link to='/' className = 'StudentProjectBuilderLink'>
-        <i className="fa fa-cog" aria-hidden="true"></i>
-        <p>Settings</p>
-      </Link>
-      <Link to ='/' className = 'StudentProjectBuilderLink'>
-        <i className="fa fa-angle-right"></i>
-        <p>Sign Out</p>
-      </Link>
+	const showSideBar = () => {
+		setSidebar(true);
+	};
+	const hideSideBar = () => {
+		setSidebar(false);
+	};
 
-      </div>
-    </div>
-  );
+	// Collapsed Sidebar data
+	const showCollapsedSideBar = () => {
+		return (
+			<div className="SideBarCollapsed">
+				<div className="ProfilePicPlacementSideBar">
+					<img
+						src={PlaceHolderPic}
+						alt="placeholder"
+						style={{ height: "79px", width: "79px", borderRadius: "50%" }}
+					/>
+				</div>
+
+				<div className="SideBarTopContentCollapsed">
+					{ProjectSideBarData.map((item, index) => {
+						return (
+							<li key={index} className={item.cName}>
+								<NavLink to={item.path} activeClassName="activeTab">
+									{item.icon}
+								</NavLink>
+							</li>
+						);
+					})}
+				</div>
+
+				<div className="SideBarButtonCollapsed">
+					<RiIcons.RiArrowRightSFill
+						onClick={showSideBar}
+						className="menuArrowsCollapsed"
+						style={{ cursor: "pointer" }}
+					/>
+				</div>
+
+				{/* Manually added the collapsed icon so they appear in a collumn */}
+				<div className="SideBarBottomCollapsed">
+					{SideNavBottomData.map((item, index) => {
+						return (
+							<li key={index} className={item.cName}>
+								<Link to={item.path}>{item.icon}</Link>
+							</li>
+						);
+					})}
+				</div>
+			</div>
+		);
+	};
+
+	// Main Sidebar when it is opened
+	const showMainSideBar = () => {
+		return (
+			<nav className="SideBarMainContainer active">
+				<div className="ProfilePicPlacementSideBar">
+					<img
+						src={PlaceHolderPic}
+						alt="placeholder"
+						style={{ height: "79px", width: "79px", borderRadius: "50%" }}
+					/>
+				</div>
+
+				<div className="SideBarTopContent">
+					{ProjectSideBarData.map((item, index) => {
+						return (
+							<li key={index} className={item.cName}>
+								<NavLink to={item.path} activeClassName="activeTab">
+									{item.icon}
+									<span>{item.title}</span>
+								</NavLink>
+							</li>
+						);
+					})}
+				</div>
+
+				<div className="SideBarButton">
+					<RiIcons.RiArrowLeftSFill
+						onClick={hideSideBar}
+						className="menuArrows"
+						style={{ cursor: "pointer" }}
+					/>
+				</div>
+				<SideNavBottom />
+			</nav>
+		);
+	};
+
+	return <>{sidebar ? showMainSideBar() : showCollapsedSideBar()}</>;
 }
 
-export default ProjectBuilderSideBar
-
+export default ProjectBuilderSideBar;

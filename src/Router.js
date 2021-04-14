@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
 import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
-import StudentProjectBuilder from "./StudentProjectBuilder/StudentProjectBuilder";
+
 import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 import ProgressTrackerDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDummy";
 import HelpRequestDummy from "./TeacherDashboard/DummyPages/HelpRequestDummy";
@@ -10,6 +10,13 @@ import ProjectLibraryDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDu
 import TeacherProjectsPage from "./ProjectLibrary/TeacherProjects/TeacherProjectsPage";
 import StudentProjectLib from "./ProjectLibrary/StudentProjectLibrary/StudentProjectLib";
 import TeacherStudentProfile from "./TeacherDashboard/TeacherStudentProfiles/TeacherStudentProfile";
+import ObjectivesProjectBuilder from "./StudentProjectBuilder/ObjectivesProjectBuilder";
+import InstructionsDummy from "./StudentProjectBuilder/DummyPages/InstructionsDummy";
+import VideoTutorialDummy from "./StudentProjectBuilder/DummyPages/VideoTutorialDummy";
+import MakeProjectDummy from "./StudentProjectBuilder/DummyPages/MakeProjectDummy";
+import SubmitProjectDummy from "./StudentProjectBuilder/DummyPages/VideoTutorialDummy";
+import BonusChallengeDummy from "./StudentProjectBuilder/DummyPages/VideoTutorialDummy";
+import TakeTheQuizDummy from "./StudentProjectBuilder/DummyPages/TakeTheQuizDummy";
 
 const Router = () => {
 	return (
@@ -29,8 +36,8 @@ const Router = () => {
 			/>
 			<Route
 				exact
-				path="/StudentProjectBuilder"
-				component={StudentProjectBuilder}
+				path="/ObjectivesProjectBuilder"
+				component={ObjectivesProjectBuilder}
 			/>
 			<Route
 				exact
@@ -53,6 +60,16 @@ const Router = () => {
 				path="/ProjectLibraryDummy"
 				component={ProjectLibraryDummy}
 			/>
+			<Route exact path="/InstructionsDummy" component={InstructionsDummy} />
+			<Route exact path="/VideoTutorialDummy" component={VideoTutorialDummy} />
+			<Route exact path="/MakeProjectDummy" component={MakeProjectDummy} />
+			<Route exact path="/SubmitProjectDummy" component={SubmitProjectDummy} />
+			<Route
+				exact
+				path="/BonusChallengeDummy"
+				component={BonusChallengeDummy}
+			/>
+			<Route exact path="/TakeTheQuizDummy" component={TakeTheQuizDummy} />
 		</Switch>
 	);
 };

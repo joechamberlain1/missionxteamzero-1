@@ -121,6 +121,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
+	flex-wrap: wrap;
 }
 
 .TeachingKidsIconContainer {

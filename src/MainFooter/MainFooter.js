@@ -57,7 +57,9 @@ const MainFooter = () => {
 				<div className="ContentContainer">
 					<h4>Joseph Temp Test</h4>
 					<Link to="/studentProjectLib">Student Project Library Test</Link>
-					<Link to="/StudentProjectBuilder">Student Project Builder Test</Link>
+					<Link to="/ObjectivesProjectBuilder">
+						Student Project Builder Test
+					</Link>
 				</div>
 			</div>
 		</div>
