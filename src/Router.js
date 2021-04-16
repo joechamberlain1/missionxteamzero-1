@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
 import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
-
 import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 import ProgressTrackerDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDummy";
 import HelpRequestDummy from "./TeacherDashboard/DummyPages/HelpRequestDummy";
