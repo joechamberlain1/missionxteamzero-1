@@ -9,7 +9,6 @@
     "clsx": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-elastic-carousel": "^0.11.2",
     "react-hook-form": "^6.15.5",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",

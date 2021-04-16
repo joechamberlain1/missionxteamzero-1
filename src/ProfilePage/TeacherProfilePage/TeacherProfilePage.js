@@ -5,8 +5,25 @@ import ProfilePic from "../../img/profilepicplaceholder.png";
 import ProfilePicPlaceHolder from "../ProfilePicPlaceHolder.js";
 import "../ProfilePage.css";
 import TeacherProfileBottomButtons from "./TeacherProfileBottomButtons.js";
+import ProfileDetails from "../ProfileDetails.js";
 
 function TeacherProfilePage() {
+	let test = null;
+
+	function handleClick() {
+		console.log("hello");
+		const requestURL1 = "http://localhost:8080/teamzeromissionreadybackend";
+		fetch(requestURL1)
+			.then((response) => response.json())
+			.then((data) => updateTest(data));
+		// console.log(test.Course);
+	}
+
+	function updateTest(data) {
+		test = data;
+		console.log(test[0].Course);
+	}
+
 	return (
 		<div>
 			<MainTopNav />
@@ -22,29 +39,33 @@ function TeacherProfilePage() {
 					</div>
 					<div className="main-profile-details">
 						<h1 style={{ textAlign: "center" }}>Profile Name Function</h1>
-						<div className="details-container">
-							<div className="requiredDetails">School</div>
-							<div className="returnedFunction">Function for school name</div>
-						</div>
-						<div className="details-container">
-							<div className="requiredDetails">Courses Purchased</div>
-							<div className="returnedFunction">
-								Function for Course difficulty
-							</div>
-						</div>
 
-						<div className="details-container">
-							<div className="requiredDetails">Date of Birth</div>
-							<div className="returnedFunction">Function for DOB</div>
-						</div>
-						<div className="details-container">
-							<div className="requiredDetails">Contact No</div>
-							<div className="returnedFunction">Function for Contact No</div>
-						</div>
-						<div className="details-container">
-							<div className="requiredDetails">Email Address</div>
-							<div className="returnedFunction">Function for Email</div>
-						</div>
+						<ProfileDetails
+							reqDetails="School"
+							returnedFunction={
+								<button onClick={() => handleClick()}> for school name</button>
+							}
+						/>
+						<ProfileDetails
+							reqDetails="Courses Purchased"
+							returnedFunction={test !== null ? test[0].Course : "Course"}
+						/>
+
+						<ProfileDetails
+							reqDetails="Date Of Birth"
+							returnedFunction={
+								test !== null ? test[0].Course : "Date of Birth"
+							}
+						/>
+
+						<ProfileDetails
+							reqDetails="Contact No"
+							returnedFunction="Function for Contact No"
+						/>
+						<ProfileDetails
+							reqDetails="Email Address"
+							returnedFunction="Function for Email"
+						/>
 					</div>
 				</div>
 				<TeacherProfileBottomButtons />

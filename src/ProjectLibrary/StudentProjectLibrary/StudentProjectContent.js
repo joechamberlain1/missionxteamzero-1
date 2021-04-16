@@ -19,7 +19,7 @@ import project15 from "../../img/Project -15@2x.jpg";
 export const StudentProjectContent = [
 	{
 		Image: (
-			<Link to="/StudentProjectBuilder">
+			<Link to="/ObjectivesProjectBuilder">
 				<img src={project1} alt="Project 1" />
 			</Link>
 		),
