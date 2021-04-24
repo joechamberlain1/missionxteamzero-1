@@ -1,25 +1,45 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-
 function SignUpTeacher() {
 	const { register, handleSubmit, errors, watch } = useForm();
 
-	const onSubmitTeacher = (data) => {
-		console.log(data);
+	const onSubmitTeacher = () => {
+		const requestURL1 = "http://localhost:8080/api/user/register";
+		const FullName = document.getElementById("FullName").value;
+		const Password = document.getElementById("Password").value;
+		const Email = document.getElementById("Email").value;
+		const formData = {
+			FullName: FullName,
+			Password: Password,
+			Email: Email,
+		};
+		console.log(formData);
+
+		fetch(requestURL1, {
+			method: "POST",
+			body: JSON.stringify(formData),
+			headers: {
+				Accept: "*",
+				"Content-Type": "application/json",
+			},
+		});
 	};
 
 	return (
 		<div>
-		<form
-				action="student register"
+			<form
+				// action="student register"
+				action="submit"
 				onSubmit={handleSubmit(onSubmitTeacher)}
 				className="UserInput"
+				method="POST"
 			>
 				<input
 					placeholder="Full Name"
 					type="text"
-					name="fullName"
+					name="FullName"
+					id="FullName"
 					required
 					ref={register}
 				/>
@@ -27,14 +47,16 @@ function SignUpTeacher() {
 				<input
 					placeholder="Email Address"
 					type="text"
-					name="email"
+					name="Email"
+					id="Email"
 					required
 					ref={register}
 				/>
 				<input
 					placeholder="Password"
 					type="password"
-					name="password"
+					name="Password"
+					id="Password"
 					ref={register({ required: true, minLength: 8 })}
 				/>
 				<input
@@ -44,10 +66,12 @@ function SignUpTeacher() {
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
 				{errors.password && <h6>{errors.password.message}</h6>}
-				<button className='registerButton'>SIGN UP</button>
+				<button onClick={() => onSubmitTeacher()} className="registerButton">
+					SIGN UP
+				</button>
 			</form>
 		</div>
 	);
-};
+}
 
 export default SignUpTeacher;
