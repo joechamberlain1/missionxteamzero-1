@@ -5,7 +5,7 @@ function SignUpTeacher() {
 	const { register, handleSubmit, errors, watch } = useForm();
 
 	const onSubmitTeacher = () => {
-		const requestURL1 = "http://localhost:8080/api/user/register";
+		const requestURL1 = "http://localhost:8080/api/user/registerTeacher";
 		const FullName = document.getElementById("FullName").value;
 		const Password = document.getElementById("Password").value;
 		const Email = document.getElementById("Email").value;
