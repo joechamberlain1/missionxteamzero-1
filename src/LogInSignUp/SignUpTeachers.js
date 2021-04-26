@@ -6,15 +6,16 @@ function SignUpTeacher() {
 
 	const onSubmitTeacher = () => {
 		const requestURL1 = "http://localhost:8080/api/user/registerTeacher";
-		const FullName = document.getElementById("FullName").value;
-		const Password = document.getElementById("Password").value;
-		const Email = document.getElementById("Email").value;
+		const FullName = document.getElementById("TeacherFullName").value;
+		const Password = document.getElementById("TeacherPassword").value;
+		const Email = document.getElementById("TeacherEmail").value;
 		const formData = {
 			FullName: FullName,
 			Password: Password,
 			Email: Email,
 		};
 		console.log(formData);
+		alert(`Hello ${FullName} you have successfully registered!`);
 
 		fetch(requestURL1, {
 			method: "POST",
@@ -38,8 +39,8 @@ function SignUpTeacher() {
 				<input
 					placeholder="Full Name"
 					type="text"
-					name="FullName"
-					id="FullName"
+					name="TeacherFullName"
+					id="TeacherFullName"
 					required
 					ref={register}
 				/>
@@ -47,16 +48,16 @@ function SignUpTeacher() {
 				<input
 					placeholder="Email Address"
 					type="text"
-					name="Email"
-					id="Email"
+					name="TeacherEmail"
+					id="TeacherEmail"
 					required
 					ref={register}
 				/>
 				<input
 					placeholder="Password"
 					type="password"
-					name="Password"
-					id="Password"
+					name="TeacherPassword"
+					id="TeacherPassword"
 					ref={register({ required: true, minLength: 8 })}
 				/>
 				<input
