@@ -42,7 +42,7 @@ function SignUpStudent() {
 					required
 					ref={register}
 				/>
-				{errors.fullName && <h6>This is required</h6>}
+				{errors.fullName && <p>This is required</p>}
 				<input
 					placeholder="Email Address"
 					type="text"
@@ -64,7 +64,7 @@ function SignUpStudent() {
 					name="confirmPassword"
 					ref={register({ validate: (value) => value === watch("password") })}
 				/>
-				{errors.password && <h6>{errors.password.message}</h6>}
+				{errors.password && <p>{errors.password.message}</p>}
 				{/* <Link><input type='submit'><Button className ='LogSignButton' fullWidth = {true} color = 'secondary' variant = 'contained'>Sign Up</Button></input></Link> */}
 				<button onClick={() => onSubmitStudent()} className="registerButton">
 					SIGN UP
