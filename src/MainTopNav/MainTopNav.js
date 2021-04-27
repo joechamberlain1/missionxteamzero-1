@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import flagnz from "../img/nzflag.png";
 import flagmaori from "../img/maoriflag.png";
 import "../TeacherDashboard/MainTemplate.css";
-// import SignUpModal from "../LogInSignUp/SignUpModal";
-// import LogInModal from "../LogInSignUp/LoginModal";
 import FormModal from "../LogInSignUp/MissionXModal";
 
 const MainTopNav = () => {
 	return (
 		<div className="TopNavMainBackground">
-			<img src={LevelUpWorksLogo} alt="LevelUp Works Logo" />
+			<Link to="/">
+				<img src={LevelUpWorksLogo} alt="LevelUp Works Logo" />
+			</Link>
 
 			<div className="TopNavigationContainer">
 				<div className="TopNavigation">

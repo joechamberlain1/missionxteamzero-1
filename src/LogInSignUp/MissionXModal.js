@@ -56,15 +56,13 @@ function FormModal() {
 
 	const LoginSubmit = () => {
 		const requestURL1 = "http://localhost:8080/api/user/login";
-		const FullName = document.getElementById("FullName").value;
-		const Password = document.getElementById("Password").value;
-		const Email = document.getElementById("Email").value;
+		const Password = document.getElementById("LoginPassword").value;
+		const Email = document.getElementById("LoginEmail").value;
 		const formData = {
-			FullName: FullName,
 			Password: Password,
 			Email: Email,
 		};
-		console.log(formData);
+		// alert("Successfully loged in");
 
 		fetch(requestURL1, {
 			method: "POST",
@@ -73,6 +71,8 @@ function FormModal() {
 				Accept: "*",
 				"Content-Type": "application/json",
 			},
+		}).then((res) => {
+			console.log(res);
 		});
 	};
 
@@ -89,8 +89,20 @@ function FormModal() {
 				</div>
 
 				<div className="UserInput">
-					<input placeholder="Email Address"></input>
-					<input placeholder="Password"></input>
+					<input
+						placeholder="Email Address"
+						type="text"
+						name="LoginEmail"
+						id="LoginEmail"
+						required
+					></input>
+					<input
+						placeholder="Password"
+						type="password"
+						name="LoginPassword"
+						id="LoginPassword"
+						required
+					></input>
 					{/* have added link to the student project library page. User data has not been added yet */}
 				</div>
 
@@ -114,8 +126,19 @@ function FormModal() {
 					</Link>
 				</div>
 				<div className="UserInput">
-					<input type="email" required placeholder="Email Address" />
-					<input placeholder="Password" />
+					<input
+						placeholder="Email Address"
+						type="text"
+						name="LoginEmail"
+						required
+					></input>
+					<input
+						placeholder="Password"
+						type="password"
+						name="LoginPassword"
+						required
+					></input>
+					{/* have added link to the student project library page. User data has not been added yet */}
 				</div>
 
 				<button
@@ -137,7 +160,7 @@ function FormModal() {
 				<div className="FormLinks">
 					<Link className="FormLinkModal" onClick={OpenLogCloseSign}>
 						LOG IN
-					</Link>{" "}
+					</Link>
 					<Link className="SignUpLinkON">SIGN UP</Link>
 				</div>
 				<SignUpStudent />
@@ -150,7 +173,7 @@ function FormModal() {
 				<div className="FormLinks">
 					<Link className="FormLinkModal" onClick={OpenLogCloseSign}>
 						LOG IN
-					</Link>{" "}
+					</Link>
 					<Link className="SignUpLinkON">SIGN UP</Link>
 				</div>
 				<SignUpTeacher />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import TeacherProfilePage from "./ProfilePage/TeacherProfilePage/TeacherProfilePage";
-import ProjectBuilderSideBar from "./StudentProjectBuilder/ProjectBuilderSideBar";
+
 import JohnnyHomePage from "../src/HomePageJohnnyPracticeFun/JohnnyHomePage";
 import ProgressTrackerDummy from "./TeacherDashboard/DummyPages/ProgressTrackerDummy";
 import HelpRequestDummy from "./TeacherDashboard/DummyPages/HelpRequestDummy";
@@ -23,11 +23,6 @@ const Router = () => {
 			<Route exact path="/" component={JohnnyHomePage} />
 			<Route exact path="/TeacherProfilePage" component={TeacherProfilePage} />
 			<Route exact path="/StudentProjectLib" component={StudentProjectLib} />
-			<Route
-				exact
-				path="/ProjectBuilderSideBar"
-				component={ProjectBuilderSideBar}
-			/>
 			<Route
 				exact
 				path="/TeacherStudentProfile"
