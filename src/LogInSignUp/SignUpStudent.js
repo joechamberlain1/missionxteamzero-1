@@ -14,6 +14,7 @@ function SignUpStudent() {
 			Password: Password,
 			Email: Email,
 		};
+		
 		console.log(formData);
 		alert(`Hello ${FullName} you have successfully registered!`);
 

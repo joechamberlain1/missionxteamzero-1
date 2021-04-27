@@ -6,10 +6,11 @@ import { StudentProjectContent } from './StudentProjectContent.js'
     const [projectData, setProjectData] = useState("");
 
     function CallAPI(){
-      const requestURL1 ="http://localhost:8080/api/StudentProjectLib/getAllData/projectData";
+      const requestURL1 ="http://localhost:8080/api/StudentProjectsLibrary/getAllData";
       fetch(requestURL1)
         .then((response) => response.json())
-        .then((data) => setProjectData)
+        .then((data) => setProjectData(data))
+        
     }
 
     useEffect(() => {
@@ -25,7 +26,7 @@ import { StudentProjectContent } from './StudentProjectContent.js'
             const {Image, Title} = gallery;
             return(
                 <StudentLibraryImage Image={Image} Title={Title} 
-                Difficulty ={projectData ? projectData[0].Course : "Waiting for API to load"} />
+                Difficulty ={projectData ? `${projectData[1].Course} | ${projectData[1].SubjectMatter1}` : "Loading"} />
           )})}
           
           </div>
