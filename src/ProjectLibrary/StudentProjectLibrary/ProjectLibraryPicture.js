@@ -6,7 +6,7 @@ import { StudentProjectContent } from './StudentProjectContent.js'
     const [projectData, setProjectData] = useState("");
 
     function CallAPI(){
-      const requestURL1 ="http://localhost:8080/api/StudentProjectsLibrary/getAllData";
+      const requestURL1 ="http://localhost:8080/api/TeacherProjectsLibrary/getAllData";
       fetch(requestURL1)
         .then((response) => response.json())
         .then((data) => setProjectData(data))
