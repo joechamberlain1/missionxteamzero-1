@@ -9,11 +9,13 @@ function SignUpStudent() {
 		const FullName = document.getElementById("FullName").value;
 		const Password = document.getElementById("Password").value;
 		const Email = document.getElementById("Email").value;
+
 		const formData = {
 			FullName: FullName,
 			Password: Password,
 			Email: Email,
 		};
+		
 		console.log(formData);
 
 		fetch(requestURL1, {
