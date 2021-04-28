@@ -6,12 +6,18 @@ import { StudentProjectContent } from './StudentProjectContent.js'
     const [projectData, setProjectData] = useState("");
 
     function CallAPI(){
+<<<<<<< HEAD
       const requestURL1 ="http://localhost:8080/api/TeacherProjectsLibrary/getAllData";
+=======
+      const requestURL1 ="http://localhost:8080/api/project/getAllData";
+>>>>>>> Joe-Backend-Project-Lib
       fetch(requestURL1)
         .then((response) => response.json())
-        .then((data) => setProjectData(data))
-        
-    }
+        .then((data) => {
+          setProjectData(data)
+          console.log(data) 
+        })
+      }
 
     useEffect(() => {
       if(!projectData) {
@@ -19,17 +25,32 @@ import { StudentProjectContent } from './StudentProjectContent.js'
       }
     })
     
+
+
     return (
         <div className ='ProjectGallery'>
   
-          {StudentProjectContent.map((gallery) => {
-            const {Image, Title} = gallery;
+          {StudentProjectContent.map((project) => {
+            const {Image, Title} = project;
             return(
                 <StudentLibraryImage Image={Image} Title={Title} 
-                Difficulty ={projectData ? `${projectData[1].Course} | ${projectData[1].SubjectMatter1}` : "Loading"} />
+                Difficulty ={projectData ? `${projectData[0].Course} | ${projectData[0].SubjectMatter1}` : "Loading"} />
           )})}
           
           </div>
+
+        // trying to map through a database  
+        // <div className ='ProjectGallery'>
+        // {projectData.map((courseDetails) =>{
+        //   const {Course, SubjectMatter1} = courseDetails
+        //   {StudentProjectContent.map((gallery) => {
+        //    const {Image, Title} = gallery;
+        //   return (
+        //     <StudentLibraryImage Image ={Image} Title= {Title}
+        //             Difficulty ={projectData ? `${Course} | ${SubjectMatter1}` : "Loading"} />
+        //   )
+        // })}})}
+        // </div>
     );
   }
 
