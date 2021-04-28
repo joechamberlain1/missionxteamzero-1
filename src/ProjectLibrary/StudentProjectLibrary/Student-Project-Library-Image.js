@@ -34,6 +34,7 @@ const useStyles = makeStyles({
 const StudentLibraryImage = ({Image, Title, Difficulty}) => {
     const classes = useStyles();
     return (
+        
         <Card className={classes.CardSize}>
         <CardContent>
          <CardMedia>{Image}</CardMedia>

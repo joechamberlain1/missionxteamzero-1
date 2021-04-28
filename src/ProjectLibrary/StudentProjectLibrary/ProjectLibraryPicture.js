@@ -26,26 +26,23 @@ import { StudentProjectContent } from './StudentProjectContent.js'
     return (
         <div className ='ProjectGallery'>
   
-          {StudentProjectContent.map((project) => {
-            const {Image, Title} = project;
+          {projectData.map((project) => {
             return(
-                <StudentLibraryImage Image={Image} Title={Title} 
-                Difficulty ={projectData ? `${projectData[0].Course} | ${projectData[0].SubjectMatter1}` : "Loading"} />
+                <StudentLibraryImage Image = {project.IMGURL} Title ={project.Title}
+                Difficulty ={projectData ? `${project.Course} | ${project.ActivityType}` : "Loading"} />
           )})}
           
           </div>
 
-        // trying to map through a database  
         // <div className ='ProjectGallery'>
-        // {projectData.map((courseDetails) =>{
-        //   const {Course, SubjectMatter1} = courseDetails
+
         //   {StudentProjectContent.map((gallery) => {
-        //    const {Image, Title} = gallery;
+        //   const {Image, Title} = gallery;
         //   return (
-        //     <StudentLibraryImage Image ={Image} Title= {Title}
-        //             Difficulty ={projectData ? `${Course} | ${SubjectMatter1}` : "Loading"} />
+        //     <StudentLibraryImage Image={Image} Title= {Title}
+        //             Difficulty ={projectData ? `${projectData.Course} | ${projectData.SubjectMatter1}` : "Loading"} />
         //   )
-        // })}})}
+        // })}
         // </div>
     );
   }

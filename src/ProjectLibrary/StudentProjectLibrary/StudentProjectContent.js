@@ -18,11 +18,7 @@ import project15 from "../../img/Project -15@2x.jpg";
 
 export const StudentProjectContent = [
 	{
-		Image: (
-			<Link to="/ObjectivesProjectBuilder">
-				<img src={project1} alt="Project 1" />
-			</Link>
-		),
+		Image: <img src={project1} alt="Project 1" />,
 		Title: "Introduction",
 		Difficulty: "BEGINNER|Animation",
 		ID: 1,
