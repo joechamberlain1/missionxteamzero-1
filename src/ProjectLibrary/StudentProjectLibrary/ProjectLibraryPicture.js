@@ -6,11 +6,7 @@ import { StudentProjectContent } from './StudentProjectContent.js'
     const [projectData, setProjectData] = useState("");
 
     function CallAPI(){
-<<<<<<< HEAD
-      const requestURL1 ="http://localhost:8080/api/TeacherProjectsLibrary/getAllData";
-=======
       const requestURL1 ="http://localhost:8080/api/project/getAllData";
->>>>>>> Joe-Backend-Project-Lib
       fetch(requestURL1)
         .then((response) => response.json())
         .then((data) => {
