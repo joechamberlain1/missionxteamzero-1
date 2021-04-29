@@ -1,7 +1,7 @@
 import React from "react";
 import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import "./StudentProjectLib.css";
-import LibButton from "./ProjectLibButtons.js";
+// import LibButton from "./ProjectLibButtons.js";
 import ProjectSideBar from "./ProjectGallerySideBar";
 import MainFooter from "../../MainFooter/MainFooter";
 import { Button } from "@material-ui/core";
@@ -46,7 +46,7 @@ function StudentProjectLib() {
 							to help you search for specific projects.
 						</p>
 
-						<LibButton />
+						{/* <LibButton /> */}
 					</div>
 					<div>
 						<LibraryPicture />

@@ -52,6 +52,7 @@ function FormModal() {
 	const OpenSignCloseLog = () => {
 		setLogin(false);
 		setSignup(true);
+		//closes login and opens signup, used for internal links
 	};
 
 	async function studentLoginSubmit() {
