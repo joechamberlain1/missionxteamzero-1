@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import StudentLibraryImage from './Student-Project-Library-Image.js';
-import { StudentProjectContent } from './StudentProjectContent.js'
+// import { StudentProjectContent } from './StudentProjectContent.js'
 
   function LibraryPicture() {
-    const [projectData, setProjectData] = useState("");
+    const [projectData, setProjectData] = useState([]);
 
-    function CallAPI(){
+    const CallAPI = () =>{
       const requestURL1 ="http://localhost:8080/api/project/getAllData";
+      
+
+
       fetch(requestURL1)
         .then((response) => response.json())
         .then((data) => {
@@ -15,15 +18,14 @@ import { StudentProjectContent } from './StudentProjectContent.js'
         })
       }
 
-    useEffect(() => {
-      if(!projectData) {
-        CallAPI();
-      }
-    })
-    
 
+    useEffect(() => {
+      CallAPI();
+    }, [])
 
     return (
+
+
         <div className ='ProjectGallery'>
   
           {projectData.map((project) => {
