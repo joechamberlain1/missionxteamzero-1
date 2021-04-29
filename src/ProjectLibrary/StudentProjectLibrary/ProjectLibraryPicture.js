@@ -45,6 +45,34 @@ const useStyles = makeStyles((theme) => ({
           console.log(data)
         });
       };
+
+      const getIntermediate = () => {
+        const requestURL1 = 'http://localhost:8080/api/project/getintermediatedata';
+        
+        // calls the API with the url 'requestURL2'
+        // once we get the response then do something with it
+        // * CONSUMER of the promise returned by the Fetch API
+        fetch(requestURL1)
+          .then((response) => response.json())
+          .then((data) => {
+            setProjectData(data)
+            console.log(data)
+          });
+        };
+
+        const getAdvanced = () => {
+          const requestURL1 = 'http://localhost:8080/api/project/getadvanceddata';
+          
+          // calls the API with the url 'requestURL2'
+          // once we get the response then do something with it
+          // * CONSUMER of the promise returned by the Fetch API
+          fetch(requestURL1)
+            .then((response) => response.json())
+            .then((data) => {
+              setProjectData(data)
+              console.log(data)
+            });
+          };
     const classes = useStyles();
 
     return (
@@ -60,9 +88,10 @@ const useStyles = makeStyles((theme) => ({
   >
 
     {/* color ={beginner ? 'black' : 'primary'}  */}
-    <Button id='content' onClick={()=> getBeginnerData()}>BEGINNER</Button>
-    <Button onClick={()=> callAPI()}>INTERMEDIATE</Button>
-    <Button onClick={()=> callAPI()}>ADVANCED</Button>
+    <Button onClick={()=> getBeginnerData()}>BEGINNER</Button>
+    <Button onClick={()=> getIntermediate()}>INTERMEDIATE</Button>
+    <Button onClick={()=> getAdvanced()}>ADVANCED</Button>
+    <Button onClick={()=> callAPI()}>ALL</Button>
   </ButtonGroup>
 </div>
 
