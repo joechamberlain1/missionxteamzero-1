@@ -8,7 +8,8 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import LibraryPicture from "./ProjectLibraryPicture.js";
 
-const useStyles = makeStyles((theme) => ({
+
+const useStyles = makeStyles(() => ({
 	buttonStyles: {
 		display: "flex",
 		float: "right",
@@ -49,7 +50,7 @@ function StudentProjectLib() {
 						{/* <LibButton /> */}
 					</div>
 					<div>
-						<LibraryPicture />
+						<LibraryPicture path='/ObjectivesProjectBuilder'/>
 					</div>
 					<div>
 						<Button

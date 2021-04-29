@@ -34,13 +34,13 @@ const useStyles = makeStyles({
 });
 
 //uses props from StudentProjectContent in order to make the buttons and side bar interactive
-const StudentLibraryImage = ({ Image, Title, Difficulty }) => {
+const StudentLibraryImage = ({Image, Title, Difficulty,}, link) => {
 	const classes = useStyles();
 	return (
 		<Card className={classes.CardSize}>
 			<CardContent>
-				<CardMedia>
-					<img src={Image} alt={Title} />
+                <CardMedia>
+					<img src={Image} alt={Title}/>
 				</CardMedia>
 				<Typography className={classes.textTitle}>{Title}</Typography>
 				<Typography className={classes.textAlign}>{Difficulty}</Typography>

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import StudentLibraryImage from './Student-Project-Library-Image.js';
 import { Button, ButtonGroup } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
 	paper: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 		height: 20,
 	},
 }));
-  function LibraryPicture() {
+  function LibraryPicture(props) {
     const [projectData, setProjectData] = useState([]);
 
     const callAPI = () =>{
@@ -113,8 +113,8 @@ const useStyles = makeStyles((theme) => ({
   
           {projectData.map((project) => {
             return(
-                <StudentLibraryImage Image = {project.IMGURL} Title ={project.Title}
-                Difficulty ={projectData ? `${project.Course} | ${project.ActivityType}` : "Loading"} />
+               <Link to={props.path}><StudentLibraryImage Image = {project.IMGURL} Title ={project.Title} 
+                Difficulty ={projectData ? `${project.Course} | ${project.ActivityType}` : "Loading"} /></Link>
           )})}
           
           </div>

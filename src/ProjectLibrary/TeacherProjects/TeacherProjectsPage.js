@@ -1,7 +1,6 @@
 import React from "react";
 import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import MainFooter from "../../MainFooter/MainFooter.js";
-
 import ProjectSideBar from "../StudentProjectLibrary/ProjectGallerySideBar";
 import TeacherProjectBottomButtons from "./TeacherProjectBottomButtons.js";
 import "../StudentProjectLibrary/StudentProjectLib.css";
@@ -25,7 +24,7 @@ function TeacherProjectsPage() {
 						</p>
 					</div>
 					<div>
-						<LibraryPicture />
+						<LibraryPicture path='/TeacherStudentProfile'/>
 					</div>
 					<TeacherProjectBottomButtons />
 				</div>
