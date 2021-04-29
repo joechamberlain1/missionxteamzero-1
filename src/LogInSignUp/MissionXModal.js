@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function FormModal() {
+function FormModal(props) {
 	const classes = useStyles();
 
 	const [login, setLogin] = useState(false); //sets the login state
@@ -235,14 +235,16 @@ function FormModal() {
 	return (
 		<>
 			<div>
+
+			
 				<Link onClick={openSignup}>
-					<i className="fa fa-user-circle" /> REGISTER
+				<i className="fa fa-user-circle" />{props.signupProp} {props.signupButton}
 				</Link>
 				<Modal open={signup} className={classes.modal} onClose={closeSignup}>
 					{bodyTwo}
 				</Modal>
 
-				<Link onClick={openLogin}>{" | "}LOG IN</Link>
+				<Link onClick={openLogin}>{props.loginProp}</Link>
 				<Modal open={login} className={classes.modal} onClose={closeLogin}>
 					{body}
 				</Modal>
