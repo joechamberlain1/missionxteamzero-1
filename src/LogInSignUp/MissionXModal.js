@@ -65,7 +65,7 @@ const OpenSignCloseLog=()=>{
                 <img src={students} className="FormPic" alt="Students" />
                 <p className='FormHeader'>Students</p>
                 <div className ='FormLinks'>
-				<Link className="LogInLinkON">LOG IN</Link>{" "}
+				<span className="LogInLinkON">LOG IN</span>{" "}
 				<Link className="FormLinkModal" onClick={OpenSignCloseLog}>SIGN UP</Link>
 				</div>
 
@@ -85,7 +85,7 @@ const OpenSignCloseLog=()=>{
 
                 <p className='FormHeader'>Teachers</p>
                 <div className = 'FormLinks'>
-				<Link className="LogInLinkON">LOG IN</Link>{" "}
+				<span className="LogInLinkON">LOG IN</span>{" "}
 				<Link className="FormLinkModal"onClick={OpenSignCloseLog}>SIGN UP</Link>
 				</div>
                 <div className="UserInput">
@@ -110,7 +110,7 @@ const OpenSignCloseLog=()=>{
 			<p className='FormHeader'>Students</p>
 			<div className='FormLinks'>
 			<Link className="FormLinkModal" onClick={OpenLogCloseSign}>LOG IN</Link>{" "}
-			<Link className="SignUpLinkON">SIGN UP</Link>
+			<span className="SignUpLinkON">SIGN UP</span>
 			</div>
 			<SignUpStudent />
 			<br />
@@ -121,7 +121,7 @@ const OpenSignCloseLog=()=>{
 			<p className = 'FormHeader'>Teachers</p>
 			<div className='FormLinks'>
 			<Link className="FormLinkModal" onClick={OpenLogCloseSign}>LOG IN</Link>{" "}
-			<Link className="SignUpLinkON">SIGN UP</Link>
+			<span className="SignUpLinkON">SIGN UP</span>
 			</div>
 			<SignUpTeacher />
 		</div>

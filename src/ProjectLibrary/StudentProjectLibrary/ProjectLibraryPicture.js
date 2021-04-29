@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import StudentLibraryImage from './Student-Project-Library-Image.js';
-import { StudentProjectContent } from './StudentProjectContent.js'
+// import { StudentProjectContent } from './StudentProjectContent.js'
 
   function LibraryPicture() {
-    const [projectData, setProjectData] = useState("");
+    const [projectData, setProjectData] = useState([]);
 
-    function CallAPI(){
+    const CallAPI = () =>{
       const requestURL1 ="http://localhost:8080/api/project/getAllData";
+      
+
+
       fetch(requestURL1)
         .then((response) => response.json())
         .then((data) => {
@@ -15,37 +18,34 @@ import { StudentProjectContent } from './StudentProjectContent.js'
         })
       }
 
-    useEffect(() => {
-      if(!projectData) {
-        CallAPI();
-      }
-    })
-    
 
+    useEffect(() => {
+      CallAPI();
+    }, [])
 
     return (
+
+
         <div className ='ProjectGallery'>
   
-          {StudentProjectContent.map((project) => {
-            const {Image, Title} = project;
+          {projectData.map((project) => {
+            const { Course, SubjectMatter1, Title, IMGURL} = project
             return(
-                <StudentLibraryImage Image={Image} Title={Title} 
-                Difficulty ={projectData ? `${projectData[0].Course} | ${projectData[0].SubjectMatter1}` : "Loading"} />
+                <StudentLibraryImage Image={projectData ? IMGURL : 'Pic loading'} Title={Title} 
+                Difficulty ={projectData ? `${Course} | ${SubjectMatter1}` : "Loading"} />
           )})}
           
           </div>
 
-        // trying to map through a database  
-        // <div className ='ProjectGallery'>
-        // {projectData.map((courseDetails) =>{
-        //   const {Course, SubjectMatter1} = courseDetails
+        // <div className ='ProjectGallery' id = "Projects">
+        
         //   {StudentProjectContent.map((gallery) => {
         //    const {Image, Title} = gallery;
         //   return (
         //     <StudentLibraryImage Image ={Image} Title= {Title}
-        //             Difficulty ={projectData ? `${Course} | ${SubjectMatter1}` : "Loading"} />
+        //             Difficulty ={projectData ? `${projectData[0].Title} | ${projectData[0].SubjectMatter1}` : "Loading"} />
         //   )
-        // })}})}
+        // })}
         // </div>
     );
   }

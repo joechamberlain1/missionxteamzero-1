@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, } from "react";
 import "./StudentProjectLib.css";
 import { Button, ButtonGroup } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
@@ -14,33 +14,29 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-//trying to make a function to filter when a different 
-// const filterFunction= () => {
-	
-// 	return StudentProjectContent ? StudentProjectContent.Difficulty !== 'BEGINNER|Animation': 'nothing'
-// };
-
-// console.log(filterFunction())
-
-// changes the button to show which selection is highlighted
 function LibButton() {
 
 
+
+		  //these are all used to change the colour of the buttons 
 const [beginner, setBeginner] = useState(true);
 
   const handleClickOne = () => {
     setBeginner(!beginner);
   };
+
   const [intermediate, setIntermediate] = useState(true);
 
   const handleClickTwo = () => {
     setIntermediate(!intermediate);
   };
+
   const [advanced, setAdvanced] = useState(true);
 
   const handleClickThree = () => {
     setAdvanced(!advanced);
   };
+
 	const classes = useStyles();
 	return (
 		<div className="StudentLibButtonContainer">

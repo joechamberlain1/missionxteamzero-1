@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 import './StudentProjectLib.css'
 import SideBarCheckbox from './checkboxSideBar'
 
@@ -13,7 +13,9 @@ function ProjectSideBar() {
         { title: 'Subject Matter', itemTypes: ['Computer Science', 'Maths', 'Science', 'Language', 'Art', 'Music'], id:4 },
 
     ]);
-        
+
+
+
     return (
         <div>
             {checkboxes.map((checkbox) => (

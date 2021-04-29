@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import project1 from "../../img/Project -1@2x.jpg";
 import project2 from "../../img/Project -2@2x.jpg";
 import project3 from "../../img/Project -3@2x.jpg";
@@ -19,9 +19,9 @@ import project15 from "../../img/Project -15@2x.jpg";
 export const StudentProjectContent = [
 	{
 		Image: (
-			<Link to="/ObjectivesProjectBuilder">
+			
 				<img src={project1} alt="Project 1" />
-			</Link>
+			
 		),
 		Title: "Introduction",
 		Difficulty: "BEGINNER|Animation",

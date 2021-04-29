@@ -36,7 +36,7 @@ const StudentLibraryImage = ({Image, Title, Difficulty}) => {
     return (
         <Card className={classes.CardSize}>
         <CardContent>
-         <CardMedia>{Image}</CardMedia>
+         <CardMedia><img src={Image}/></CardMedia>
          <Typography className={classes.textTitle}>{Title}</Typography>
          <Typography className={classes.textAlign}>{Difficulty}</Typography>
        </CardContent>
