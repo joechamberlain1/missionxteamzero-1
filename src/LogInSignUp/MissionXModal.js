@@ -238,7 +238,7 @@ function FormModal(props) {
 
 			
 				<Link onClick={openSignup}>
-				<i className="fa fa-user-circle" />{props.signupProp} {props.signupButton}
+				{props.signupProp} {props.signupButton}
 				</Link>
 				<Modal open={signup} className={classes.modal} onClose={closeSignup}>
 					{bodyTwo}

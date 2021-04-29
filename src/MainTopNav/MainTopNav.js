@@ -29,7 +29,7 @@ const MainTopNav = () => {
 					<img src={flagmaori} alt="Maori Flag" />
 				</div>
 				<div className="TopNavRegistrationSection">
-					<FormModal loginProp =' | LOG IN' signupProp ='REGISTER' />
+				<i className="fa fa-user-circle" /><FormModal loginProp =' | LOG IN' signupProp ='REGISTER' />
 				</div>
 			</div>
 		</div>
