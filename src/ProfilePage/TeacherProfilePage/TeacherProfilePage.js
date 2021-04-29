@@ -17,8 +17,7 @@ function TeacherProfilePage() {
 	// }
 
 	function CallAPI() {
-		const requestURL1 =
-			"http://localhost:8080/api/TeacherProfilePage/getAllData/userProfile";
+		const requestURL1 = "http://localhost:8080/api/user/getUserDetails";
 		fetch(requestURL1)
 			.then((response) => response.json())
 			.then((data) => setUserData(data));
@@ -30,6 +29,18 @@ function TeacherProfilePage() {
 		}
 	});
 
+	const profilePicUpload = () => {
+		const requestURL2 = "http://localhost:8080/api/user/profilePic";
+		fetch(requestURL2, {
+			method: "POST",
+			body: JSON.stringify(),
+			headers: {
+				Accept: "*",
+				"Content-Type": "application/json",
+			},
+		});
+	};
+
 	return (
 		<div>
 			<MainTopNav />
@@ -37,7 +48,7 @@ function TeacherProfilePage() {
 				<div className="profile-container">
 					<div className="main-profile-left">
 						<ProfilePicPlaceHolder
-							ProfilePic={userData ? userData[0].ProfilePic : ProfilePic}
+							ProfilePic={userData ? userData[2].ProfilePic : ProfilePic}
 						/>
 						<div className="profile-buttons">
 							<button>Edit profile</button>
@@ -47,15 +58,13 @@ function TeacherProfilePage() {
 					</div>
 					<div className="main-profile-details">
 						<h1 style={{ textAlign: "center" }}>
-							{userData
-								? userData[0].FirstName + " " + userData[0].LastName
-								: "Waiting for API to load"}
+							{userData ? userData[2].FullName : "Waiting for API to load"}
 						</h1>
 
 						<ProfileDetails
 							reqDetails="School"
 							returnedFunction={
-								userData ? userData[0].School : "Waiting for API to load"
+								userData ? userData[2].School : "Waiting for API to load"
 							}
 						/>
 						{/* <button onClick={() => handleClick()}> Button to call API</button> */}
@@ -74,7 +83,7 @@ function TeacherProfilePage() {
 						<ProfileDetails
 							reqDetails="Date Of Birth"
 							returnedFunction={
-								userData ? userData[0].DateOfBirth : "Waiting for API to load"
+								userData ? userData[2].DateOfBirth : "Waiting for API to load"
 							}
 						/>
 
@@ -87,7 +96,7 @@ function TeacherProfilePage() {
 						<ProfileDetails
 							reqDetails="Email Address"
 							returnedFunction={
-								userData ? userData[0].Email : "Waiting for API to load"
+								userData ? userData[2].Email : "Waiting for API to load"
 							}
 						/>
 					</div>

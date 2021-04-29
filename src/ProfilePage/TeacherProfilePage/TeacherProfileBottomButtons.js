@@ -10,8 +10,6 @@ function TeacherProfileBottomButtons() {
 			</button>
 			<button className="helpcenterbutton">
 				<Link to="/TeacherStudentProfile">BACK TO DASHBOARD</Link>
-
-				{/* Dashboard should be defaulted to the Teacher Progress page according to the UX design. Will link it back to that page once that page is finalized. For now it is linked back to my TeacherStudentProfileMain page */}
 			</button>
 		</div>
 	);
