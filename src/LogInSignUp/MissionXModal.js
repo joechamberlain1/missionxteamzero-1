@@ -85,7 +85,7 @@ function FormModal(props) {
 				}
 				if (result === "Successfully logged in user!") {
 					window.location.replace("http://localhost:3000/StudentProfilePage");
-					alert(result);
+					alert(result + " We are now redirecting you to your profile page!");
 				}
 			});
 	}
@@ -120,7 +120,7 @@ function FormModal(props) {
 				}
 				if (result === "Successfully logged in user!") {
 					window.location.replace("http://localhost:3000/TeacherProfilePage");
-					alert(result);
+					alert(result + " We are now redirecting you to your profile page!");
 				}
 			});
 	}
