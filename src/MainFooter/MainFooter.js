@@ -1,6 +1,6 @@
 import React from "react";
 // Remove import link once finalized
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 import "./MainFooterStyle.css";
 
 const MainFooter = () => {
@@ -41,25 +41,6 @@ const MainFooter = () => {
 						to the New Zealand Digital Technologies & Hangarau Matchiko.
 						alan@levelupworks.com (021) 668 185
 					</p>
-				</div>
-
-				{/* Remove these temp test once finalized  */}
-				<div className="ContentContainer">
-					<h4>Johnny Temp Test</h4>
-					<NavLink to="/TeacherProfilePage">Teacher Profile Page Test</NavLink>
-					<Link to="/TeacherStudentProfile">
-						Teacher Student Dashboard Profile Page TEST
-					</Link>
-					<NavLink to="/TeacherProjectsPage">
-						Teacher Projects Page Test
-					</NavLink>
-				</div>
-				<div className="ContentContainer">
-					<h4>Joseph Temp Test</h4>
-					<Link to="/studentProjectLib">Student Project Library Test</Link>
-					<Link to="/ObjectivesProjectBuilder">
-						Student Project Builder Test
-					</Link>
 				</div>
 			</div>
 		</div>

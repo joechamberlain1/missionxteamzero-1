@@ -3,12 +3,14 @@ import MainFooter from "../../MainFooter/MainFooter.js";
 import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import ProfilePic from "../../img/profilepicplaceholder.png";
 import ProfilePicPlaceHolder from "../ProfilePicPlaceHolder.js";
+import { Link } from "react-router-dom";
 import "../ProfilePage.css";
-import TeacherProfileBottomButtons from "./TeacherProfileBottomButtons.js";
+import "../../TeacherDashboard/ButtonStyle.css";
+// import TeacherProfileBottomButtons from "./TeacherProfileBottomButtons.js";
 import ProfileDetails from "../ProfileDetails.js";
 import UploadProfilePicButton from "../UploadProfilePicButton";
 
-function TeacherProfilePage() {
+function StudentProfilePage() {
 	const [userData, setUserData] = useState("");
 
 	// This is the above line WITHOUT using react.
@@ -42,25 +44,30 @@ function TeacherProfilePage() {
 						<div className="profile-buttons">
 							<button>Edit profile</button>
 							<UploadProfilePicButton />
-							<button>Settings</button>
 						</div>
 					</div>
 					<div className="main-profile-details">
 						<h1 style={{ textAlign: "center" }}>
-							{userData ? userData[2].FullName : "Waiting for API to load"}
+							{userData ? userData[7].FullName : "Waiting for API to load"}
 						</h1>
 
 						<ProfileDetails
 							reqDetails="School"
 							returnedFunction={
-								userData ? userData[2].School : "Waiting for API to load"
+								userData ? userData[7].School : "Waiting for API to load"
+							}
+						/>
+						<ProfileDetails
+							reqDetails="Teacher"
+							returnedFunction={
+								userData ? userData[2].FullName : "Waiting for API to load"
 							}
 						/>
 						{/* <button onClick={() => handleClick()}> Button to call API</button> */}
 						<ProfileDetails
-							reqDetails="Courses Purchased"
+							reqDetails="Course"
 							returnedFunction={
-								userData ? userData[2].Courses : "Waiting for API to load"
+								userData ? userData[7].Courses : "Waiting for API to load"
 							}
 							// returnedFunction={
 							// 	test
@@ -75,29 +82,33 @@ function TeacherProfilePage() {
 						<ProfileDetails
 							reqDetails="Date Of Birth"
 							returnedFunction={
-								userData ? userData[2].DOB : "Waiting for API to load"
+								userData ? userData[7].DOB : "Waiting for API to load"
 							}
 						/>
 
 						<ProfileDetails
 							reqDetails="Contact No"
 							returnedFunction={
-								userData ? userData[2].ContactNo : "Waiting for API to load"
+								userData ? userData[7].ContactNo : "Waiting for API to load"
 							}
 						/>
 						<ProfileDetails
 							reqDetails="Email Address"
 							returnedFunction={
-								userData ? userData[2].Email : "Waiting for API to load"
+								userData ? userData[7].Email : "Waiting for API to load"
 							}
 						/>
 					</div>
 				</div>
-				<TeacherProfileBottomButtons />
+				<div className="TeacherProfileBottomButtonContainer">
+					<button className="BackToProjects">
+						<Link to="/StudentProjectLib">BACK TO PROJECTS</Link>
+					</button>
+				</div>
 			</div>
 			<MainFooter />
 		</div>
 	);
 }
 
-export default TeacherProfilePage;
+export default StudentProfilePage;

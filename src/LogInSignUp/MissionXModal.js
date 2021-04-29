@@ -84,7 +84,7 @@ function FormModal() {
 					alert(result);
 				}
 				if (result === "Successfully logged in user!") {
-					window.location.replace("http://localhost:3000/TeacherProfilePage");
+					window.location.replace("http://localhost:3000/StudentProfilePage");
 					alert(result);
 				}
 			});
@@ -236,14 +236,13 @@ function FormModal() {
 		<>
 			<div>
 				<Link onClick={openSignup}>
-					<i className="fa fa-user-circle" />
-					REGISTER
+					<i className="fa fa-user-circle" /> REGISTER
 				</Link>
 				<Modal open={signup} className={classes.modal} onClose={closeSignup}>
 					{bodyTwo}
 				</Modal>
 
-				<Link onClick={openLogin}>{"|"}LOG IN</Link>
+				<Link onClick={openLogin}>{" | "}LOG IN</Link>
 				<Modal open={login} className={classes.modal} onClose={closeLogin}>
 					{body}
 				</Modal>

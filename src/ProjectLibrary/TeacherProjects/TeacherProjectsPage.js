@@ -1,7 +1,7 @@
 import React from "react";
 import MainTopNav from "../../MainTopNav/MainTopNav.js";
 import MainFooter from "../../MainFooter/MainFooter.js";
-import LibButton from "../StudentProjectLibrary/ProjectLibButtons";
+
 import ProjectSideBar from "../StudentProjectLibrary/ProjectGallerySideBar";
 import TeacherProjectBottomButtons from "./TeacherProjectBottomButtons.js";
 import "../StudentProjectLibrary/StudentProjectLib.css";

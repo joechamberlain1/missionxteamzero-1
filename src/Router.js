@@ -16,12 +16,14 @@ import MakeProjectDummy from "./StudentProjectBuilder/DummyPages/MakeProjectDumm
 import SubmitProjectDummy from "./StudentProjectBuilder/DummyPages/VideoTutorialDummy";
 import BonusChallengeDummy from "./StudentProjectBuilder/DummyPages/VideoTutorialDummy";
 import TakeTheQuizDummy from "./StudentProjectBuilder/DummyPages/TakeTheQuizDummy";
+import StudentProfilePage from "./ProfilePage/StudentProfilePage/StudentProfilePage";
 
 const Router = () => {
 	return (
 		<Switch>
 			<Route exact path="/" component={JohnnyHomePage} />
 			<Route exact path="/TeacherProfilePage" component={TeacherProfilePage} />
+			<Route exact path="/StudentProfilePage" component={StudentProfilePage} />
 			<Route exact path="/StudentProjectLib" component={StudentProjectLib} />
 			<Route
 				exact
