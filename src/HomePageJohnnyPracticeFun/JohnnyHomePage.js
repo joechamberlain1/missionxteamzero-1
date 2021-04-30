@@ -2,7 +2,7 @@ import React from "react";
 import MainTopNav from "../MainTopNav/MainTopNav.js";
 import MainFooter from "../MainFooter/MainFooter.js";
 import "./JohnnyHomePageStyle.css";
-import SignUpButton from "../LogInSignUp/SignUpButton";
+// import SignUpButton from "../LogInSignUp/SignUpButton";
 import Project01 from "./Images/Projects 01.png";
 import StudentCreateIcon from "./StudentsIcons/StudentCreateIcon.js";
 import animationIcon from "./StudentsIcons/animationicon.png";
@@ -20,6 +20,7 @@ import Atom from "./StudentsIcons/atom.png";
 import laptopgirl from "./Images/girlonlaptop.jpg";
 import Section4Content from "./Section4Content.js";
 import happyboys from "./Images/happystudents.jpg";
+import FormModal from "../LogInSignUp/MissionXModal.js";
 
 // Purposely did it like this, because it was purely for practice purposes and counted as my "4th" page --> Johnny
 // Ideally would be better to break it into individual sections similarly to the MainTopNav and MainFooter
@@ -40,7 +41,7 @@ const JohnnyHomePage = () => {
 						<button>Learn More</button>
 						<div className="SignUpButtonCSS">
 							<button>
-								<SignUpButton />
+								<FormModal signupButton = 'SIGN UP' />
 							</button>
 							*Basic subscription includes the first 15 project free of charge.
 						</div>
@@ -160,7 +161,7 @@ const JohnnyHomePage = () => {
 					<div className="Content5ButtonsContainer">
 						<button>Enquire Now</button>
 						<button>
-							<SignUpButton />
+							<FormModal signupButton = 'SIGN UP'/>
 						</button>
 					</div>
 				</div>
