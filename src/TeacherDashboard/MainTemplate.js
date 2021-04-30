@@ -5,7 +5,7 @@ import MainDashboardFooter from "./DashboardFooter";
 import DashboardTopButtons from "./DashboardTopButtons";
 import "./MainTemplate.css";
 
-// Use this as a template when creating a page
+// Use this as a template when creating a teacher Dashboard content / Student Project builder page
 
 function MainTemplate() {
 	return (

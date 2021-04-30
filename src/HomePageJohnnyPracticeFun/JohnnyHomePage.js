@@ -21,6 +21,9 @@ import laptopgirl from "./Images/girlonlaptop.jpg";
 import Section4Content from "./Section4Content.js";
 import happyboys from "./Images/happystudents.jpg";
 
+// Purposely did it like this, because it was purely for practice purposes and counted as my "4th" page --> Johnny
+// Ideally would be better to break it into individual sections similarly to the MainTopNav and MainFooter
+
 const JohnnyHomePage = () => {
 	return (
 		<div>

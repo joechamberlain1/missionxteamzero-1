@@ -3,6 +3,8 @@ import React from "react";
 // import { Link, NavLink } from "react-router-dom";
 import "./MainFooterStyle.css";
 
+// Main reusable footer that could be called upon on different pages
+
 const MainFooter = () => {
 	return (
 		<div className="MainFooterLayout">

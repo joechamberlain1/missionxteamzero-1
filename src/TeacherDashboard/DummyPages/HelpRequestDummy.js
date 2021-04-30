@@ -5,7 +5,7 @@ import MainDashboardFooter from "../DashboardFooter";
 import DashboardTopButtons from "../DashboardTopButtons";
 import "../MainTemplate.css";
 
-// Use this as a template when creating a page
+// Dummy page for Help Request so can show front end that the NavLink is working
 
 function HelpRequestDummy() {
 	return (

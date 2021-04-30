@@ -100,6 +100,8 @@ function StudentProfilePage() {
 						/>
 					</div>
 				</div>
+
+				{/* Hard coded the single button page for student profile page */}
 				<div className="TeacherProfileBottomButtonContainer">
 					<button className="BackToProjects">
 						<Link to="/StudentProjectLib">BACK TO PROJECTS</Link>

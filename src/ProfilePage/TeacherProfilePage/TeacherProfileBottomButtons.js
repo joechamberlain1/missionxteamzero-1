@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../TeacherDashboard/ButtonStyle.css";
 
+// Teacher profile page has 2x buttons
+
 function TeacherProfileBottomButtons() {
 	return (
 		<div className="TeacherProfileBottomButtonContainer">

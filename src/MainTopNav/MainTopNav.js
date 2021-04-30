@@ -7,6 +7,8 @@ import flagmaori from "../img/maoriflag.png";
 import "../TeacherDashboard/MainTemplate.css";
 import FormModal from "../LogInSignUp/MissionXModal";
 
+// Top Navigation panel. Can be reused for pages such as the Home Page or Project library pages.
+
 const MainTopNav = () => {
 	return (
 		<div className="TopNavMainBackground">

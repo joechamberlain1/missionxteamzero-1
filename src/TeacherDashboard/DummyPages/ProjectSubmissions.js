@@ -5,9 +5,9 @@ import MainDashboardFooter from "../DashboardFooter";
 import DashboardTopButtons from "../DashboardTopButtons";
 import "../MainTemplate.css";
 
-// Use this as a template when creating a page
+// Dummy page for ProjectSubmissionsDummy so can show front end that the NavLink is working
 
-function ProgressTrackerDummy() {
+function ProjectSubmissionsDummy() {
 	return (
 		<div className="webcontainer">
 			<DashboardTopNav />
@@ -24,4 +24,4 @@ function ProgressTrackerDummy() {
 	);
 }
 
-export default ProgressTrackerDummy;
+export default ProjectSubmissionsDummy;

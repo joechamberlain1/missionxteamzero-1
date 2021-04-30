@@ -8,6 +8,8 @@ import ProfilePicPlaceHolder from "./ProfilePicPlaceHolder.js";
 import "./ProfilePage.css";
 import TeacherProjectBottomButtons from "../TeacherProjects/TeacherProjectBottomButtons";
 
+// Template for generic profile page
+
 function ProfilePage() {
 	return (
 		<div>

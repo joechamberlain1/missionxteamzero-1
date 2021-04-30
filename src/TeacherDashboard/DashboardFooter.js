@@ -1,5 +1,7 @@
 import React from "react";
-import "./MainTemplate.css";
+
+// Main footer for Teacher dashboard / Student Project builder.
+// Using inline styling as no need for a dedicated section in a CSS as it is only 1 text
 
 const DashboardFooter = () => {
 	return (

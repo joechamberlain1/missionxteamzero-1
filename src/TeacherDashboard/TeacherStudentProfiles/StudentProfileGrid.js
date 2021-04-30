@@ -1,6 +1,9 @@
 import React from "react";
 import "./StudentProfileGrid.css";
 
+// Student profiles will be called when entering the Teacher Student Profile section. Props being used specifically for the text and images.
+// Can edit the name and profile pics on the actual TeacherStudentProfile.js to accomodate the name and images from backend
+
 function StudentProfileGrid(props) {
 	return (
 		<div className="MainReusableSmallContainer">

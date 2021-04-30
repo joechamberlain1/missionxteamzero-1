@@ -1,6 +1,8 @@
 import React from "react";
 import "./ProfilePage.css";
 
+// Uploading photos button
+
 function UploadProfilePicButton() {
 	return (
 		<form

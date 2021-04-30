@@ -5,9 +5,9 @@ import MainDashboardFooter from "../DashboardFooter";
 import DashboardTopButtons from "../DashboardTopButtons";
 import "../MainTemplate.css";
 
-// Use this as a template when creating a page
+// Dummy page for ProjectLibrary so can show front end that the NavLink is working
 
-function ProjectSubmissionsDummy() {
+function ProjectLibraryDummy() {
 	return (
 		<div className="webcontainer">
 			<DashboardTopNav />
@@ -24,4 +24,4 @@ function ProjectSubmissionsDummy() {
 	);
 }
 
-export default ProjectSubmissionsDummy;
+export default ProjectLibraryDummy;
