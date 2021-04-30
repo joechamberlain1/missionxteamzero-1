@@ -26,7 +26,7 @@ function ProjectSideBar() {
                         
                         {checkbox.itemTypes.map((item) =>(
                             <div>
-                            <SideBarCheckbox type='checkbox'  className = 'CheckBoxContainer'/>{item}
+                            <input type='checkbox'  className = 'CheckBoxContainer'/>{item}
                             </div>
                         ))}
                     
