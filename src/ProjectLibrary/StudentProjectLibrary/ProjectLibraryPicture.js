@@ -11,6 +11,11 @@ const useStyles = makeStyles((theme) => ({
 		color: "white",
 		height: 20,
 	},
+
+  textDecoration : {
+    textDecoration: 'none',
+  },
+
 }));
   function LibraryPicture(props) {
     const [projectData, setProjectData] = useState([]);
@@ -113,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
   
           {projectData.map((project) => {
             return(
-               <Link to={props.path}><StudentLibraryImage Image = {project.IMGURL} Title ={project.Title} 
+               <Link className = {classes.textDecoration} to={props.path}><StudentLibraryImage Image = {project.IMGURL} Title ={project.Title} 
                 Difficulty ={projectData ? `${project.Course} | ${project.ActivityType}` : "Loading"} /></Link>
           )})}
           
